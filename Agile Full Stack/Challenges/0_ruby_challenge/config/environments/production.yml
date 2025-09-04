@@ -1,0 +1,6 @@
+#database:
+#  adapter: postgresql
+#  host: db
+#  username: prod_user
+#  password: prod_pass
+#  database: my_ruby_prod

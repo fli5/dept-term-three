@@ -1,0 +1,20 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+# 核心 Gems
+gem 'dotenv', '~> 3.0'           # 环境变量管理
+gem 'logger'                      # 日志
+
+# 开发环境
+group :development do
+  gem 'pry', '~> 0.14'           # 调试
+  gem 'rubocop', '~> 1.50'       # 代码规范检查
+  gem 'reek', '~> 6.2'           # 代码气味检测
+end
+
+# 测试环境
+group :test do
+  gem 'rspec', '~> 3.12'         # 单元测试
+  gem 'factory_bot', '~> 6.2'    # 测试数据生成
+end
