@@ -1,0 +1,6 @@
+#database:
+#  adapter: postgresql
+#  host: localhost
+#  username: dev_user
+#  password: dev_pass
+#  database: my_ruby_dev
