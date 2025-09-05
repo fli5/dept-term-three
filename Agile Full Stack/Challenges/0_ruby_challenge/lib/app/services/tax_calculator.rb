@@ -45,12 +45,12 @@ module App
       # @param pst_tax [Float] PST Tax
       # @param gst_tax [Float] GST Tax
       # @param grand_total [Float] Total Charge
-      def print_receipt(pst_tax,gst_tax,grand_total)
+      def print_receipt(pst_tax, gst_tax, grand_total)
         # Format the number to keep two decimal places
-        puts "Subtotal: $#{format('%.2f',@sub_total)}"
-        puts "PST: $#{format('%.2f',pst_tax)} - #{(PST_RATE * 100).to_i}%"
-        puts "GST: $#{format('%.2f',gst_tax)} - #{(GST_RATE * 100).to_i}%"
-        puts "Grand Total: $#{format('%.2f',grand_total)}"
+        puts "Subtotal: $#{format('%.2f', @sub_total)}"
+        puts "PST: $#{format('%.2f', pst_tax)} - #{(PST_RATE * 100).to_i}%"
+        puts "GST: $#{format('%.2f', gst_tax)} - #{(GST_RATE * 100).to_i}%"
+        puts "Grand Total: $#{format('%.2f', grand_total)}"
       end
 
       # Calculate the grand total
@@ -63,7 +63,7 @@ module App
 
         # Print 20 dashes
         puts '-' * 20
-        print_receipt(pst_tax,gst_tax,grand_total)
+        print_receipt(pst_tax, gst_tax, grand_total)
         puts ''
 
         # Print message based on total
