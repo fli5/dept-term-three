@@ -6,7 +6,7 @@
 # Unauthorized copying, modification, or distribution of this file, via any
 # medium, is strictly prohibited without prior written permission from Felix Li.
 #
-# For licensing inquiries, please contact: future.doo@gmail.com
+# For licensing inquiries, please contact: fli5@academic.rrc.ca
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------

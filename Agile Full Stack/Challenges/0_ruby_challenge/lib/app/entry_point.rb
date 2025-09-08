@@ -36,6 +36,7 @@ module App
     def start_app
       log "Starting #{App::EntryPoint} in #{@config}"
       print "\nEnter the subtotal: $"
+      # Remove '\r','\n','\r\n'
       sub_total = gets.chomp
       calculator = Services::TaxCalculator.new(sub_total)
       calculator.calculate_tax

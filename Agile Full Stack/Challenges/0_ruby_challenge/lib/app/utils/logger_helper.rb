@@ -14,7 +14,6 @@
 # Course: WEBD-3011 (273794) Agile Full Stack Web Development
 # Created: 2025-09-03
 # ---------------------------------------------------------------------
-
 module App
   # Utils
   module Utils
