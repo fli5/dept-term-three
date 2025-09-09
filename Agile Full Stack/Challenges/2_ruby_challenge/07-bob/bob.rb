@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby
 # frozen_string_literal: true
 
 # ---------------------------------------------------------------------
@@ -14,9 +13,3 @@
 # Course: WEBD-3011 (273794) Agile Full Stack Web Development
 # Created: 2025-09-08
 # ---------------------------------------------------------------------
-class HelloWorld
-  def self.hello(greet_to = 'World')
-    "Hello, #{greet_to}!"
-  end
-end
-

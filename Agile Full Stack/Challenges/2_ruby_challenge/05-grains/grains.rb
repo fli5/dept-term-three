@@ -14,9 +14,19 @@
 # Course: WEBD-3011 (273794) Agile Full Stack Web Development
 # Created: 2025-09-08
 # ---------------------------------------------------------------------
-class HelloWorld
-  def self.hello(greet_to = 'World')
-    "Hello, #{greet_to}!"
+class Grains
+  SQUARE_SIZE = 64
+
+  #
+  # @param square_no [int] The sequence number of the square
+  #
+  def self.square(square_no)
+    raise ArgumentError, "Square must be between 1 and #{SQUARE_SIZE}" unless (1..SQUARE_SIZE).include?(n)
+
+    2**(square_no - 1)
+  end
+
+  def self.total
+    (1..SQUARE_SIZE).sum { |square_no| square(square_no) }
   end
 end
-

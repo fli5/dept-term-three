@@ -15,8 +15,11 @@
 # Created: 2025-09-08
 # ---------------------------------------------------------------------
 class HelloWorld
-  def self.hello(greet_to = 'World')
-    "Hello, #{greet_to}!"
+  def initialize(my_name)
+    @my_name = my_name
+  end
+
+  def hello(greet_to = 'World')
+    "Hello, #{greet_to}. My name is #{@my_name}!"
   end
 end
-

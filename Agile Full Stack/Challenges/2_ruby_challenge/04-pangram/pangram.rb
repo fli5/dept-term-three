@@ -14,9 +14,15 @@
 # Course: WEBD-3011 (273794) Agile Full Stack Web Development
 # Created: 2025-09-08
 # ---------------------------------------------------------------------
-class HelloWorld
-  def self.hello(greet_to = 'World')
-    "Hello, #{greet_to}!"
+class Pangram
+  def self.is_pangram?(sentence)
+    sentence.nil?
+    # Create a letter array with a range
+    letter_array = ('a'..'z').to_a
+
+    # Convert the sentence into lowercase, then remove non-alphabeted letter
+    normalized_str = sentence.downcase.gsub(/[^a-z]/, '')
+
+    letter_array.all? { |ch| normalized_str.include?(ch) }
   end
 end
-

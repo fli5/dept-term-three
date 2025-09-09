@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+
 # frozen_string_literal: true
 
 # ---------------------------------------------------------------------
@@ -14,9 +15,15 @@
 # Course: WEBD-3011 (273794) Agile Full Stack Web Development
 # Created: 2025-09-08
 # ---------------------------------------------------------------------
-class HelloWorld
-  def self.hello(greet_to = 'World')
-    "Hello, #{greet_to}!"
+gem 'rspec', '~> 3.12'
+gem 'factory_bot', '~> 6.2'
+
+require_relative '../hello_world'
+
+RSpec.describe HelloWorld do
+  # let(:calc) { HelloWorld.new }
+
+  it 'test no name' do
+    expect(HelloWorld.hello).to eq('Hello, World!')
   end
 end
-

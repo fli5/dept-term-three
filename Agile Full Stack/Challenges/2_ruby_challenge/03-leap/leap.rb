@@ -14,9 +14,14 @@
 # Course: WEBD-3011 (273794) Agile Full Stack Web Development
 # Created: 2025-09-08
 # ---------------------------------------------------------------------
-class HelloWorld
-  def self.hello(greet_to = 'World')
-    "Hello, #{greet_to}!"
+class Year
+  def self.leap?(year)
+    if (year % 400).zero?
+      true
+    elsif (year % 100).zero?
+      false
+    else
+      (year % 4).zero?
+    end
   end
 end
-
