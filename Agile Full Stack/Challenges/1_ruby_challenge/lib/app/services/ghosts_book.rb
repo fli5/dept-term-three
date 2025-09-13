@@ -2,11 +2,9 @@
 
 # ---------------------------------------------------------------------
 # Copyright (c) 2025. Felix Li. All rights reserved
-#
 # Unauthorized copying, modification, or distribution of this file, via any
 # medium, is strictly prohibited without prior written permission from Felix Li.
-#
-# For licensing inquiries, please contact: future.doo@gmail.com
+# For licensing inquiries, please contact: fli5@academic.rrc.ca
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
@@ -17,6 +15,8 @@
 # ---------------------------------------------------------------------
 require_relative '../contracts/task_contract'
 module Services
+
+  # Demonstrate a hash array
   class GhostsBook
     include Contracts::TaskContract
 

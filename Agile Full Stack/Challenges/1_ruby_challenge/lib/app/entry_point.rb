@@ -39,24 +39,23 @@ module App
     def start_app
       log "Starting #{App::EntryPoint} in #{@config}"
       # Task 1
-      puts '1:' + '-' * 80
-      carl_agan=Services::CarlSagan.new
+      puts "1:#{'-' * 80}"
+      carl_agan = Services::CarlSagan.new
       carl_agan.execute_task
-      
 
-      #Task 2
-      puts '2:'+'-'*80
-      ghosts_book=Services::GhostsBook.new
+      # Task 2
+      puts "2:#{'-' * 80}"
+      ghosts_book = Services::GhostsBook.new
       ghosts_book.execute_task
 
-      #Task 3
-      puts '3:'+'-'*80
-      dog_breeds=Services::DogBreeds.new
+      # Task 3
+      puts "3:#{'-' * 80}"
+      dog_breeds = Services::DogBreeds.new
       dog_breeds.execute_task
 
-      #Task 4
-      puts '4:'+'-'*80
-      ash_trees=Services::AshTrees.new
+      # Task 4
+      puts "4:#{'-' * 80}"
+      ash_trees = Services::AshTrees.new
       ash_trees.execute_task
     end
   end

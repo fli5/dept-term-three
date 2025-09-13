@@ -2,11 +2,9 @@
 
 # ---------------------------------------------------------------------
 # Copyright (c) 2025. Felix Li. All rights reserved
-#
 # Unauthorized copying, modification, or distribution of this file, via any
 # medium, is strictly prohibited without prior written permission from Felix Li.
-#
-# For licensing inquiries, please contact: future.doo@gmail.com
+# For licensing inquiries, please contact: fli5@academic.rrc.ca
 # ---------------------------------------------------------------------
 
 # ---------------------------------------------------------------------
@@ -26,10 +24,10 @@ module Services
     def execute_task
       url = 'https://dog.ceo/api/breeds/list/all'
       uri = URI(url)
-      response = Net::HTTP.get(uri)
-      dog_breeds = JSON.parse(response)
-      # pp dog_breeds # pp stands for pretty print.
+      response_json = Net::HTTP.get(uri)
+      dog_breeds = JSON.parse(response_json)
 
+      # Iterate through the dog_breeds and apply a block.
       dog_breeds['message'].each do |key, value|
         puts "* #{key.capitalize}"
         value.each do |item|
