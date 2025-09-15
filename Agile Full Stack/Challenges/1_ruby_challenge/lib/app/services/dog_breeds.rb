@@ -25,6 +25,8 @@ module Services
       url = 'https://dog.ceo/api/breeds/list/all'
       uri = URI(url)
       response_json = Net::HTTP.get(uri)
+
+      # Convert to an object from a JSON
       dog_breeds = JSON.parse(response_json)
 
       # Iterate through the dog_breeds and apply a block.

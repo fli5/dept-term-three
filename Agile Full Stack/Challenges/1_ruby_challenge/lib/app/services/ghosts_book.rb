@@ -21,6 +21,7 @@ module Services
     include Contracts::TaskContract
 
     def execute_task
+      # Two different ways using symbols in a hash array
       ghosts = [
         { :name => 'Inky', age: 4, loves: 'reindeers', net_worth: 25 },
         { :name => 'Pinky', age: 5, loves: 'garden tools', net_worth: 14 },
@@ -28,6 +29,7 @@ module Services
         { :name => 'Clyde', age: 6, loves: 'yarn', net_worth: 0 }
       ]
 
+      # Using a block statement with a parameter
       ghosts.each do |ghost|
         ghost_info = "#{ghost[:name]} is #{ghost[:age]} years old, "
         ghost_info += "loves #{ghost[:loves]} and "

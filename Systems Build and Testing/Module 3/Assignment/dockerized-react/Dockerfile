@@ -1,4 +1,5 @@
-FROM node:20-alpine
+# Stage for the development
+FROM node:20-alpine AS development
 
 # Workdir as required
 WORKDIR /feng_li_site
@@ -17,4 +18,3 @@ EXPOSE 7775
 
 # Start React dev server on port 7775
 CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "7775"]
-
