@@ -6,21 +6,20 @@ $g_page = 'login';
 require 'header.php';
 require 'menu.php';
 
-//ob_start();
 $login_result = false;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $login_result = Database::check_login($username, $password);
+    $sanitized_username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
+    $sanitized_password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
+    $login_result = Database::check_login($sanitized_username, $sanitized_password);
 }
 
 ?>
 <div id="all_blogs">
-    <?php if ($login_result && isset($username)): ?>
+    <?php if ($login_result && isset($sanitized_username)): ?>
         You have successfully logged in
         <p>Redirecting to homepage in 2 seconds...</p>
     <?php
-    $_SESSION['username'] = $username;
+    $_SESSION['username'] = $sanitized_username;
     ?>
         <script>
             setTimeout(function () {
@@ -32,7 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php endif; ?>
 </div>
 <?php
-//ob_end_flush();
 require 'footer.php';
 ?>
 

@@ -4,10 +4,8 @@
   
   if (!isset($_GET['id'])) redirect();
   
-  $id = $_GET['id'];
-  
-  $post = find_post_by_id($id);
-  
+  $post_id = filter_input(INPUT_GET, "id", FILTER_VALIDATE_INT);
+  $post = Database::find_post_by_id($post_id);
   if (!$post) redirect();
   
   $g_title = BLOG_NAME . ' - ' . htmlspecialchars($post['title']);

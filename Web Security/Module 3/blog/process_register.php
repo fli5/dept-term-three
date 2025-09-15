@@ -6,11 +6,9 @@ $g_page = 'register';
 require 'header.php';
 require 'menu.php';
 
-ob_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
+    $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
+    $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
     $result = Database::create_user($username, $username);
 }
 ?>
@@ -28,8 +26,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         Registered Failed
     <?php endif; ?>
 </div>
-
 <?php
-ob_end_flush();
 require 'footer.php';
 ?>

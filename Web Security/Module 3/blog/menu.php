@@ -12,10 +12,6 @@ session_start();
         <li><a href="register.php" <?= ($g_page == 'register') ? "class='active'" : '' ?>>Register</a></li>
     <?php else: ?>
         <li><a href="logout.php" <?= ($g_page == 'logout') ? "class='active'" : '' ?>>Logout</a></li>
-
     <?php endif; ?>
-
-
-
     <li><a href="privacy.php" <?= ($g_page == 'privacy') ? "class='active'" : '' ?>>Privacy</a></li>
 </ul> <!-- END div id="menu" -->
