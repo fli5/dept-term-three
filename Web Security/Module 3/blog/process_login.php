@@ -8,8 +8,8 @@ require 'menu.php';
 
 $login_result = false;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $sanitized_username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
-    $sanitized_password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
+    $sanitized_username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $sanitized_password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $login_result = Database::check_login($sanitized_username, $sanitized_password);
 }
 
