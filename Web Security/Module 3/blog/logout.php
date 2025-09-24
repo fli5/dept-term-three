@@ -1,4 +1,5 @@
 <?php
+require 'security.php';
 require 'config.php';
 require 'database.php';
 $g_title = BLOG_NAME . ' - Logout';

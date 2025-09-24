@@ -1,4 +1,5 @@
 <?php
+require 'security.php';
 require 'config.php';
 require 'database.php';
 
@@ -15,7 +16,7 @@ $content = $_POST['content'];
 
 if (!validated_post($title, $content)) {
     $error_msg = 'Both the title and content must be at least one character.';
-} else if (Database::create_post($title, $content)) {
+} else if (Database::createPost($title, $content)) {
     redirect();
 } else {
     $error_msg = 'Create New Post Error. [create]';

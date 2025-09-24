@@ -1,16 +1,22 @@
 <?php
+require 'security.php';
 require 'config.php';
 require 'database.php';
+require 'csrftool.php';
 $g_title = BLOG_NAME . ' - Login';
 $g_page = 'login';
 require 'header.php';
 require 'menu.php';
 
+
 $login_result = false;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $sanitized_password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    $login_result = Database::check_login($sanitized_username, $sanitized_password);
+    $csrf_token = filter_input(INPUT_POST, "csrf_token", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    if ($csrf_token && CSRFTool::validateCsrf($csrf_token)) {
+        $login_result = Database::checkLogin($sanitized_username, $sanitized_password);
+    }
 }
 
 ?>
@@ -21,11 +27,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php
     $_SESSION['username'] = $sanitized_username;
     ?>
-        <script>
-            setTimeout(function () {
-                window.location.href = "index.php";
-            }, 2000)
+        <script id="redirect-script"
+                src="redirect.js"
+                data-delay="2000"
+                data-url="index.php">
         </script>
+
     <?php else: ?>
         Wrong Username or Password
     <?php endif; ?>

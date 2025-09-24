@@ -1,8 +1,8 @@
 <?php
+require 'security.php';
 if (!isset($g_page)) {
     $g_page = '';
 }
-session_start();
 ?>
 <ul id="menu">
     <li><a href="index.php" <?= ($g_page == 'index') ? "class='active'" : '' ?>>Home</a></li>
@@ -15,3 +15,4 @@ session_start();
     <?php endif; ?>
     <li><a href="privacy.php" <?= ($g_page == 'privacy') ? "class='active'" : '' ?>>Privacy</a></li>
 </ul> <!-- END div id="menu" -->
+

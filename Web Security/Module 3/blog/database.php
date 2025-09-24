@@ -1,7 +1,6 @@
 <?php
 
 class Database {
-    //private mysqli $mysqli;
     private static ?Database $instance = null;
     private static ?mysqli $connection = null;
 
@@ -21,16 +20,16 @@ class Database {
     }
 
 
-    public static function get_instance(): ?Database {
+    public static function getInstance(): ?Database {
         if (self::$instance == null) {
             self::$instance = new self();
         }
         return self::$instance;
     }
 
-    public static function get_connection(): mysqli {
+    public static function getConnection(): mysqli {
         if (self::$connection === null) {
-            self::get_instance();
+            self::getInstance();
         }
         return self::$connection;
     }
@@ -51,7 +50,7 @@ class Database {
      * Prepare a statement with parameters
      */
     private static function prepare(string $query, array $params = []): mysqli_stmt {
-        $connection = self::get_connection();
+        $connection = self::getConnection();
         $statement = $connection->prepare($query);
         $param_values = [];
         $param_types = "";
@@ -65,13 +64,13 @@ class Database {
         return $statement;
     }
 
-    private static function format_datetime($datetime): string {
+    private static function formatDatetime($datetime): string {
         return date("Y-m-d H:i:s", strtotime($datetime));
     }
 
-    public static function create_user($username, $password): bool {
+    public static function createUser($username, $password): bool {
         //Check if the username exists. Fail when it exists
-        if (self::exist_user($username)) {
+        if (self::existUser($username)) {
             return false;
         }
         // salting adds uniqueness to each entry.
@@ -87,7 +86,7 @@ class Database {
         return $insert_result;
     }
 
-    public static function find_blogs($limit = null): array {
+    public static function findBlogs($limit = null): array {
         $blogs = [];
 
         $query_sql = "SELECT * FROM posts ORDER BY created_at DESC";
@@ -102,7 +101,7 @@ class Database {
         $query_result = $prepare_stmt->get_result();
 
         while ($row = $query_result->fetch_assoc()) {
-            $row['created_at'] = self::format_datetime($row['created_at']);
+            $row['created_at'] = self::formatDatetime($row['created_at']);
             $blogs[] = $row;
         }
 
@@ -110,7 +109,7 @@ class Database {
         return $blogs;
     }
 
-    public static function create_post($title, $content): bool {
+    public static function createPost($title, $content): bool {
         $insert_sql = "INSERT INTO posts (title,content,created_at) value (?, ?, null)";
         $prepare_stmt = self::prepare($insert_sql, [$title, $content]);
         $insert_result = $prepare_stmt->execute();
@@ -118,7 +117,7 @@ class Database {
         return $insert_result;
     }
 
-    private static function exist_user($username): bool {
+    private static function existUser($username): bool {
         $select_sql = "SELECT count(*) as count_num FROM members WHERE username=? ";
         $prepare_stmt = self::prepare($select_sql, [$username]);
         $prepare_stmt->execute();
@@ -135,7 +134,7 @@ class Database {
      * @param $password
      * @return bool
      */
-    public static function check_login($username, $password): bool {
+    public static function checkLogin($username, $password): bool {
         if (!isset($username) || !isset($password)) {
             return false;
         }
@@ -172,7 +171,7 @@ class Database {
      * @param $post_id
      * @return bool|array
      */
-    public static function find_post_by_id($post_id): bool|array {
+    public static function findPostById($post_id): bool|array {
         $post_id = filter_var($post_id, FILTER_VALIDATE_INT);
         if (!$post_id) return false;
         $post = false;

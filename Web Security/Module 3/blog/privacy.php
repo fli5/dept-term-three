@@ -1,4 +1,5 @@
 <?php
+require 'security.php';
 require 'config.php';
 $g_title = BLOG_NAME . ' - Privacy';
 $g_page = 'privacy';

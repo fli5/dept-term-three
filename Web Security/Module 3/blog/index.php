@@ -1,4 +1,5 @@
 <?php
+require 'security.php';
 require 'config.php';
 require 'database.php';
 $g_title = BLOG_NAME . ' - Index';
@@ -6,7 +7,7 @@ $g_page = 'index';
 require 'header.php';
 require 'menu.php';
 
-$posts = Database::find_blogs(BLOG_INDEX_NUM_POSTS);
+$posts = Database::findBlogs(BLOG_INDEX_NUM_POSTS);
 ?>
 <div id="all_blogs">
     <?php foreach ($posts as $post): ?>
