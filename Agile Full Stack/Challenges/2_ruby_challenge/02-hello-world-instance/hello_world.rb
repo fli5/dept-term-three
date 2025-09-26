@@ -15,10 +15,14 @@
 # Created: 2025-09-08
 # ---------------------------------------------------------------------
 class HelloWorld
+  # Define a constructor with parameters
   def initialize(my_name)
+    # initialize an instance variable
     @my_name = my_name
   end
 
+  # Define an instance method
+  # Assign a default value to greet_to parameter
   def hello(greet_to = 'World')
     "Hello, #{greet_to}. My name is #{@my_name}!"
   end

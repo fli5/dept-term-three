@@ -15,7 +15,9 @@
 # Created: 2025-09-08
 # ---------------------------------------------------------------------
 class Year
+  # Define a class method
   def self.leap?(year)
+    # use if/else statement to cover multiple condition
     if (year % 400).zero?
       true
     elsif (year % 100).zero?

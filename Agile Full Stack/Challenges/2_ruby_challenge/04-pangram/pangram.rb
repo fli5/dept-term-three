@@ -15,6 +15,8 @@
 # Created: 2025-09-08
 # ---------------------------------------------------------------------
 class Pangram
+
+  # Define a class method
   def self.is_pangram?(sentence)
     sentence.nil?
     # Create a letter array with a range
@@ -23,6 +25,7 @@ class Pangram
     # Convert the sentence into lowercase, then remove non-alphabeted letter
     normalized_str = sentence.downcase.gsub(/[^a-z]/, '')
 
+    # Check if the sentence includes all letter
     letter_array.all? { |ch| normalized_str.include?(ch) }
   end
 end

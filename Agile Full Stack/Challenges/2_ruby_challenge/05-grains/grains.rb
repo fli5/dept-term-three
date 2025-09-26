@@ -15,14 +15,18 @@
 # Created: 2025-09-08
 # ---------------------------------------------------------------------
 class Grains
+  # Define a constant variable
   SQUARE_SIZE = 64
 
   #
+  # Define a class method
   # @param square_no [int] The sequence number of the square
   #
   def self.square(square_no)
-    raise ArgumentError, "Square must be between 1 and #{SQUARE_SIZE}" unless (1..SQUARE_SIZE).include?(n)
+    # Check if the parameter is a valid value
+    raise ArgumentError, "Square must be between 1 and #{SQUARE_SIZE}" unless (1..SQUARE_SIZE).include?(square_no)
 
+    # Perform the power operation of two
     2**(square_no - 1)
   end
 
@@ -30,3 +34,4 @@ class Grains
     (1..SQUARE_SIZE).sum { |square_no| square(square_no) }
   end
 end
+

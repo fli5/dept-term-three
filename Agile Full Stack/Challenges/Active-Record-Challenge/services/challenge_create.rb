@@ -18,6 +18,7 @@ require_relative '../ar'
 require_relative '../models/product'
 require_relative '../models/category'
 require_relative '../config/config_logger'
+
 setup_logger
 
 category = Category.first
@@ -32,7 +33,6 @@ product_b = Product.create(name: "Product B", description: "Product B", price: 1
 puts "\nTrying to create Product C..."
 product_c = category.products.build(name: "Product C", description: "Product C", price: 20, stock_quantity: 25)
 product_c.save
-
 
 # Product with missing fields
 puts "\nTrying to create a Bad Product ..."

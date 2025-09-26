@@ -15,6 +15,8 @@
 # Created: 2025-09-08
 # ---------------------------------------------------------------------
 class HelloWorld
+  # Define a class method using self keyword
+  # Assign a default value to the parameter
   def self.hello(greet_to = 'World')
     "Hello, #{greet_to}!"
   end

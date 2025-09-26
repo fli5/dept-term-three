@@ -17,6 +17,7 @@
 require_relative '../ar'
 require_relative '../models/product'
 require_relative '../config/config_logger'
+
 setup_logger
 product = Product.find_by(name: "Product A")
 if product
