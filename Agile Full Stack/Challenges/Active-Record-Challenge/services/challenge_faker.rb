@@ -23,7 +23,8 @@ setup_logger
 puts "Created 10 categories and 100 products with Faker."
 puts '=' * 80
 10.times do
-  category = Category.create(name: Faker::Commerce.department)
+  category_name=Faker::Commerce.department + '-Felix'
+  category = Category.create(name: category_name)
   10.times do
     category.products.create(
       name: Faker::Commerce.product_name,

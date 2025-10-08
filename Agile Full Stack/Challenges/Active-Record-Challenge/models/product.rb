@@ -15,7 +15,7 @@ class Product < ActiveRecord::Base
     belongs_to :category
   ASSOCIATION
 
-  # A product has a many to one relationship with a category.
+  # A product has a many-to-one relationship with a category.
   # The products table has a category_id foreign key.
   # In other words, a product belongs to a category.
   belongs_to :category

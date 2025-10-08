@@ -19,7 +19,7 @@ require_relative '../models/category'
 require_relative '../config/config_logger'
 setup_logger
 puts '=' * 30+'Categories && Products' + '='*30
-Category.all.each do |category|
+Category.where('name LIKE ?', '%-Felix').each do |category|
   puts "#{category.id} - Category: #{category.name} (#{category.products.count})"
   category.products.each do |product|
     puts "  #{product.id} - #{product.name.ljust(40)} | $#{'%.2f' % product.price}"

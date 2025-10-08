@@ -26,7 +26,7 @@ $csrf_token = CSRFTool::generateCsrf();
             <tr>
                 <td>Password</td>
                 <td>:</td>
-                <td><label><input name="password" type="text" id="password"></label></td>
+                <td><label><input name="password" type="password" id="password"></label></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>

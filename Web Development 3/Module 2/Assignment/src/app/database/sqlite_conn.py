@@ -148,20 +148,20 @@ class SQLiteConn:
         # Use parametrized SQL to avoid SQL injection
         # -------------------------------------------
         query_sql = f"SELECT * FROM {table_name.value}"
-        params_sql = []
+        query_params = []
         if where_condition:
             where_clause = [f"{field_name} = ?" for field_name in where_condition.keys()]
             query_sql += " WHERE " + " AND ".join(where_clause)
-            params_sql.extend(where_condition.values())
+            query_params.extend(where_condition.values())
 
         if limit_size and isinstance(limit_size, int):
             query_sql += " LIMIT ?"
-            params_sql.append(limit_size)
+            query_params.append(limit_size)
 
         try:
             print(f"{table_name.value}".center(80, "-"))
-            self._conn_cursor.execute(query_sql, params_sql)
-            query_result = self._conn_cursor.execute(query_sql, params_sql).fetchall()
+            self._conn_cursor.execute(query_sql, query_params)
+            query_result = self._conn_cursor.execute(query_sql, query_params).fetchall()
             for row in query_result:
                 print(row)
             print("-" * 80)

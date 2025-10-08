@@ -6,6 +6,7 @@ $g_title = BLOG_NAME . ' - Register';
 $g_page = 'register';
 require 'header.php';
 require 'menu.php';
+require 'csrftool.php';
 
 $result = false;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -16,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $csrf_token = filter_input(INPUT_POST, "csrf_token", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     if ($csrf_token && CSRFTool::validateCsrf($csrf_token)) {
         if (!empty($username) && !empty($password)) {
-            $result = Database::createUser($username, $username);
+            $result = Database::createUser($username, $password);
         }
     }
 }
