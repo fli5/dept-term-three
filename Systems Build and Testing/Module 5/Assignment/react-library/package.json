@@ -12,7 +12,7 @@
   },
   "author": "Felix Li",
   "license": "ISC",
-  "description": "",
+  "description": "This a first React Library",
   "devDependencies": {
     "@babel/core": "^7.28.4",
     "@babel/preset-env": "^7.28.3",
@@ -32,7 +32,6 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30.2.0",
     "jest-environment-jsdom": "^30.2.0",
-    "react": "^18.3.1",
     "rollup": "^4.52.4",
     "rollup-plugin-dts": "^6.2.3",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -42,7 +41,7 @@
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "dependencies": {

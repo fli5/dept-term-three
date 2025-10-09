@@ -15,22 +15,22 @@
  * Created: 2025-10-09
  * ---------------------------------------------------------------------
  */
-export interface CardProps {
-    /** Card title */
-    title: string;
+import React from "react";
+import {cleanup, render, screen} from "@testing-library/react";
+import "@testing-library/jest-dom";
+import { RadioButton } from "./RadioButton";
 
-    /** Card content/body text */
-    content: string;
+describe("RadioButton Component", () => {
+    test("renders a RadioButton", () => {
+        render(<RadioButton label="Option" />);
+        const radio_button=screen.getByText("Option");
+        expect(radio_button).toBeInTheDocument();
+    });
 
-    /** Background color */
-    backgroundColor?: string;
-
-    /** Text color */
-    textColor?: string;
-
-    /** Whether the card is disabled */
-    disabled?: boolean;
-
-    /** Event when the card is clicked */
-    onClick?: () => void;
-}
+    test("applies disabled styles", () => {
+        render(<RadioButton label="Option" disabled />);
+        const radio_button = screen.getByRole("radio_button");
+        expect(radio_button).toHaveStyle("opacity: 0.5");
+        expect(radio_button).toHaveStyle("cursor: not-allowed");
+    });
+});

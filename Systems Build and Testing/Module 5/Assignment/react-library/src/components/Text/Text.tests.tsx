@@ -1,23 +1,38 @@
-import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
-import { Text } from './Text';
+/*
+ * ---------------------------------------------------------------------
+ * Copyright (c) 2025. Felix Li. All rights reserved
+ * Unauthorized copying, modification, or distribution of this file, via any
+ * medium, is strictly prohibited without prior written permission from Felix Li.
+ * For licensing inquiries, please contact: fli5@academic.rrc.ca
+ * ---------------------------------------------------------------------
+ */
 
-describe('Text Component', () => {
-    it('renders the text content', () => {
-        render(<Text content="Hello World" />);
-        expect(screen.getByText('Hello World')).toBeVisible();
+/*
+ * ---------------------------------------------------------------------
+ * Program: Full Stack Web Development
+ * Author: Feng Li
+ * Course: WEBD-3012 (273795) Business Systems Build and Testing
+ * Created: 2025-10-09
+ * ---------------------------------------------------------------------
+ */
+import React from "react";
+import { render, screen, fireEvent } from "@testing-library/react";
+import "@testing-library/jest-dom";
+import { Text } from "./Text";
+
+describe("Text Component", () => {
+    test("renders a Text", () => {
+        render(<Text value="Hello" />);
+        const text_element = screen.getByDisplayValue("Hello");
+        expect(text_element).toBeInTheDocument();
+        expect(text_element).toBeVisible();
     });
 
-    it('applies grey color when disabled', () => {
-        render(<Text content="Disabled Text" disabled />);
-        const textElement = screen.getByText('Disabled Text');
-        expect(textElement).toHaveStyle('color: #aaa');
-    });
 
-    it('handles click event', () => {
-        const handleClick = jest.fn();
-        render(<Text content="Clickable" onClick={handleClick} />);
-        fireEvent.click(screen.getByText('Clickable'));
-        expect(handleClick).toHaveBeenCalledTimes(1);
+    test("applies disabled background color", () => {
+        render(<Text value="Disabled" disabled backgroundColor="#ffffff" />);
+        const text_element = screen.getByDisplayValue("Disabled");
+        expect(text_element).toHaveStyle("background-color: #f0f0f0");
+        expect(text_element).toHaveStyle("cursor: not-allowed");
     });
 });

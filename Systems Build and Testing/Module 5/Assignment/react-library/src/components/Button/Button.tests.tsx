@@ -16,21 +16,22 @@
  * ---------------------------------------------------------------------
  */
 import React from "react";
-import { render, screen } from "@testing-library/react";
-import { Label } from "./Label";
+import {cleanup, render, screen} from "@testing-library/react";
+import "@testing-library/jest-dom";
+import { Button } from "./Button";
 
-describe("Label Component", () => {
-    test("renders the label text", () => {
-        render(<Label text="Test Label" />);
-        const label_element = screen.getByText("Test Label");
-        expect(label_element).toBeInTheDocument();
-        expect(label_element).toBeVisible();
+describe("Button Component", () => {
+
+    test("renders the button text", () => {
+        render(<Button text="Test Button" />);
+        const button_element=screen.getByText("Test Button");
+        expect(button_element).toBeInTheDocument();
     });
 
-    test("changes color when disabled", () => {
-        render(<Label text="Disabled Label" backgroundColor="#000" disabled />);
-        const label_element = screen.getByText("Disabled Label");
-        expect(label_element).toHaveStyle("background-color: #cccccc");
-        expect(label_element).toHaveStyle("cursor:not-allowed");
+    test("applies disabled styles", () => {
+        render(<Button text="Disabled" backgroundColor="#007bff" disabled />);
+        const button_element = screen.getByRole("button");
+        expect(button_element).toHaveStyle("background-color: #cccccc");
+        expect(button_element).toHaveStyle("cursor: not-allowed");
     });
 });

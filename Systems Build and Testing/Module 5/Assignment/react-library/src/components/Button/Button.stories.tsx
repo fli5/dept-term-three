@@ -1,3 +1,20 @@
+/*
+ * ---------------------------------------------------------------------
+ * Copyright (c) 2025. Felix Li. All rights reserved
+ * Unauthorized copying, modification, or distribution of this file, via any
+ * medium, is strictly prohibited without prior written permission from Felix Li.
+ * For licensing inquiries, please contact: fli5@academic.rrc.ca
+ * ---------------------------------------------------------------------
+ */
+
+/*
+ * ---------------------------------------------------------------------
+ * Program: Full Stack Web Development
+ * Author: Feng Li
+ * Course: WEBD-3012 (273795) Business Systems Build and Testing
+ * Created: 2025-10-09
+ * ---------------------------------------------------------------------
+ */
 import type {Meta, StoryObj} from '@storybook/react';
 import {Button} from './Button';
 import {ButtonProps} from './Button.types';
@@ -5,10 +22,6 @@ import {fn, userEvent, within} from "storybook/test";
 
 /**
  * Storybook configuration for Button component
- * Requirements covered:
- *  - Has Controls for text and background color
- *  - Has default and disabled states
- *  - Allows visual change in disabled state
  */
 
 const meta: Meta<ButtonProps> = {
@@ -36,7 +49,11 @@ const meta: Meta<ButtonProps> = {
             description: 'Triggered when the button is clicked',
         },
     },
-    play: async ({ canvasElement }) => {
+    play: async ({ canvasElement,args }) => {
+        if (args.disabled) {
+            console.log("Button is disabled, skipping click.");
+            return;
+        }
         const canvas = within(canvasElement);
         const button = await canvas.getByRole('button');
         await userEvent.click(button);
@@ -47,16 +64,14 @@ const meta: Meta<ButtonProps> = {
 export default meta;
 type Story = StoryObj<ButtonProps>;
 
-//Default state (active)
 export const Default: Story = {
     args: {
-        text: 'Click Me',
+        text: 'Active',
         backgroundColor: '#007bff',
         disabled: false,
     },
 };
 
-//Disabled state
 export const Disabled: Story = {
     args: {
         text: 'Disabled',
@@ -65,7 +80,6 @@ export const Disabled: Story = {
     },
 };
 
-//Example of custom color
 export const Success: Story = {
     args: {
         text: 'Submit',
@@ -73,3 +87,11 @@ export const Success: Story = {
         disabled: false,
     }
 };
+export const Cancel: Story = {
+    args: {
+        text: 'Cancel',
+        backgroundColor: '#a7282c',
+        disabled: false,
+    }
+};
+

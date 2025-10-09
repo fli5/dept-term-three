@@ -1,4 +1,20 @@
-// src/components/Dropdown/Dropdown.tests.tsx
+/*
+ * ---------------------------------------------------------------------
+ * Copyright (c) 2025. Felix Li. All rights reserved
+ * Unauthorized copying, modification, or distribution of this file, via any
+ * medium, is strictly prohibited without prior written permission from Felix Li.
+ * For licensing inquiries, please contact: fli5@academic.rrc.ca
+ * ---------------------------------------------------------------------
+ */
+
+/*
+ * ---------------------------------------------------------------------
+ * Program: Full Stack Web Development
+ * Author: Feng Li
+ * Course: WEBD-3012 (273795) Business Systems Build and Testing
+ * Created: 2025-10-09
+ * ---------------------------------------------------------------------
+ */
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { Dropdown } from "./Dropdown";
@@ -11,19 +27,18 @@ const mockOptions = [
 describe("Dropdown Component", () => {
     test("renders all options", () => {
         render(<Dropdown options={mockOptions} />);
-        expect(screen.getByText("Option A")).toBeInTheDocument();
-        expect(screen.getByText("Option B")).toBeInTheDocument();
+        const dropdown_element=screen.getByRole("dropdown")
+        expect(dropdown_element).toBeInTheDocument();
+        expect(dropdown_element).toBeVisible();
+        const option_element=screen.getByText("Option A")
+        expect(option_element).toBeVisible();
     });
 
     test("changes background color when disabled", () => {
-        render(<Dropdown options={mockOptions} disabled />);
-        const select = screen.getByRole("combobox");
-        expect(select).toHaveStyle("background-color: #f0f0f0");
+        render(<Dropdown options={mockOptions} backgroundColor="#fff" disabled />);
+        const dropdown_element = screen.getByRole("combobox");
+        expect(dropdown_element).toHaveStyle("background-color: #f0f0f0");
+        expect(dropdown_element).toHaveStyle("cursor: not-allowed");
     });
 
-    test("applies custom background color", () => {
-        render(<Dropdown options={mockOptions} backgroundColor="#ffcc00" />);
-        const select = screen.getByRole("combobox");
-        expect(select).toHaveStyle("background-color: #ffcc00");
-    });
 });

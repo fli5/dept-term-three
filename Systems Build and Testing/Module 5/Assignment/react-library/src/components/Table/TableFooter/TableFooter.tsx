@@ -1,29 +1,44 @@
+/*
+ * ---------------------------------------------------------------------
+ * Copyright (c) 2025. Felix Li. All rights reserved
+ * Unauthorized copying, modification, or distribution of this file, via any
+ * medium, is strictly prohibited without prior written permission from Felix Li.
+ * For licensing inquiries, please contact: fli5@academic.rrc.ca
+ * ---------------------------------------------------------------------
+ */
+
+/*
+ * ---------------------------------------------------------------------
+ * Program: Full Stack Web Development
+ * Author: Feng Li
+ * Course: WEBD-3012 (273795) Business Systems Build and Testing
+ * Created: 2025-10-09
+ * ---------------------------------------------------------------------
+ */
 import React from "react";
 import styled from "styled-components";
 import { TableFooterProps } from "./TableFooter.types";
-import TableCell from "../TableCell/TableCell";
 
-const Tfoot = styled.tfoot``;
-
-const Tr = styled.tr``;
-
-const Td = styled.td`
-  border: 1px solid #ccc;
-  padding: 8px;
-  font-weight: bold;
-  background-color: #f0f0f0;
+const StyledTfoot = styled.tfoot<{ disabled?: boolean; $backgroundColor?: string }>`
+    background-color: ${({$backgroundColor, disabled}) => (disabled ? "#f0f0f0" : $backgroundColor || "#f3d942")};
+    filter: ${({disabled}) => (disabled ? "grayscale(100%)" : "none")};
+    cursor: ${({disabled}) => (disabled ? "not-allowed" : "pointer")};
 `;
 
-export const TableFooter: React.FC<TableFooterProps> = ({ footer }) => {
-    if (!footer) return null;
+const StyledTd = styled.td`
+  border: 1px solid #ccc;
+  padding: 8px;
+`;
+
+export const TableFooter: React.FC<TableFooterProps> = ({ footer, disabled, backgroundColor }) => {
     return (
-        <Tfoot>
-            <Tr>
-                {footer.map((cell, index) => (
-                    <Td key={index}>{cell}</Td>
+        <StyledTfoot disabled={disabled} $backgroundColor={backgroundColor} role="table-footer">
+            <tr>
+                {footer.map((cell, idx) => (
+                    <StyledTd key={idx}>{cell}</StyledTd>
                 ))}
-            </Tr>
-        </Tfoot>
+            </tr>
+        </StyledTfoot>
     );
 };
 export default TableFooter;

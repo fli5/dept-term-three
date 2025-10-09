@@ -1,4 +1,20 @@
-// src/components/Label/Label.stories.tsx
+/*
+ * ---------------------------------------------------------------------
+ * Copyright (c) 2025. Felix Li. All rights reserved
+ * Unauthorized copying, modification, or distribution of this file, via any
+ * medium, is strictly prohibited without prior written permission from Felix Li.
+ * For licensing inquiries, please contact: fli5@academic.rrc.ca
+ * ---------------------------------------------------------------------
+ */
+
+/*
+ * ---------------------------------------------------------------------
+ * Program: Full Stack Web Development
+ * Author: Feng Li
+ * Course: WEBD-3012 (273795) Business Systems Build and Testing
+ * Created: 2025-10-09
+ * ---------------------------------------------------------------------
+ */
 import type {Meta, StoryObj} from "@storybook/react";
 import {Label} from "./Label";
 import {LabelProps} from "./Label.types";
@@ -15,6 +31,7 @@ const meta: Meta<LabelProps> = {
     argTypes: {
         text: {control: "text", description: "Text displayed by the label"},
         color: {control: "color", description: "Label text color"},
+        backgroundColor: {control: "color", description: 'Background color of the label'},
         fontSize: {control: "text", description: "Font size of the label"},
         disabled: {control: "boolean", description: "Disables the label interaction"},
         onClick: {action: "clicked"},
@@ -34,8 +51,6 @@ type Story = StoryObj<LabelProps>;
 export const Default: Story = {
     args: {
         text: "Default Label",
-        color: "#333",
-        fontSize: "16px",
         disabled: false,
     },
 };
