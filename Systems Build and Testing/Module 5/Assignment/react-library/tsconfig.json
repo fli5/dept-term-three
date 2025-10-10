@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-//    "declaration": true,
-//    "declarationDir": "dist",
     "outDir": "dist",
     //Specifies that the TypeScript compiler will generate code compatible with ECMAScript 5
     "target": "es5",
