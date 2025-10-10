@@ -18,9 +18,9 @@
 import React from "react";
 import styled from "styled-components";
 import {TableProps} from "./Table.types";
-import TableHeader from "./TableHeader/TableHeader";
-import TableRow from "./TableRow/TableRow";
-import TableFooter from "./TableFooter/TableFooter";
+import TableHeader from "../TableHeader/TableHeader";
+import TableRow from "../TableRow/TableRow";
+import TableFooter from "../TableFooter/TableFooter";
 
 
 const StyledTable = styled.table<{ disabled?: boolean; $backgroundColor?: string }>`

@@ -19,7 +19,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { HeroImage } from "./HeroImage";
 import { HeroImageProps } from "./HeroImage.types";
 // @ts-ignore
-import sampleLogo from "../../../assets/images/logo-sample.png";
+import sampleLogo from "../../assets/images/logo-sample.png";
 import { fn } from "storybook/test";
 import { within, userEvent } from "storybook/test";
 

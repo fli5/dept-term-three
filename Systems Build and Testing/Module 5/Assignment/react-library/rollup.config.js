@@ -9,7 +9,7 @@ const packageJson = require("./package.json");
 
 export default [
     {
-        input: "src/index.ts",
+        input: "src/Index.ts",
         output: [
             //creating separate files specified by the main and module entries in the package.json
             {
@@ -33,8 +33,8 @@ export default [
         external: ["react", "react-dom"],
     },
     {
-        input: "src/index.ts",
-        output: [{ file: "dist/types.d.ts", format: "es" }],
+        input: "src/Index.ts",
+        output: [{ file: "dist/types/types.d.ts", format: "es" }],
         //generates a type declaration file (types.d.ts) using the dts plugin
         plugins: [dts.default()],
     },

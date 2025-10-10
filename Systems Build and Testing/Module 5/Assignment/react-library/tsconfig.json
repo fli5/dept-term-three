@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+//    "declaration": true,
+//    "declarationDir": "dist",
+    "outDir": "dist",
     //Specifies that the TypeScript compiler will generate code compatible with ECMAScript 5
     "target": "es5",
     //Includes necessary libraries, such as the Document Object Model (DOM)
