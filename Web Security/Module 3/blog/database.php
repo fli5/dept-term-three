@@ -24,6 +24,7 @@ class Database {
         return self::$instance;
     }
 
+
     public static function getConnection(): PDO {
         if (self::$connection === null) {
             self::getInstance();

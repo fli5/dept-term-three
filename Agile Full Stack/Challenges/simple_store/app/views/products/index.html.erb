@@ -1,0 +1,23 @@
+<h1>All Products</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Price</th>
+    <th>Stock Quantity</th>
+    <th>Category</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @products.each do |product| %>
+    <tr>
+      <td><%= product.title %></td>
+      <td><%= number_to_currency(product.price) %></td>
+      <td><%= product.stock_quantity %></td>
+      <td><%= product.category.name if product.category %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
