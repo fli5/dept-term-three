@@ -1,0 +1,68 @@
+<!-- app/views/customers/_customer.html.erb -->
+<!--<div class="box has-text-centered">-->
+  <%# if customer.avatar.attached? %>
+<!--    <figure class="image is-128x128 is-inline-block">-->
+      <%#= image_tag customer.avatar, class: "is-rounded" %>
+<!--    </figure>-->
+  <%# else %>
+<!--    <figure class="image is-128x128 is-inline-block">-->
+      <%#= image_tag "https://via.placeholder.com/128", class: "is-rounded" %>
+<!--    </figure>-->
+  <%# end %>
+
+<!--  <h2 class="title is-4 mt-2"><%#= customer.full_name %></h2>-->
+<!--  <p><strong>Phone:</strong> <%#= customer.phone_number.presence || "N/A" %></p>-->
+<!--  <p><strong>Email:</strong> <%#= customer.email.presence || "No Email" %></p>-->
+
+  <%# if customer.notes.present? %>
+<!--    <p class="mt-2"><%#= customer.notes %></p>-->
+  <%# end %>
+<!--</div>-->
+
+
+<!--<div class="card">-->
+  <%# if customer.avatar.attached? %>
+    <%#= image_tag customer.avatar, class: "image is-128x128" %>
+  <%# else %>
+    <%#= image_tag "default_avatar.png", class: "image is-128x128" %>
+  <%# end %>
+<!--  <h3 class="title is-5"><%#= customer.full_name %></h3>-->
+<!--  <p><strong>Phone:</strong> <%#= customer.phone_number %></p>-->
+  <%# if customer.email.present? %>
+<!--    <p><strong>Email:</strong> <%#= customer.email %></p>-->
+  <%# else %>
+<!--    <p class="has-text-danger">No email provided</p>-->
+  <%# end %>
+  <%# if customer.notes.present? %>
+<!--    <p><strong>Notes:</strong> <%#= customer.notes %></p>-->
+  <%# end %>
+<!--</div>-->
+
+
+<div class="card">
+  <div class="card-image has-text-centered p-4">
+    <% if customer.avatar.attached? %>
+      <%= image_tag customer.avatar, class: "image is-128x128 is-inline-block" %>
+    <% else %>
+      <%= image_tag "default_avatar.png", class: "image is-128x128 is-inline-block" %>
+    <% end %>
+  </div>
+
+  <div class="card-content">
+    <p class="title is-5"><%= customer.full_name %></p>
+
+    <p class="subtitle is-6"><strong>Phone:</strong> <%= customer.phone_number %></p>
+
+    <% if customer.email.present? %>
+      <p><strong>Email:</strong> <%= customer.email %></p>
+    <% else %>
+      <p class="has-text-danger"><strong>Email:</strong> Not provided</p>
+    <% end %>
+
+    <% if customer.notes.present? %>
+      <div class="content mt-2">
+        <strong>Notes:</strong> <%= customer.notes %>
+      </div>
+    <% end %>
+  </div>
+</div>
