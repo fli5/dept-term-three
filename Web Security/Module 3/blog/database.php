@@ -1,35 +1,67 @@
 <?php
+
 class Database {
     private static ?Database $instance = null;
-    private static ?PDO $connection = null;
+    private static ?mysqli $connection = null;
 
+    /**
+     * @throws Exception
+     */
     private function __construct() {
-        $dsn = "mysql:host=" . DB_HOSTNAME . ";dbname=" . DB_DATABASE . ";charset=utf8mb4";
+        // Enable mysqli report mode
+        mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
         try {
-            self::$connection = new PDO($dsn, DB_USER, DB_PASSWORD, [
-                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                PDO::ATTR_EMULATE_PREPARES => false
-            ]);
-        } catch (PDOException $e) {
+            self::$connection = new mysqli(DB_HOSTNAME, DB_USER, DB_PASSWORD, DB_DATABASE);
+            self::$connection->set_charset("utf8mb4");
+        } catch (mysqli_sql_exception $e) {
             throw new Exception("Database connection failed: " . $e->getMessage());
         }
     }
 
-    public static function getInstance(): Database {
-        if (self::$instance === null) {
+
+    public static function getInstance(): ?Database {
+        if (self::$instance == null) {
             self::$instance = new self();
         }
         return self::$instance;
     }
 
-
-    public static function getConnection(): PDO {
+    public static function getConnection(): mysqli {
         if (self::$connection === null) {
             self::getInstance();
         }
         return self::$connection;
+    }
+
+
+    private static function get_type($value): string {
+        return match (true) {
+            is_int($value) => 'i',
+            is_float($value) => 'd',
+            is_string($value),
+            is_null($value) => 's',
+            default => 'b',
+        };
+    }
+
+
+    /**
+     * Prepare a statement with parameters
+     */
+    private static function prepare(string $query, array $params = []): mysqli_stmt {
+        $connection = self::getConnection();
+        $statement = $connection->prepare($query);
+        $param_values = [];
+        $param_types = "";
+        if (!empty($params)) {
+            foreach ($params as $key => $value) {
+                $param_values[] = &$params[$key];
+                $param_types .= self::get_type($value);
+            }
+            $statement->bind_param($param_types, ...$param_values);
+        }
+        return $statement;
     }
 
     private static function formatDatetime($datetime): string {
@@ -37,100 +69,120 @@ class Database {
     }
 
     public static function createUser($username, $password): bool {
-        $pdo = self::getConnection();
-
-        //check if username already exists
+        //Check if the username exists. Fail when it exists
         if (self::existUser($username)) {
             return false;
         }
-
+        // salting adds uniqueness to each entry.
         $salt = uniqid();
         $salted_password = $salt . $password;
         $encrypted_password = hash("sha512", $salted_password);
 
-        $sql = "INSERT INTO members (username, password, salt) VALUES (?, ?, ?)";
-        $stmt = $pdo->prepare($sql);
-        return $stmt->execute([$username, $encrypted_password, $salt]);
+        $prepare_stmt = self::prepare("INSERT INTO members (username, password, salt) VALUES (?, ?, ?)", [$username, $encrypted_password, $salt]);
+
+        $insert_result = $prepare_stmt->execute();
+
+        $prepare_stmt->close();
+        return $insert_result;
     }
 
     public static function findBlogs($limit = null): array {
-        $pdo = self::getConnection();
         $blogs = [];
 
-        $sql = "SELECT * FROM posts ORDER BY created_at DESC";
-        if ($limit !== null) {
-            $sql .= " LIMIT :limit";
-        }
-
-        $stmt = $pdo->prepare($sql);
+        $query_sql = "SELECT * FROM posts ORDER BY created_at DESC";
 
         if ($limit !== null) {
-            $stmt->bindValue(':limit', (int)$limit, PDO::PARAM_INT);
+            $prepare_stmt = self::prepare($query_sql . " LIMIT ?", ['i' => $limit]);
+        } else {
+            $prepare_stmt = self::prepare($query_sql);
         }
 
-        $stmt->execute();
-        $rows = $stmt->fetchAll();
+        $prepare_stmt->execute();
+        $query_result = $prepare_stmt->get_result();
 
-        foreach ($rows as $row) {
+        while ($row = $query_result->fetch_assoc()) {
             $row['created_at'] = self::formatDatetime($row['created_at']);
             $blogs[] = $row;
         }
 
+        $prepare_stmt->close();
         return $blogs;
     }
 
     public static function createPost($title, $content): bool {
-        $pdo = self::getConnection();
-        $sql = "INSERT INTO posts (title, content, created_at) VALUES (?, ?, NOW())";
-        $stmt = $pdo->prepare($sql);
-        return $stmt->execute([$title, $content]);
+        $insert_sql = "INSERT INTO posts (title,content,created_at) value (?, ?, null)";
+        $prepare_stmt = self::prepare($insert_sql, [$title, $content]);
+        $insert_result = $prepare_stmt->execute();
+        $prepare_stmt->close();
+        return $insert_result;
     }
 
     private static function existUser($username): bool {
-        $pdo = self::getConnection();
-        $sql = "SELECT COUNT(*) AS count_num FROM members WHERE username = ?";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute([$username]);
-        $result = $stmt->fetch();
-
-        return ($result && $result['count_num'] > 0);
+        $select_sql = "SELECT count(*) as count_num FROM members WHERE username=? ";
+        $prepare_stmt = self::prepare($select_sql, [$username]);
+        $prepare_stmt->execute();
+        $query_result = $prepare_stmt->get_result();
+        if ($query_result->num_rows > 0) {
+            echo $query_result->fetch_assoc()["count_num"]>0;
+        }
+        return false;
     }
 
+    /**
+     * Log in a user using username and password
+     * @param $username
+     * @param $password
+     * @return bool
+     */
     public static function checkLogin($username, $password): bool {
         if (!isset($username) || !isset($password)) {
             return false;
         }
 
-        if (strlen($username) > 255 || strlen($username) <= 0 || strlen($password) > 255 || strlen($password) <= 0) {
+
+        if (strlen($username)>255 || strlen($username)<=0 ||strlen($password)>255 || strlen($password)<=0 ) {
             return false;
         }
 
-        $pdo = self::getConnection();
-        $sql = "SELECT password, salt FROM members WHERE username = ? LIMIT 1";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute([$username]);
-        $user = $stmt->fetch();
+        $login_result = false;
+        $select_sql = "SELECT password,salt FROM members WHERE username=? limit 1";
+        $prepare_stmt = self::prepare($select_sql, [$username]);
+        $prepare_stmt->execute();
+        $query_result = $prepare_stmt->get_result();
 
-        if (!$user) {
-            return false;
+        if ($query_result->num_rows > 0) {
+            $row = $query_result->fetch_assoc();
+            $returned_password = $row['password'];
+            $returned_salt = $row['salt'];
+
+            // take clean password, salt and encrypt it as we did in the register page
+            $salted_password = $returned_salt . $password;
+            $check_password = hash("sha512", $salted_password);
+
+            // If returned password matches entered password, valid login
+            $login_result = $check_password == $returned_password && $password <> '';
         }
 
-        $salted_password = $user['salt'] . $password;
-        $check_password = hash("sha512", $salted_password);
+        return $login_result;
 
-        return $check_password === $user['password'];
     }
 
+    /**
+     * @param $post_id
+     * @return bool|array
+     */
     public static function findPostById($post_id): bool|array {
-        $pdo = self::getConnection();
         $post_id = filter_var($post_id, FILTER_VALIDATE_INT);
         if (!$post_id) return false;
-
-        $sql = "SELECT * FROM posts WHERE id = ?";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute([$post_id]);
-        $post = $stmt->fetch();
-
-        return $post ?: false;
+        $post = false;
+        $select_sql = "SELECT * from posts WHERE id = ?";
+        $prepare_stmt = self::prepare($select_sql, [$post_id]);
+        $prepare_stmt->execute();
+        $query_result = $prepare_stmt->get_result();
+        if ($query_result->num_rows == 1) {
+            $post = $query_result->fetch_assoc();
+        }
+        return $post;
     }
 }
+
