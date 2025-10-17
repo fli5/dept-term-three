@@ -1,0 +1,113 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Page-1" id="VqGWRa54wzq0K6yluBhY">
+    <mxGraphModel dx="943" dy="1173" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="KtnQcg4md3mQNJ4BnMV1-1" target="KtnQcg4md3mQNJ4BnMV1-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-1" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="40" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-2" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="840" y="528" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="KtnQcg4md3mQNJ4BnMV1-3" target="KtnQcg4md3mQNJ4BnMV1-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-3" value="Marked for production" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="KtnQcg4md3mQNJ4BnMV1-4" target="KtnQcg4md3mQNJ4BnMV1-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-4" value="&lt;span style=&quot;caret-color: rgb(32, 33, 36); color: rgb(32, 33, 36); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; text-align: start; white-space-collapse: preserve-breaks; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font&gt;Request for security review&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="520" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="KtnQcg4md3mQNJ4BnMV1-5" target="KtnQcg4md3mQNJ4BnMV1-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-5" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;-apple-system, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji&quot; color=&quot;#202124&quot;&gt;&lt;span style=&quot;caret-color: rgb(32, 33, 36); white-space-collapse: preserve-breaks; background-color: rgb(255, 255, 255);&quot;&gt;Schedule for security review&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="680" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-6" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;-apple-system, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji&quot; color=&quot;#202124&quot;&gt;&lt;span style=&quot;caret-color: rgb(32, 33, 36); white-space-collapse: preserve-breaks; background-color: rgb(255, 255, 255);&quot;&gt;Conduct security review&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="840" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-7" value="Develop a feature" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="200" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="KtnQcg4md3mQNJ4BnMV1-8" target="KtnQcg4md3mQNJ4BnMV1-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="1025" />
+              <mxPoint x="40" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-22" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="KtnQcg4md3mQNJ4BnMV1-21">
+          <mxGeometry x="-0.9185" y="-2" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-8" value="Conform to security compliance?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="970" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="KtnQcg4md3mQNJ4BnMV1-9" target="KtnQcg4md3mQNJ4BnMV1-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-9" value="Prepared TEP Form&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="560" y="200" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="KtnQcg4md3mQNJ4BnMV1-10" target="KtnQcg4md3mQNJ4BnMV1-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-10" value="Attend&amp;nbsp; LARB meeting" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="560" y="360" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="KtnQcg4md3mQNJ4BnMV1-11" target="KtnQcg4md3mQNJ4BnMV1-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-28" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="KtnQcg4md3mQNJ4BnMV1-25">
+          <mxGeometry x="-0.28" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-11" value="Approve the changes for Production?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="560" y="520" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-12" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;-apple-system, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji&quot; color=&quot;#202124&quot;&gt;&lt;span style=&quot;caret-color: rgb(32, 33, 36); white-space-collapse: preserve-breaks; background-color: rgb(255, 255, 255);&quot;&gt;Perform a deployment&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="560" y="680" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="KtnQcg4md3mQNJ4BnMV1-7" target="KtnQcg4md3mQNJ4BnMV1-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;" edge="1" parent="1" source="KtnQcg4md3mQNJ4BnMV1-6" target="KtnQcg4md3mQNJ4BnMV1-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.003;entryY=0.44;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;" edge="1" parent="1" source="KtnQcg4md3mQNJ4BnMV1-8" target="KtnQcg4md3mQNJ4BnMV1-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-20" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="KtnQcg4md3mQNJ4BnMV1-19">
+          <mxGeometry x="-0.8729" y="-2" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.006;entryY=0.588;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;" edge="1" parent="1" source="KtnQcg4md3mQNJ4BnMV1-11" target="KtnQcg4md3mQNJ4BnMV1-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-27" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="KtnQcg4md3mQNJ4BnMV1-26">
+          <mxGeometry x="0.1207" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-29" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="560" y="840" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KtnQcg4md3mQNJ4BnMV1-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;" edge="1" parent="1" source="KtnQcg4md3mQNJ4BnMV1-12" target="KtnQcg4md3mQNJ4BnMV1-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
