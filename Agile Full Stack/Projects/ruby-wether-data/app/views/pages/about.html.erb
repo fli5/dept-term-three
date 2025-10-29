@@ -1,0 +1,132 @@
+<!-- app/views/pages/about.html.erb -->
+<!-- 2.1 About Page with Data Sources -->
+<div class="row">
+  <div class="col-lg-8 mx-auto">
+    <h1 class="mb-4">About Climate Weather Tracker</h1>
+
+    <section class="mb-5">
+      <h2>Project Overview</h2>
+      <p>Climate Weather Tracker is a comprehensive web application designed to track and analyze weather conditions
+        across different cities and climate zones worldwide. This application provides users with detailed weather
+        readings, climate zone classifications, and weather condition information.</p>
+    </section>
+
+    <section class="mb-5">
+      <h2>Data Sources</h2>
+      <div class="card mb-3">
+        <div class="card-header bg-primary text-white">
+          <h4 class="mb-0">Climate Classification Data (CSV)</h4>
+        </div>
+        <div class="card-body">
+          <p><strong>Source:</strong> Köppen Climate Classification System</p>
+          <p><strong>Description:</strong> Climate zones are categorized based on the Köppen climate classification,
+            which divides climates into five main groups based on temperature and precipitation patterns.</p>
+          <p><strong>Fields:</strong> zone name, zone description, and standardized zone codes</p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-header bg-success text-white">
+          <h4 class="mb-0">Cities in Canada (JSON)</h4>
+        </div>
+        <div class="card-body">
+          <p><strong>Source:</strong>https://simplemaps.com/data/canada-cities</p>
+          <p><strong>Description:</strong> comprehensive city information including location coordinates
+            (latitude/longitude) and country classifications.</p>
+          <p><strong>Fields:</strong> city name, country, coordinates for mapping</p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-header bg-info text-white">
+          <h4 class="mb-0">Weather Condition Data (CSV)</h4>
+        </div>
+        <div class="card-body">
+          <p><strong>Source:</strong> https://openweathermap.org/weather-conditions</p>
+          <p><strong>Description:</strong> Standardized weather condition classifications including sunny, cloudy,
+            rainy, snowy, and other atmospheric conditions.</p>
+          <p><strong>Fields:</strong> condition codes, condition names, condition descriptions, and icon references</p>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header bg-warning">
+          <h4 class="mb-0">Daily Weather Data (JSON)</h4>
+        </div>
+        <div class="card-body">
+          <p><strong>Source:</strong>
+            https://api.openweathermap.org//data/2.5/forecast/daily?lat={latitude}&lon={longitude}&units=metric&cnt=16&appid=4b2047652a8cb49876e5a83394ffe24f
+          </p>
+          <p><strong>Description:</strong> Real-time and historical weather readings including temperature, humidity,
+            wind speed, and other meteorological measurements.</p>
+          <p><strong>Fields:</strong> Daily temperature, min/max temperatures, wind speed, humidity, timestamp</p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-header bg-black text-white">
+          <h4 class="mb-0">Classify the City (JSON)</h4>
+        </div>
+        <div class="card-body">
+          <p><strong>Source:</strong> http://climateapi.scottpinkelman.com/api/v1/location/{latitude}/{longitude}</p>
+          <p><strong>Description:</strong> use `latitude` and `longitude` to classify cities into a climate zone via
+            API.</p>
+          <p><strong>Fields:</strong> climate classification codes </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h2>Entity Relationship Diagram</h2>
+      <div class="card">
+        <%= image_tag("er_diagram.png", class: "card-img-top", alt: "...") %>
+        <div class="card-body">
+          <p>The application database is structured around four main entities:</p>
+          <ul>
+            <li><strong>Climate Zones:</strong> Categories that classify different climate types</li>
+            <li><strong>Cities:</strong> Geographic locations where weather is tracked</li>
+            <li><strong>Weather Conditions:</strong> Standardized weather state classifications</li>
+            <li><strong>Weather Readings:</strong> Individual measurements of weather data</li>
+          </ul>
+
+          <h5 class="mt-3">Key Relationships:</h5>
+          <ul>
+            <li>Cities belong to Climate Zones (many-to-many through city_climates)</li>
+            <li>Weather Readings belong to Cities (one-to-many)</li>
+            <li>Weather Readings categorized by Weather Conditions (many-to-one)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h2>Features</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li>Browse cities and their climate zones</li>
+            <li>View detailed weather readings</li>
+            <li>Search across multiple data categories</li>
+            <li>Interactive maps showing city locations</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>Hierarchical navigation between related data</li>
+            <li>Paginated data views for better performance</li>
+            <li>Responsive Bootstrap-based design</li>
+            <li>Real-time weather condition tracking</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Stack</h2>
+      <p>This application is built using:</p>
+      <ul>
+        <li>Ruby on Rails 8+</li>
+        <li>Bootstrap 5 for responsive design</li>
+        <li>Kaminari gem for pagination</li>
+        <li>Google Maps API for location visualization</li>
+      </ul>
+    </section>
+  </div>
+</div>

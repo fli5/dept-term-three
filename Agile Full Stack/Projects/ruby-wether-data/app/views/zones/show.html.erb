@@ -1,0 +1,102 @@
+<!-- app/views/climate_zones/show.html.erb -->
+<!-- 3.4 Hierarchical Navigation -->
+<div class="row mb-3">
+  <div class="col-12">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <!--        <li class="breadcrumb-item"><%#= link_to "Home", root_path %></li>-->
+        <li class="breadcrumb-item"><%= link_to "Climate Zones", zones_path %></li>
+        <li class="breadcrumb-item active"><%= @climate_zone.zone_name %></li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8">
+    <h1><%= @climate_zone.zone_name %></h1>
+    <p class="lead">Climate Zone Code: <span class="badge bg-primary"><%= @climate_zone.zone_code %></span></p>
+
+    <div class="card mb-4">
+      <div class="card-header bg-primary text-white">
+        <h3 class="mb-0">Zone Description</h3>
+      </div>
+      <div class="card-body">
+        <% if @climate_zone.zone_desc.present? %>
+          <p><%= @climate_zone.zone_desc %></p>
+        <% else %>
+          <p class="text-muted">No detailed description available for this climate zone.</p>
+        <% end %>
+      </div>
+    </div>
+
+    <!-- Cities in this Climate Zone -->
+    <div class="card mb-4">
+      <div class="card-header bg-success text-white">
+        <h3 class="mb-0">Cities in this Climate Zone</h3>
+      </div>
+      <div class="card-body">
+        <% if @cities.any? %>
+          <div class="row">
+            <% @cities.each do |city| %>
+              <div class="col-md-6 mb-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <%= link_to city.city_name, city_path(city) %>
+                    </h5>
+                    <p class="card-text">
+                      <small class="text-muted">
+                        <%= city.country_name %>
+                        <% if city.coord_lat.present? && city.coord_lon.present? %>
+                          <br>
+                          <%= "#{city.coord_lat.round(2)}, #{city.coord_lon.round(2)}" %>
+                        <% end %>
+                      </small>
+                    </p>
+                    <%= link_to "View City", city_path(city), class: "btn btn-sm btn-primary" %>
+                    <%= link_to "Weather", readings_city_path(city), class: "btn btn-sm btn-info" %>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+
+          <div class="d-flex justify-content-center mt-3">
+            <%= paginate @cities %>
+          </div>
+        <% else %>
+          <p class="text-muted">No cities are currently assigned to this climate zone.</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card sticky-top" style="top: 20px;">
+      <div class="card-header bg-info text-white">
+        <h4 class="mb-0">Statistics</h4>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <h5 class="mb-1">Total Cities</h5>
+          <p class="display-4 mb-0"><%= @climate_zone.cities.count %></p>
+        </div>
+
+        <hr>
+
+        <div class="mb-3">
+          <h5 class="mb-1">Zone Code</h5>
+          <p class="h3 mb-0"><%= @climate_zone.zone_code %></p>
+        </div>
+
+        <hr>
+
+        <div>
+          <%= link_to "View All Cities", cities_zone_path(@climate_zone),
+                      class: "btn btn-success w-100" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

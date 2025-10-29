@@ -1,0 +1,156 @@
+<!-- app/views/cities/show.html.erb -->
+<!-- 3.2 Member Pages & 3.3 Multi-model Data -->
+<div class="row mb-3">
+  <div class="col-12">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <!--        <li class="breadcrumb-item"><%#= link_to "Home", root_path %></li>-->
+        <li class="breadcrumb-item"><%= link_to "Cities", cities_path %></li>
+        <li class="breadcrumb-item active"><%= @city.city_name %></li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8">
+    <h1><%= @city.city_name %></h1>
+    <p class="lead text-muted"><%= @city.country_name %></p>
+
+    <div class="card mb-4">
+      <div class="card-header bg-primary text-white">
+        <h3 class="mb-0">City Information</h3>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <p><strong>City:</strong> <%= @city.city_name %></p>
+            <p><strong>Country:</strong> <%= @city.country_name %></p>
+          </div>
+          <div class="col-md-6">
+            <% if @city.coord_lat.present? && @city.coord_lon.present? %>
+              <p><strong>Latitude:</strong> <%= @city.coord_lat %></p>
+              <p><strong>Longitude:</strong> <%= @city.coord_lon %></p>
+            <% else %>
+              <p class="text-muted">Coordinates not available</p>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3.3 Multi-model Data - Climate Zones -->
+    <!-- 3.4 Hierarchical Navigation -->
+    <div class="card mb-4">
+      <div class="card-header bg-success text-white">
+        <h3 class="mb-0">Climate Zone</h3>
+      </div>
+      <div class="card-body">
+        <% if @city.climate_zones.any? %>
+          <div class="row">
+            <% @city.climate_zones.each do |zone| %>
+              <div class="col-md-6 mb-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      <%= link_to zone.zone_name, zone_path(zone) %>
+                    </h5>
+                    <p class="card-text"><small class="text-muted">Code: <%= zone.zone_code %></small></p>
+                    <% if zone.zone_desc.present? %>
+                      <p class="card-text"><%= truncate(zone.zone_desc, length: 100) %></p>
+                    <% end %>
+                    <%= link_to "View Zone Details", zone_path(zone), class: "btn btn-sm btn-success" %>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        <% else %>
+          <p class="text-muted">No climate zones assigned to this city.</p>
+        <% end %>
+      </div>
+    </div>
+
+    <!-- 3.3 Multi-model Data - Recent Weather Readings -->
+    <div class="card mb-4">
+      <div class="card-header bg-info text-white">
+        <h3 class="mb-0">Recent Weather Readings</h3>
+      </div>
+      <div class="card-body">
+        <% if @recent_readings.any? %>
+          <div class="table-responsive">
+            <table class="table table-sm table-hover">
+              <thead>
+              <tr>
+                <th>Condition</th>
+                <th>Temperature</th>
+                <th>Min/Max</th>
+                <th>Humidity</th>
+                <th>Recorded</th>
+                <th>Actions</th>
+              </tr>
+              </thead>
+              <tbody>
+              <% @recent_readings.each do |reading| %>
+                <tr>
+                  <td>
+                    <%= link_to reading.weather_condition.condition_name,
+                                condition_path(reading.weather_condition) %>
+                  </td>
+                  <td><%= reading.temp_day %>°C</td>
+                  <td>
+                    <% if reading.temp_min.present? && reading.temp_max.present? %>
+                      <%= reading.temp_min %>°C / <%= reading.temp_max %>°C
+                    <% else %>
+                      <span class="text-muted">N/A</span>
+                    <% end %>
+                  </td>
+                  <td>
+                    <% if reading.humidity.present? %>
+                      <%= reading.humidity %>%
+                    <% else %>
+                      <span class="text-muted">N/A</span>
+                    <% end %>
+                  </td>
+                  <td><%= reading.recorded_at.strftime("%Y-%m-%d %H:%M") %></td>
+                  <td>
+                    <%= link_to "Details", reading_path(reading), class: "btn btn-sm btn-info" %>
+                  </td>
+                </tr>
+              <% end %>
+              </tbody>
+            </table>
+          </div>
+          <%= link_to "View All Weather Readings", readings_city_path(@city),
+                      class: "btn btn-primary mt-2" %>
+        <% else %>
+          <p class="text-muted">No weather readings available for this city.</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3.6 Mapping - Google Maps -->
+  <div class="col-lg-4">
+    <div class="card sticky-top" style="top: 20px;">
+      <div class="card-header bg-warning">
+        <h4 class="mb-0">Location Map</h4>
+      </div>
+      <div class="card-body p-0">
+        <% if @city.coord_lat.present? && @city.coord_lon.present? %>
+          <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @city.coord_lat %>,<%= @city.coord_lon %>&zoom=10&size=400x300&markers=color:red%7C<%= @city.coord_lat %>,<%= @city.coord_lon %>&key=YOUR_GOOGLE_MAPS_API_KEY"
+               alt="Map of <%= @city.city_name %>"
+               class="img-fluid">
+          <div class="p-3">
+            <p class="mb-1"><small><strong>Coordinates:</strong></small></p>
+            <p class="mb-0"><small><%= @city.coord_lat %>, <%= @city.coord_lon %></small></p>
+          </div>
+        <% else %>
+          <div class="p-3">
+            <p class="text-muted">Map not available - coordinates missing</p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

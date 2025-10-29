@@ -1,0 +1,1738 @@
+name,lat,lon,country
+Toronto,43.7417,-79.3733,CA
+Montréal,45.5089,-73.5617,CA
+Vancouver,49.25,-123.1,CA
+Calgary,51.05,-114.0667,CA
+Edmonton,53.5344,-113.4903,CA
+Ottawa,45.4247,-75.695,CA
+Winnipeg,49.8844,-97.1464,CA
+Quebec City,46.8139,-71.2081,CA
+Hamilton,43.2567,-79.8692,CA
+Mississauga,43.6,-79.65,CA
+Brampton,43.6833,-79.7667,CA
+Surrey,49.19,-122.8489,CA
+Kitchener,43.4186,-80.4728,CA
+Halifax,44.6475,-63.5906,CA
+Laval,45.5833,-73.75,CA
+London,42.9836,-81.2497,CA
+Victoria,48.4283,-123.3647,CA
+Markham,43.8767,-79.2633,CA
+Oshawa,43.9,-78.85,CA
+Vaughan,43.8333,-79.5,CA
+Windsor,42.2833,-83,CA
+Gatineau,45.4833,-75.65,CA
+Saskatoon,52.1333,-106.6833,CA
+Longueuil,45.5333,-73.5167,CA
+Burnaby,49.2667,-122.9667,CA
+St. Catharines,43.1833,-79.2333,CA
+Regina,50.4547,-104.6067,CA
+Oakville,43.45,-79.6833,CA
+Richmond,49.1667,-123.1333,CA
+Richmond Hill,43.8667,-79.4333,CA
+Burlington,43.3167,-79.8,CA
+St. John's,47.4817,-52.7971,CA
+Kelowna,49.8881,-119.4956,CA
+Sherbrooke,45.4,-71.9,CA
+Sudbury,46.49,-81.01,CA
+Barrie,44.3711,-79.6769,CA
+Abbotsford,49.05,-122.3167,CA
+Lévis,46.8,-71.1833,CA
+Coquitlam,49.2839,-122.7919,CA
+Saguenay,48.4167,-71.0667,CA
+Guelph,43.55,-80.25,CA
+Trois-Rivières,46.35,-72.55,CA
+Whitby,43.8833,-78.9417,CA
+Cambridge,43.3972,-80.3114,CA
+Milton,43.5083,-79.8833,CA
+Ajax,43.8583,-79.0364,CA
+Waterloo,43.4667,-80.5167,CA
+Terrebonne,45.7,-73.6333,CA
+Moncton,46.1328,-64.7714,CA
+Saanich,48.484,-123.381,CA
+White Rock,49.025,-122.8028,CA
+Thunder Bay,48.3822,-89.2461,CA
+Delta,49.0847,-123.0586,CA
+Nanaimo,49.1642,-123.9364,CA
+Brantford,43.1667,-80.25,CA
+Chatham,42.4229,-82.1324,CA
+Clarington,43.935,-78.6083,CA
+Saint-Jérôme,45.7833,-74,CA
+Red Deer,52.2681,-113.8111,CA
+Pickering,43.8354,-79.089,CA
+Lethbridge,49.6942,-112.8328,CA
+Kamloops,50.6761,-120.3408,CA
+Saint-Jean-sur-Richelieu,45.3167,-73.2667,CA
+Niagara Falls,43.06,-79.1067,CA
+Cape Breton,46.1389,-60.1931,CA
+Chilliwack,49.1577,-121.9509,CA
+Brossard,45.4667,-73.45,CA
+Maple Ridge,49.2167,-122.6,CA
+Newmarket,44.05,-79.4667,CA
+Repentigny,45.7333,-73.4667,CA
+Peterborough,44.3,-78.3167,CA
+Drummondville,45.8833,-72.4833,CA
+Kawartha Lakes,44.35,-78.75,CA
+New Westminster,49.2069,-122.9111,CA
+Prince George,53.9169,-122.7494,CA
+Caledon,43.8667,-79.8667,CA
+Châteauguay,45.38,-73.75,CA
+Belleville,44.1667,-77.3833,CA
+Airdrie,51.2917,-114.0144,CA
+Sarnia,42.9994,-82.3089,CA
+Wood Buffalo,57.6042,-111.3284,CA
+Sault Ste. Marie,46.5333,-84.35,CA
+Saint John,45.2806,-66.0761,CA
+Welland,42.9833,-79.2333,CA
+Granby,45.4,-72.7333,CA
+St. Albert,53.6303,-113.6258,CA
+Fredericton,45.9636,-66.6431,CA
+Grande Prairie,55.1708,-118.7947,CA
+Medicine Hat,50.0417,-110.6775,CA
+Halton Hills,43.63,-79.95,CA
+Aurora,44,-79.4667,CA
+Port Coquitlam,49.2625,-122.7811,CA
+Mirabel,45.65,-74.0833,CA
+Blainville,45.67,-73.88,CA
+Lac-Brome,45.2167,-72.5167,CA
+North Vancouver,49.32019672,-123.0699402,CA
+Saint-Hyacinthe,45.6167,-72.95,CA
+Beloeil,45.5667,-73.2,CA
+North Bay,46.3,-79.45,CA
+Charlottetown,46.2403,-63.1347,CA
+Vernon,50.267,-119.272,CA
+Brandon,49.8483,-99.95,CA
+Mascouche,45.75,-73.6,CA
+Stouffville,43.9667,-79.25,CA
+Shawinigan,46.5667,-72.75,CA
+Joliette,46.0167,-73.45,CA
+Rimouski,48.45,-68.53,CA
+Courtenay,49.6878,-124.9944,CA
+Dollard-des-Ormeaux,45.4833,-73.8167,CA
+Cornwall,45.0275,-74.74,CA
+Victoriaville,46.05,-71.9667,CA
+Georgina,44.3,-79.4333,CA
+Woodstock,43.1306,-80.7467,CA
+Langford Station,48.4506,-123.5058,CA
+Quinte West,44.1833,-77.5667,CA
+St. Thomas,42.775,-81.1833,CA
+Saint-Eustache,45.57,-73.9,CA
+West Vancouver,49.3667,-123.1667,CA
+New Tecumseth,44.0833,-79.75,CA
+Innisfil,44.3,-79.5833,CA
+Vaudreuil-Dorion,45.4,-74.0333,CA
+Bradford West Gwillimbury,44.1333,-79.6333,CA
+Salaberry-de-Valleyfield,45.25,-74.13,CA
+Rouyn-Noranda,48.2333,-79.0167,CA
+Boucherville,45.6,-73.45,CA
+Mission,49.1337,-122.3112,CA
+Timmins,48.4667,-81.3333,CA
+Lakeshore,42.2399,-82.6511,CA
+Brant,43.1167,-80.3667,CA
+Spruce Grove,53.545,-113.9008,CA
+Campbell River,50.0244,-125.2475,CA
+Prince Albert,53.2,-105.75,CA
+Penticton,49.4911,-119.5886,CA
+Sorel-Tracy,46.0333,-73.1167,CA
+East Kelowna,49.8625,-119.5833,CA
+Leamington,42.0667,-82.5833,CA
+East Gwillimbury,44.1333,-79.4167,CA
+Côte-Saint-Luc,45.4687,-73.6673,CA
+Orangeville,43.9167,-80.1167,CA
+Leduc,53.2594,-113.5492,CA
+Moose Jaw,50.3933,-105.5519,CA
+Port Moody,49.2831,-122.8317,CA
+Pointe-Claire,45.45,-73.8167,CA
+Orillia,44.6,-79.4167,CA
+Stratford,43.3708,-80.9819,CA
+Fort Erie,42.9167,-79.0167,CA
+Val-d’Or,48.1,-77.7833,CA
+LaSalle,42.2167,-83.0667,CA
+Cochrane,51.189,-114.467,CA
+North Cowichan,48.8236,-123.7192,CA
+Lloydminster,53.2783,-110.005,CA
+Chambly,45.4311,-73.2873,CA
+Centre Wellington,43.7,-80.3667,CA
+Okotoks,50.725,-113.975,CA
+Alma,48.55,-71.65,CA
+Sainte-Julie,45.5833,-73.3333,CA
+Saint-Constant,45.37,-73.57,CA
+Langley,49.09869081,-122.6597287,CA
+Grimsby,43.2,-79.55,CA
+Magog,45.2667,-72.15,CA
+Boisbriand,45.62,-73.83,CA
+Whitehorse,60.7029,-135.0691,CA
+Dieppe,46.0989,-64.7242,CA
+King,44.0463,-79.6044,CA
+Parksville,49.315,-124.312,CA
+Conception Bay South,47.5167,-52.9833,CA
+Fort Saskatchewan,53.7128,-113.2133,CA
+Woolwich,43.5667,-80.4833,CA
+Sainte-Thérèse,45.6333,-73.85,CA
+Clarence-Rockland,45.4833,-75.2,CA
+La Prairie,45.42,-73.5,CA
+Saint-Bruno-de-Montarville,45.5333,-73.35,CA
+Midland,44.75,-79.8833,CA
+Thetford Mines,46.1,-71.3,CA
+Lincoln,43.13,-79.43,CA
+Quispamsis,45.4322,-65.9462,CA
+Wasaga Beach,44.5206,-80.0167,CA
+Collingwood,44.5,-80.2167,CA
+Sept-Îles,50.2167,-66.3833,CA
+Duncan,48.7787,-123.7079,CA
+Hudson,45.45,-74.15,CA
+Saint-Lin--Laurentides,45.85,-73.7667,CA
+Strathroy-Caradoc,42.9575,-81.6167,CA
+Squamish,49.7017,-123.1589,CA
+Thorold,43.1167,-79.2,CA
+Truro,45.3647,-63.28,CA
+Amherstburg,42.1,-83.0833,CA
+L’Assomption,45.8333,-73.4167,CA
+Tecumseh,42.2431,-82.9256,CA
+Candiac,45.38,-73.52,CA
+Essa,44.25,-79.7833,CA
+Paradise,47.5333,-52.8667,CA
+Saint-Lambert,45.5,-73.5167,CA
+Mount Pearl Park,47.5189,-52.8058,CA
+Saint-Lazare,45.4,-74.1333,CA
+Owen Sound,44.5667,-80.9333,CA
+Brockville,44.5833,-75.6833,CA
+Chestermere,51.05,-113.8225,CA
+Kingsville,42.1,-82.7167,CA
+Port Alberni,49.2339,-124.805,CA
+Springwater,44.4333,-79.7333,CA
+Scugog,44.09,-78.936,CA
+Uxbridge,44.1167,-79.1333,CA
+Fort St. John,56.2465,-120.8476,CA
+Wilmot,43.4,-80.65,CA
+Essex,42.0833,-82.9,CA
+Varennes,45.6833,-73.4333,CA
+Oro-Medonte,44.5667,-79.5833,CA
+Mont-Royal,45.5161,-73.6431,CA
+Beaumont,53.3572,-113.4147,CA
+Baie-Comeau,49.2167,-68.15,CA
+Riverview,46.0613,-64.8052,CA
+Cobourg,43.9667,-78.1667,CA
+Cranbrook,49.5097,-115.7667,CA
+Yellowknife,62.4709,-114.4053,CA
+South Frontenac,44.5081,-76.4939,CA
+Rivière-du-Loup,47.8333,-69.5333,CA
+Port Colborne,42.8833,-79.25,CA
+Saint-Augustin-de-Desmaures,46.7333,-71.4667,CA
+Huntsville,45.3333,-79.2167,CA
+Sainte-Marthe-sur-le-Lac,45.53,-73.93,CA
+Lloydminster,53.2807,-110.035,CA
+Westmount,45.4833,-73.6,CA
+Russell,45.2569,-75.3583,CA
+Les Coteaux,45.28,-74.23,CA
+Salmon Arm,50.7022,-119.2722,CA
+Kirkland,45.45,-73.8667,CA
+Corner Brook,48.9287,-57.926,CA
+New Glasgow,45.5926,-62.6455,CA
+Dorval,45.45,-73.75,CA
+Beaconsfield,45.4333,-73.8667,CA
+Pitt Meadows,49.2333,-122.6833,CA
+Niagara-on-the-Lake,43.2553,-79.0717,CA
+Colwood,48.4236,-123.4958,CA
+Middlesex Centre,43.05,-81.45,CA
+Mont-Saint-Hilaire,45.5622,-73.1917,CA
+Camrose,53.0167,-112.8333,CA
+Selwyn,44.4167,-78.3333,CA
+Tillsonburg,42.8667,-80.7333,CA
+Pelham,43.0333,-79.3333,CA
+Petawawa,45.9,-77.2833,CA
+Stony Plain,53.5264,-114.0069,CA
+Oak Bay,48.4264,-123.3228,CA
+North Grenville,44.9667,-75.65,CA
+Loyalist,44.25,-76.75,CA
+Deux-Montagnes,45.5333,-73.8833,CA
+Steinbach,49.5258,-96.6839,CA
+Saint-Colomban,45.73,-74.13,CA
+Miramichi,47.0196,-65.5072,CA
+Esquimalt,48.4306,-123.4147,CA
+Central Saanich,48.5142,-123.3839,CA
+Sainte-Catherine,45.4,-73.58,CA
+Port Hope,43.95,-78.3,CA
+Inverness,46.2,-61.1,CA
+Saint-Basile-le-Grand,45.5333,-73.2833,CA
+L’Ancienne-Lorette,46.8,-71.35,CA
+Swift Current,50.2881,-107.7939,CA
+Pembroke,45.8167,-77.1,CA
+Edmundston,47.3765,-68.3253,CA
+Yorkton,51.2139,-102.4628,CA
+Springfield,49.9292,-96.6939,CA
+Sylvan Lake,52.3083,-114.0964,CA
+Bracebridge,45.0333,-79.3,CA
+Summerside,46.4,-63.7833,CA
+Canmore,51.089,-115.359,CA
+Bathurst,47.62,-65.65,CA
+Greater Napanee,44.25,-76.95,CA
+Lake Country,50.0833,-119.4142,CA
+Hanover,49.4433,-96.8492,CA
+Winkler,49.1817,-97.9397,CA
+Saint-Charles-Borromée,46.05,-73.4667,CA
+Cowansville,45.2,-72.75,CA
+Sainte-Anne-des-Plaines,45.7617,-73.8204,CA
+Gaspé,48.8333,-64.4833,CA
+Sooke,48.3761,-123.7378,CA
+Kenora,49.7667,-94.4833,CA
+Cold Lake,54.4642,-110.1825,CA
+Brooks,50.5642,-111.8989,CA
+Kentville,45.0775,-64.4958,CA
+Comox,49.6733,-124.9022,CA
+Pincourt,45.3833,-73.9833,CA
+Mississippi Mills,45.2167,-76.2,CA
+St. Clair,42.7833,-82.35,CA
+Terrace,54.5164,-128.5997,CA
+Mercier,45.32,-73.75,CA
+West Lincoln,43.0667,-79.5667,CA
+Lavaltrie,45.8833,-73.2833,CA
+West Nipissing / Nipissing Ouest,46.3667,-79.9167,CA
+Strathmore,51.0378,-113.4003,CA
+High River,50.5808,-113.8744,CA
+Clearview,44.3981,-80.0742,CA
+Lachute,45.65,-74.3333,CA
+Rosemère,45.6369,-73.8,CA
+Matane,48.85,-67.5333,CA
+Thames Centre,43.03,-81.08,CA
+Powell River,49.8353,-124.5247,CA
+Carleton Place,45.1333,-76.1333,CA
+Guelph/Eramosa,43.63,-80.22,CA
+Grand Falls,48.9578,-55.6633,CA
+North Battleford,52.7575,-108.2861,CA
+Mont-Laurier,46.55,-75.5,CA
+Central Elgin,42.7667,-81.1,CA
+Mistassini,48.8229,-72.2154,CA
+Saugeen Shores,44.4333,-81.3667,CA
+Ingersoll,43.0392,-80.8836,CA
+Beauharnois,45.32,-73.87,CA
+South Stormont,45.0833,-74.9667,CA
+Bécancour,46.3333,-72.4333,CA
+Severn,44.75,-79.5167,CA
+Lacombe,52.4683,-113.7369,CA
+Sainte-Sophie,45.82,-73.9,CA
+Val-des-Monts,45.65,-75.6667,CA
+Saint-Amable,45.65,-73.3,CA
+Portage La Prairie,49.9728,-98.2919,CA
+South Glengarry,45.2,-74.5833,CA
+Sainte-Marie,46.45,-71.0333,CA
+North Perth,43.73,-80.95,CA
+Thompson,55.7433,-97.8553,CA
+Trent Hills,44.3142,-77.8514,CA
+Trail,49.095,-117.71,CA
+The Nation / La Nation,45.35,-75.0333,CA
+Amos,48.5667,-78.1167,CA
+Wetaskiwin,52.9694,-113.3769,CA
+West Grey,44.1833,-80.8167,CA
+Warman,52.3219,-106.5842,CA
+Dawson Creek,55.7606,-120.2356,CA
+Sidney,48.6506,-123.3986,CA
+Gravenhurst,44.9167,-79.3667,CA
+Prince Rupert,54.3122,-130.3271,CA
+Perth East,43.47,-80.95,CA
+North Saanich,48.6142,-123.42,CA
+Prévost,45.87,-74.08,CA
+Sainte-Adèle,45.95,-74.13,CA
+Sainte-Agathe-des-Monts,46.05,-74.28,CA
+Quesnel,52.9784,-122.4927,CA
+Les Îles-de-la-Madeleine,47.3833,-61.8667,CA
+Taché,49.7081,-96.6736,CA
+Wellington North,43.9,-80.57,CA
+St. Andrews,50.27,-96.9747,CA
+Williams Lake,52.1294,-122.1383,CA
+Gander,48.9569,-54.6089,CA
+Whistler,50.1208,-122.9544,CA
+Brighton,44.1222,-77.7642,CA
+Tiny,44.6833,-79.95,CA
+Hawkesbury,45.6,-74.6,CA
+Carignan,45.45,-73.3,CA
+Brock,44.3167,-79.0833,CA
+L’Île-Perrot,45.3833,-73.95,CA
+Summerland,49.6006,-119.6778,CA
+St. Clements,50.2689,-96.6742,CA
+View Royal,48.4517,-123.4339,CA
+Montmagny,46.9833,-70.55,CA
+Cantley,45.5667,-75.7833,CA
+Erin,43.7667,-80.0667,CA
+Notre-Dame-de-l'Île-Perrot,45.3667,-73.9333,CA
+Kincardine,44.1667,-81.6333,CA
+Elliot Lake,46.3833,-82.65,CA
+Bromont,45.3167,-72.65,CA
+Arnprior,45.4333,-76.35,CA
+North Dundas,45.0833,-75.35,CA
+Wellesley,43.55,-80.7167,CA
+Nelson,49.5,-117.2833,CA
+Ladysmith,48.9975,-123.8203,CA
+Coldstream,50.22,-119.2481,CA
+Georgian Bluffs,44.65,-81.0333,CA
+Weyburn,49.6611,-103.8525,CA
+La Tuque,48.0652,-74.0528,CA
+Norwich,42.9833,-80.6,CA
+Meaford,44.58,-80.73,CA
+Adjala-Tosorontio,44.1333,-79.9333,CA
+Hamilton Township,44.054,-78.2164,CA
+Stratford,46.2167,-63.0893,CA
+Estevan,49.1392,-102.9861,CA
+South Dundas,44.9167,-75.2667,CA
+Lambton Shores,43.1833,-81.9,CA
+North Dumfries,43.32,-80.38,CA
+Martensville,52.2897,-106.6667,CA
+Mapleton,43.7358,-80.6681,CA
+Rawdon,46.05,-73.7167,CA
+Morinville,53.8022,-113.6497,CA
+Blackfalds,52.3833,-113.8,CA
+Chester,44.65,-64.3,CA
+Queens,44.0333,-64.7167,CA
+Selkirk,50.1436,-96.8839,CA
+Saint-Félicien,48.65,-72.45,CA
+Roberval,48.52,-72.23,CA
+Rideau Lakes,44.6667,-76.2167,CA
+Sechelt,49.4742,-123.7542,CA
+Bois-des-Filion,45.6667,-73.75,CA
+North Glengarry,45.3333,-74.7333,CA
+South Huron,43.32,-81.5,CA
+Marieville,45.4333,-73.1667,CA
+Penetanguishene,44.7667,-79.9333,CA
+Tay,44.7167,-79.7667,CA
+Castlegar,49.3256,-117.6661,CA
+Cavan Monaghan,44.2,-78.4667,CA
+Morden,49.1919,-98.1006,CA
+Temiskaming Shores,47.5167,-79.6833,CA
+Hinton,53.4114,-117.5639,CA
+Saint-Sauveur,45.9,-74.17,CA
+Grey Highlands,44.3333,-80.5,CA
+East St. Paul,49.9772,-97.0103,CA
+Stoneham-et-Tewkesbury,47.1667,-71.4333,CA
+Alfred and Plantagenet,45.5667,-74.9167,CA
+Mont-Tremblant,46.1167,-74.6,CA
+Saint-Zotique,45.25,-74.25,CA
+Saint-Raymond,46.9,-71.8333,CA
+Gibsons,49.4028,-123.5036,CA
+Amherst,45.8167,-64.2167,CA
+Elizabethtown-Kitley,44.7,-75.8833,CA
+Smiths Falls,44.9,-76.0167,CA
+Lorraine,45.6833,-73.7833,CA
+Ramara,44.6333,-79.2167,CA
+Notre-Dame-des-Prairies,46.05,-73.4333,CA
+Leeds and the Thousand Islands,44.45,-76.08,CA
+Brockton,44.1667,-81.2167,CA
+Laurentian Valley,45.7681,-77.2239,CA
+Mono,44.0167,-80.0667,CA
+Sainte-Julienne,45.97,-73.72,CA
+Qualicum Beach,49.35,-124.4333,CA
+Malahide,42.7928,-80.9361,CA
+Oromocto,45.8488,-66.4788,CA
+Whitecourt,54.1417,-115.6833,CA
+Olds,51.7928,-114.1067,CA
+Huron East,43.63,-81.28,CA
+Beckwith,45.0833,-76.0667,CA
+Labrador City,52.95,-66.9167,CA
+Shelburne,44.0833,-80.2,CA
+Stanley,49.1331,-98.0656,CA
+Taber,49.7847,-112.1508,CA
+Donnacona,46.6747,-71.7294,CA
+Corman Park No. 344,52.2291,-106.8002,CA
+L’Epiphanie,45.84826642,-73.50605408,CA
+West Perth,43.47,-81.2,CA
+Campbellton,48.005,-66.6731,CA
+Bridgewater,44.37,-64.52,CA
+Coaldale,49.7333,-112.6167,CA
+Pont-Rouge,46.75,-71.7,CA
+Champlain,45.5333,-74.65,CA
+Coaticook,45.1333,-71.8,CA
+Minto,43.9167,-80.8667,CA
+La Pêche,45.6833,-75.9833,CA
+Shediac,46.2167,-64.5333,CA
+Otterburn Park,45.5333,-73.2167,CA
+Sainte-Brigitte-de-Laval,47,-71.2,CA
+Sainte-Catherine-de-la-Jacques-Cartier,46.85,-71.6167,CA
+South Bruce Peninsula,44.7333,-81.2,CA
+Portugal Cove-St. Philip's,47.6272,-52.8506,CA
+Edson,53.5817,-116.4344,CA
+Renfrew,45.4717,-76.6831,CA
+Farnham,45.2833,-72.9833,CA
+Delson,45.37,-73.55,CA
+Plympton-Wyoming,43.0167,-82.0833,CA
+Banff,51.1781,-115.5719,CA
+Kapuskasing,49.4167,-82.4333,CA
+La Malbaie,47.65,-70.15,CA
+Boischatel,46.9,-71.15,CA
+Beauport,46.9667,-71.3,CA
+Zorra,43.15,-80.95,CA
+Kitimat,54,-128.7,CA
+Macdonald,49.6725,-97.4472,CA
+Happy Valley,53.3396,-60.4467,CA
+Saint-Hippolyte,45.93,-74.02,CA
+Dauphin,51.1992,-100.0633,CA
+Church Point,44.3333,-66.1167,CA
+Old Chelsea,45.5,-75.7833,CA
+Drumheller,51.4636,-112.7194,CA
+Kirkland Lake,48.15,-80.0333,CA
+Aylmer,42.7667,-80.9833,CA
+Saint-Apollinaire,46.6167,-71.5167,CA
+Puslinch,43.45,-80.1667,CA
+Argyle,43.8,-65.85,CA
+Torbay,47.65,-52.7333,CA
+Yarmouth,43.8361,-66.1175,CA
+Innisfail,52.0333,-113.95,CA
+Nicolet,46.2167,-72.6167,CA
+Rockwood,50.2856,-97.2869,CA
+Drummond/North Elmsley,44.9667,-76.2,CA
+Contrecoeur,45.85,-73.2333,CA
+Hanover,44.15,-81.0333,CA
+Dryden,49.7833,-92.8333,CA
+Iqaluit,63.7598,-68.5107,CA
+Fort Frances,48.6167,-93.4,CA
+Goderich,43.7333,-81.7,CA
+La Sarre,48.8,-79.2,CA
+Chandler,48.35,-64.6833,CA
+Stone Mills,44.45,-76.9167,CA
+South-West Oxford,42.95,-80.8,CA
+Acton Vale,45.65,-72.5667,CA
+Douro-Dummer,44.45,-78.1,CA
+Saint-Philippe,45.35,-73.47,CA
+McNab/Braeside,45.45,-76.5,CA
+Central Huron,43.63,-81.57,CA
+Rigaud,45.4833,-74.3,CA
+Louiseville,46.25,-72.95,CA
+Chibougamau,49.9167,-74.3667,CA
+Coteau-du-Lac,45.3,-74.18,CA
+Ritchot,49.6647,-97.1167,CA
+Kimberley,49.6697,-115.9775,CA
+Blandford-Blenheim,43.2333,-80.6,CA
+Bayham,42.7333,-80.7833,CA
+Augusta,44.7511,-75.6003,CA
+Stephenville,48.55,-58.5667,CA
+The Pas,53.825,-101.2533,CA
+St. Marys,43.2583,-81.1333,CA
+Saint-Rémi,45.2667,-73.6167,CA
+Drayton Valley,53.2222,-114.9769,CA
+Ponoka,52.6833,-113.5667,CA
+Southgate,44.1,-80.5833,CA
+Les Cèdres,45.3,-74.05,CA
+Baie-Saint-Paul,47.45,-70.5,CA
+Merritt,50.1128,-120.7897,CA
+Bluewater,43.45,-81.6,CA
+East Zorra-Tavistock,43.2333,-80.7833,CA
+Brownsburg,45.6703,-74.4467,CA
+Asbestos,45.7667,-71.9333,CA
+Otonabee-South Monaghan,44.2333,-78.2333,CA
+Huron-Kinloss,44.05,-81.5333,CA
+Hampstead,45.4833,-73.6333,CA
+Saint-Joseph-du-Lac,45.5333,-74,CA
+Plessisville,46.2167,-71.7833,CA
+The Blue Mountains,44.4833,-80.3833,CA
+Whitewater Region,45.7167,-76.8333,CA
+Edwardsburgh/Cardinal,44.8333,-75.5,CA
+Sainte-Anne-des-Monts,49.1333,-66.5,CA
+Bay Roberts,47.5847,-53.2783,CA
+Wainfleet,42.925,-79.375,CA
+North Stormont,45.2167,-75,CA
+Alnwick/Haldimand,44.0833,-78.0333,CA
+Peace River,56.2339,-117.2897,CA
+Saint-Lambert-de-Lauzon,46.5865,-71.2271,CA
+Arran-Elderslie,44.4,-81.2,CA
+Parry Sound,45.3333,-80.0333,CA
+Val-Shefford,45.35,-72.5667,CA
+West St. Paul,50.0119,-97.115,CA
+Slave Lake,55.2853,-114.7706,CA
+Port-Cartier,50.0333,-66.8667,CA
+Barrington,43.5646,-65.5639,CA
+Rocky Mountain House,52.3753,-114.9217,CA
+Muskoka Falls,45.1264,-79.558,CA
+Cornwall,46.2407,-63.2009,CA
+Saint-Paul,45.9833,-73.45,CA
+Devon,53.3633,-113.7322,CA
+Perth,44.9,-76.25,CA
+Wainwright,52.8333,-110.8667,CA
+Shannon,46.8833,-71.5167,CA
+Saint-Honoré,48.5333,-71.0833,CA
+Beaubassin East / Beaubassin-est,46.1726,-64.3122,CA
+Bonnyville,54.2667,-110.75,CA
+Cramahe,44.0833,-77.8833,CA
+Beauceville,46.2,-70.7833,CA
+North Middlesex,43.15,-81.6333,CA
+Beaupré,47.05,-70.9,CA
+Charlemagne,45.7167,-73.4833,CA
+Kent,49.2833,-121.75,CA
+Clarenville,48.1566,-53.965,CA
+Mont-Joli,48.58,-68.18,CA
+Pointe-Calumet,45.5,-73.97,CA
+Dysart et al,45.2042,-78.4047,CA
+Carbonear,47.7375,-53.2294,CA
+Hope,49.3858,-121.4419,CA
+Pontiac,45.5833,-76.1333,CA
+L'Ange-Gardien,45.5833,-75.45,CA
+Hindon Hill,44.9333,-78.7333,CA
+La Broquerie,49.3994,-96.5103,CA
+Tweed,44.6,-77.3333,CA
+Oliver Paipoonge,48.39,-89.52,CA
+Saint-Félix-de-Valois,46.17,-73.43,CA
+Melfort,52.8564,-104.61,CA
+Stettler,52.3236,-112.7192,CA
+Niverville,49.6056,-97.0417,CA
+McMasterville,45.55,-73.2333,CA
+Douglas,46.2819,-66.942,CA
+Saint-Calixte,45.95,-73.85,CA
+Lac-Mégantic,45.5833,-70.8833,CA
+Humboldt,52.2019,-105.1231,CA
+St. Paul,53.9928,-111.2972,CA
+Saint-Henri,46.7,-71.0667,CA
+Peachland,49.7736,-119.7369,CA
+Verchères,45.7833,-73.35,CA
+Richelieu,45.45,-73.25,CA
+Petrolia,42.8833,-82.1417,CA
+Southwest Middlesex,42.75,-81.7,CA
+Front of Yonge,44.5333,-75.8667,CA
+Oliver,49.1844,-119.55,CA
+Vegreville,53.4928,-112.0522,CA
+Princeville,46.1667,-71.8833,CA
+Saint-Césaire,45.4167,-73,CA
+Tay Valley,44.8667,-76.3833,CA
+South Bruce,44.0333,-81.2,CA
+Antigonish,45.6167,-61.9833,CA
+Crowsnest Pass,49.5955,-114.5136,CA
+Redcliff,50.0792,-110.7783,CA
+Val-David,46.03,-74.22,CA
+Fernie,49.5042,-115.0628,CA
+Windsor,44.9803,-64.1292,CA
+Notre-Dame-du-Mont-Carmel,46.4833,-72.65,CA
+Sainte-Martine,45.25,-73.8,CA
+Creston,49.09,-116.51,CA
+Saint-Roch-de-l'Achigan,45.85,-73.6,CA
+Sussex,45.7167,-65.5167,CA
+Saint-Pie,45.5,-72.9,CA
+Ashfield-Colborne-Wawanosh,43.8667,-81.6,CA
+Trent Lakes,44.6667,-78.4333,CA
+Northern Rockies,59,-123.75,CA
+Gananoque,44.33,-76.17,CA
+Windsor,45.5667,-72,CA
+Smithers,54.7819,-127.1681,CA
+Tracadie,47.51431428,-64.91885956,CA
+Meadow Lake,54.1242,-108.4358,CA
+Lanark Highlands,45.088,-76.517,CA
+Sackville,45.9,-64.3667,CA
+Grand Falls,47.0344,-67.7394,CA
+Armstrong,50.4483,-119.1961,CA
+Cochrane,49.0667,-81.0167,CA
+La Ronge,55.1,-105.3,CA
+Marystown,47.1667,-55.1667,CA
+Sioux Lookout,50.1,-91.9167,CA
+Didsbury,51.6658,-114.1311,CA
+Deer Lake,49.1744,-57.4269,CA
+Woodstock,46.1522,-67.5983,CA
+Flin Flon,54.7667,-101.8778,CA
+Brokenhead,50.1428,-96.5319,CA
+Burton,45.8009,-66.4066,CA
+Montréal-Ouest,45.4536,-73.6472,CA
+Spallumcheen,50.4462,-119.2121,CA
+Westlock,54.1522,-113.8511,CA
+Témiscouata-sur-le-Lac,47.68,-68.88,CA
+Osoyoos,49.0325,-119.4661,CA
+Saint Marys,46.1748,-66.4897,CA
+Hearst,49.6869,-83.6544,CA
+Metchosin,48.3819,-123.5378,CA
+Wolfville,45.0833,-64.3667,CA
+Breslau,43.4816,-80.408,CA
+Stonewall,50.1344,-97.3261,CA
+Memramcook,46,-64.55,CA
+Sainte-Anne-de-Bellevue,45.4039,-73.9525,CA
+Stirling-Rawdon,44.3667,-77.5917,CA
+Mont-Orford,45.3661,-72.1838,CA
+Ste. Anne,49.6186,-96.5708,CA
+Espanola,46.25,-81.7667,CA
+West Elgin,42.5833,-81.6667,CA
+Flin Flon (Part),54.7712,-101.8419,CA
+Grand Bay-Westfield,45.3608,-66.2415,CA
+East Ferris,46.2667,-79.3,CA
+Neepawa,50.2289,-99.4656,CA
+North Huron,43.83,-81.42,CA
+Saint-Germain-de-Grantham,45.8333,-72.5667,CA
+Saint-Cyrille-de-Wendover,45.9333,-72.4333,CA
+Chisasibi,53.6645,-78.7938,CA
+Southwold,42.75,-81.3167,CA
+Chertsey,46.17,-73.92,CA
+Shippagan,47.8557,-64.6012,CA
+Lanoraie,45.9667,-73.2167,CA
+Centre Hastings,44.4167,-77.4417,CA
+Coverdale,46.0003,-64.8859,CA
+Warwick,45.95,-71.9833,CA
+Hanwell,45.8681,-66.7947,CA
+Napierville,45.1833,-73.4,CA
+Waterloo,45.35,-72.5167,CA
+Saint-Joseph-de-Beauce,46.3,-70.8833,CA
+White City,50.4353,-104.3572,CA
+Lucan Biddulph,43.2,-81.3833,CA
+Berthierville,46.0833,-73.1833,CA
+Rivière-Rouge,46.4167,-74.8667,CA
+Greenstone,50,-86.7333,CA
+Kindersley,51.4678,-109.1567,CA
+Saint-Denis-de-Brompton,45.45,-72.0833,CA
+Jasper,52.9013,-118.1312,CA
+Barrhead,54.1167,-114.4,CA
+Melville,50.9306,-102.8078,CA
+Amqui,48.4667,-67.4333,CA
+Saint-Mathias-sur-Richelieu,45.4667,-73.2667,CA
+Tyendinaga,44.3,-77.2,CA
+Iroquois Falls,48.7667,-80.6667,CA
+Havelock-Belmont-Methuen,44.5667,-77.9,CA
+Cornwallis,49.7981,-99.8481,CA
+Saint-Boniface,46.5,-72.8167,CA
+Westbank,49.8423,-119.6743,CA
+Edenwold No. 158,50.5166,-104.3451,CA
+Cumberland,49.6206,-125.0261,CA
+Goulds,47.4517,-52.7647,CA
+Vanderhoof,54.0143,-124.0089,CA
+Château-Richer,46.9667,-71.0167,CA
+Saint Stephen,45.2,-67.2833,CA
+Nipawin,53.3572,-104.0192,CA
+Battleford,52.7383,-108.3153,CA
+Hampton,45.52514912,-65.84254614,CA
+Montréal-Est,45.63,-73.52,CA
+Central Frontenac,44.7167,-76.8,CA
+Saint-Antonin,47.7667,-69.4833,CA
+Saint-Jean-de-Matha,46.23,-73.53,CA
+Headingley,49.8681,-97.3908,CA
+Seguin,45.2882,-79.8116,CA
+Beresford,47.6992726,-65.70507484,CA
+La Pocatière,47.3667,-70.0333,CA
+Bowen Island,49.3833,-123.3833,CA
+Caraquet,47.7853,-64.9592,CA
+Altona,49.1044,-97.5625,CA
+Roxton Pond,45.4833,-72.6667,CA
+Saint-Étienne-des-Grès,46.4333,-72.7667,CA
+Grand Forks,49.0333,-118.44,CA
+New Maryland,45.8911,-66.6847,CA
+Port Hardy,50.7225,-127.4928,CA
+Saint-Donat,46.3167,-74.2167,CA
+Madawaska Valley,45.5,-77.6667,CA
+Deep River,46.1,-77.4917,CA
+Asphodel-Norwood,44.3531,-78.0183,CA
+Red Lake,51.0333,-93.8333,CA
+Métabetchouan-Lac-à-la-Croix,48.4333,-71.8667,CA
+Maniwaki,46.375,-75.9667,CA
+Vermilion,53.3542,-110.8528,CA
+Hastings Highlands,45.2333,-77.9333,CA
+Prescott,44.7167,-75.5167,CA
+Carstairs,51.5619,-114.0953,CA
+Danville,45.7833,-72.0167,CA
+Channel-Port aux Basques,47.5694,-59.1361,CA
+Lac-Etchemin,46.4,-70.5,CA
+Saint-Jacques,45.95,-73.5667,CA
+Swan River,52.1058,-101.2667,CA
+Stellarton,45.5567,-62.66,CA
+Northern Bruce Peninsula,45.08,-81.38,CA
+L’Islet-sur-Mer,47.1,-70.35,CA
+Carleton-sur-Mer,48.1,-66.1333,CA
+Sparwood,49.7331,-114.8853,CA
+Casselman,45.3,-75.0833,CA
+Oka,45.47,-74.08,CA
+Callander,46.1781,-79.4125,CA
+Amaranth,43.9833,-80.2333,CA
+Marmora and Lake,44.6425,-77.7372,CA
+Raymond,49.4658,-112.6508,CA
+Morin-Heights,45.9,-74.25,CA
+Dundas,46.3155,-64.6947,CA
+Simonds,45.3145,-65.803,CA
+Crabtree,45.9667,-73.4667,CA
+Bancroft,45.05,-77.85,CA
+Saint-Tite,46.7333,-72.5667,CA
+Howick,43.9,-81.07,CA
+Dutton/Dunwich,42.6667,-81.5,CA
+New Richmond,48.1667,-65.8667,CA
+Perth South,43.3,-81.15,CA
+Claresholm,50.0194,-113.5783,CA
+Baie-d’Urfé,45.4167,-73.9167,CA
+Montague,44.9667,-75.9667,CA
+Saint-André-Avellin,45.7167,-75.0667,CA
+Saint-Ambroise-de-Kildare,46.0833,-73.55,CA
+East Angus,45.4833,-71.6667,CA
+Rossland,49.0786,-117.7992,CA
+Mackenzie,55.3381,-123.0944,CA
+Golden,51.3019,-116.9667,CA
+Saint-Adolphe-d'Howard,45.97,-74.33,CA
+Warwick,43,-81.8917,CA
+Bonnechere Valley,45.5333,-77.1,CA
+Pincher Creek,49.4861,-113.95,CA
+Alnwick,47.2656,-65.2292,CA
+Saint-Prosper,46.2167,-70.4833,CA
+Crossfield,51.4333,-114.0333,CA
+Ormstown,45.13,-74,CA
+Cardston,49.2025,-113.3019,CA
+De Salaberry,49.4403,-96.9844,CA
+Grande Cache,53.8773,-119.1199,CA
+Saint-Agapit,46.5667,-71.4333,CA
+Fruitvale,49.09869377,-117.5633821,CA
+Saint-Ambroise,48.55,-71.3333,CA
+Westville,45.55,-62.7,CA
+Hay River,60.7531,-115.9004,CA
+Pasadena,49.0161,-57.605,CA
+Mistissini,50.5707,-73.6829,CA
+Studholm,45.8133,-65.5747,CA
+Lorette,49.7414,-96.8761,CA
+Saint-Faustin--Lac-Carré,46.0813,-74.4668,CA
+Morris-Turnberry,43.85,-81.25,CA
+Placentia,47.2458,-53.9611,CA
+Saint-Pascal,47.5333,-69.8,CA
+Mulmur,44.1917,-80.1083,CA
+Blind River,46.1833,-82.95,CA
+Dunham,45.1333,-72.8,CA
+High Level,58.5169,-117.1361,CA
+Havre-Saint-Pierre,50.2333,-63.6,CA
+Saint-Anselme,46.6333,-70.9667,CA
+Trois-Pistoles,48.12,-69.18,CA
+Grande-Rivière,48.4,-64.5,CA
+Malartic,48.1333,-78.1333,CA
+Bonavista,48.6597,-53.1208,CA
+Prince Albert No. 461,53.1089,-105.6574,CA
+Saint-Maurice,46.4667,-72.5333,CA
+Killarney - Turtle Mountain,49.1775,-99.6906,CA
+Woodlands,50.2408,-97.7358,CA
+Lewisporte,49.23,-55.07,CA
+Invermere,50.5083,-116.0303,CA
+Bifrost-Riverton,51.0603,-97.1436,CA
+Ascot Corner,45.45,-71.7667,CA
+Cartier,49.9161,-97.7,CA
+Fossambault-sur-le-Lac,46.8667,-71.6167,CA
+Sainte-Anne-des-Lacs,45.85,-74.1333,CA
+Saint-Sulpice,45.8333,-73.35,CA
+Penhold,52.1333,-113.8667,CA
+Powassan,46.0825,-79.3619,CA
+Highlands East,44.9667,-78.25,CA
+Saint-Alphonse-de-Granby,45.3333,-72.8167,CA
+Sainte-Claire,46.6,-70.8667,CA
+Bright,46.1205,-67.0545,CA
+Ellison,49.9646,-119.3178,CA
+Percé,48.5333,-64.2167,CA
+Saint-Jean-Port-Joli,47.2167,-70.2667,CA
+East Hawkesbury,45.5167,-74.4667,CA
+Buckland No. 491,53.3276,-105.7804,CA
+Saint-André-d'Argenteuil,45.5667,-74.3333,CA
+Saint-Côme--Linière,46.0667,-70.5167,CA
+Marathon,48.75,-86.3667,CA
+Forestville,48.7333,-69.0833,CA
+Compton,45.2333,-71.8167,CA
+Shuniah,48.5833,-88.8333,CA
+Inuvik,68.3407,-133.6096,CA
+Richmond,45.6667,-72.15,CA
+Lake Cowichan,48.8258,-124.0542,CA
+Saint-Gabriel-de-Valcartier,46.9333,-71.4667,CA
+Gibbons,53.8278,-113.3228,CA
+Sables-Spanish Rivers,46.2333,-82,CA
+Hillsburg-Roblin-Shell River,51.3343,-101.2929,CA
+Port Hawkesbury,45.6153,-61.3642,CA
+Three Hills,51.7072,-113.2647,CA
+Kingston,45.4663,-66.0217,CA
+Paspebiac,48.0333,-65.25,CA
+Saint-Thomas,46.0167,-73.35,CA
+Saint-Jean-Baptiste,45.5167,-73.1167,CA
+Portneuf,46.7,-71.8833,CA
+Pictou,45.6814,-62.7119,CA
+Tisdale,52.85,-104.05,CA
+Lake of Bays,45.3043,-79.018,CA
+Bishops Falls,49.0167,-55.5167,CA
+WestLake-Gladstone,50.2862,-98.8415,CA
+Normandin,48.8333,-72.5333,CA
+Mitchell,49.5363,-96.7634,CA
+Saint-Alphonse-Rodriguez,46.1833,-73.7,CA
+Beauséjour,50.0622,-96.5161,CA
+Dalhousie,48.1,-66.6167,CA
+Val-Morin,46,-74.18,CA
+Lac du Bonnet,50.2577,-96.1209,CA
+Clermont,47.6833,-70.2333,CA
+Virden,49.8508,-100.9317,CA
+Saint-Christophe-d'Arthabaska,46.0333,-71.8833,CA
+Mont-Saint-Grégoire,45.3333,-73.1667,CA
+Thurso,45.5969,-75.2433,CA
+Wellington,46.4768,-64.7478,CA
+Cedar,49.0853,-123.8259,CA
+Saint-Gabriel,46.3,-73.3833,CA
+Merrickville,44.8539,-75.8269,CA
+Saint-Liboire,45.65,-72.7667,CA
+Dégelis,47.55,-68.65,CA
+Morris,49.3986,-97.4592,CA
+Saint-Alexis-des-Monts,46.4667,-73.1333,CA
+Cap-Saint-Ignace,47.0333,-70.4667,CA
+Fort Macleod,49.7256,-113.3975,CA
+Enderby,50.5508,-119.1397,CA
+Carman,49.4992,-98.0008,CA
+Saint-Anaclet-de-Lessard,48.48,-68.42,CA
+Stoke,45.5333,-71.8,CA
+Adelaide-Metcalfe,42.95,-81.7,CA
+Melancthon,44.15,-80.2667,CA
+Cap Santé,46.6667,-71.7833,CA
+Saint-David-de-Falardeau,48.6167,-71.1167,CA
+Harbour Grace,47.6917,-53.2167,CA
+Houston,54.3975,-126.6419,CA
+Springdale,49.4974,-56.0727,CA
+Pemberton,50.3203,-122.8053,CA
+Athabasca,54.7197,-113.2856,CA
+Saint-Ferréol-les-Neiges,47.1167,-70.85,CA
+Laurentian Hills,46.1333,-77.55,CA
+Grand Valley,43.95,-80.3667,CA
+Senneterre,48.3833,-77.2333,CA
+Saint-Mathieu-de-Beloeil,45.5667,-73.2,CA
+Sainte-Marie-Madeleine,45.6,-73.1,CA
+Admaston/Bromley,45.5292,-76.8969,CA
+North Algona Wilberforce,45.6167,-77.2,CA
+Errington,49.2874,-124.3433,CA
+Wawa,47.9931,-84.7736,CA
+Sainte-Mélanie,46.1333,-73.5167,CA
+Horton,45.5,-76.6667,CA
+Saint-Paul-d'Abbotsford,45.4333,-72.8833,CA
+Saint-Michel,45.2333,-73.5667,CA
+Botwood,49.15,-55.3667,CA
+Coalhurst,49.7457,-112.9319,CA
+Saint-Marc-des-Carrières,46.6833,-72.05,CA
+Stanstead,45.0167,-72.1,CA
+Sainte-Anne-de-Beaupré,47.0167,-70.9333,CA
+Sainte-Luce,48.55,-68.38,CA
+Saint-Joseph-de-Sorel,46.0446,-73.1308,CA
+Rankin Inlet,62.83,-92.1321,CA
+Kingsclear,45.8796,-66.8695,CA
+Princeton,49.4589,-120.506,CA
+La Loche,56.4833,-109.4333,CA
+Ferme-Neuve,46.7,-75.45,CA
+Yamachiche,46.2667,-72.8333,CA
+Adstock,46.05,-71.08,CA
+Cowichan Bay,48.7666,-123.6743,CA
+Vanscoy No. 345,52.0073,-107.0552,CA
+Enniskillen,42.8167,-82.125,CA
+Royston,49.6405,-124.9406,CA
+Bonaventure,48.05,-65.4833,CA
+Pohénégamook,47.4667,-69.2167,CA
+Saint-Isidore,45.3,-73.68,CA
+Wakefield,46.2406,-67.6248,CA
+Arviat,61.0996,-94.1688,CA
+Sainte-Marguerite-du-Lac-Masson,46.056,-74.0723,CA
+Saint-Prime,48.58,-72.33,CA
+Kuujjuaq,58.1429,-68.3742,CA
+Atikokan,48.75,-91.6167,CA
+Grenville-sur-la-Rouge,45.65,-74.6333,CA
+North Cypress-Langford,49.9969,-99.3982,CA
+Saint-Dominique,45.5667,-72.85,CA
+Macamic,48.75,-79,CA
+Sainte-Anne-de-Sorel,46.05,-73.0667,CA
+Sundre,51.7972,-114.6406,CA
+Rougemont,45.4333,-73.05,CA
+Piedmont,45.9,-74.13,CA
+Grimshaw,56.1908,-117.6117,CA
+Lac-des-Écorces,46.55,-75.35,CA
+Markstay,46.4912,-80.4717,CA
+Northeastern Manitoulin and the Islands,45.9667,-81.9333,CA
+Pelican Narrows,55.1883,-102.9342,CA
+McDougall,45.45,-80.0167,CA
+Black Diamond,50.6881,-114.2333,CA
+Saint-Pamphile,46.9667,-69.7833,CA
+Bedford,45.1167,-72.9833,CA
+Weedon-Centre,45.7,-71.4667,CA
+Lacolle,45.0833,-73.3667,CA
+Saint-Gabriel-de-Brandon,46.2667,-73.3833,CA
+Huntingdon,45.08,-74.17,CA
+French River / Rivière des Français,46.1667,-80.5,CA
+Spaniards Bay,47.6181,-53.3369,CA
+Cocagne,46.3406,-64.62,CA
+Pilot Butte,50.4667,-104.4167,CA
+Saint-Bruno,48.4667,-71.65,CA
+Laurier-Station,46.5333,-71.6333,CA
+Saint-Anicet,45.12,-74.35,CA
+Cap-Chat,49.1,-66.6833,CA
+Sexsmith,55.3508,-118.7825,CA
+Notre-Dame-de-Lourdes,46.1,-73.4333,CA
+Ville-Marie,47.3333,-79.4333,CA
+Wickham,45.75,-72.5,CA
+Shippegan,47.7439,-64.7178,CA
+East Garafraxa,43.85,-80.25,CA
+Unity,52.4333,-109.1667,CA
+Rimbey,52.6333,-114.2167,CA
+High Prairie,55.4325,-116.4861,CA
+Turner Valley,50.6739,-114.2786,CA
+Hanna,51.6383,-111.9419,CA
+Neuville,46.7,-71.5833,CA
+Fort Smith,60.026,-112.0821,CA
+Maria,48.1667,-65.9833,CA
+Saint-Chrysostome,45.1,-73.7667,CA
+Greater Madawaska,45.2722,-76.8589,CA
+Berwick,45.0475,-64.736,CA
+Saint-Damase,45.5333,-73,CA
+Disraeli,45.9,-71.35,CA
+Meadow Lake No. 588,54.1213,-108.2837,CA
+Elkford,50.0214,-114.9158,CA
+Georgian Bay,44.9833,-79.8167,CA
+Saint-Alexandre,45.2333,-73.1167,CA
+Hérbertville,48.3473,-71.6784,CA
+Moosomin,50.142,-101.67,CA
+Highlands,48.52,-123.5,CA
+North Kawartha,44.75,-78.1,CA
+Sainte-Thècle,46.8167,-72.5,CA
+Fermont,52.7833,-67.0833,CA
+Esterhazy,50.65,-102.0667,CA
+Holyrood,47.3833,-53.1333,CA
+La Présentation,45.6667,-73.05,CA
+Beaverlodge,55.2094,-119.4292,CA
+Sainte-Catherine-de-Hatley,45.25,-72.05,CA
+Saint-Basile,46.75,-71.8167,CA
+Saint-Raphaël,46.8,-70.75,CA
+Saint-Martin,45.9667,-70.65,CA
+Causapscal,48.3667,-67.2333,CA
+Brigham,45.25,-72.85,CA
+Sainte-Victoire-de-Sorel,45.95,-73.0833,CA
+Perry,45.5,-79.2833,CA
+Port-Daniel--Gascons,48.1833,-64.9667,CA
+Rosetown,51.55,-107.9833,CA
+Minnedosa,50.2453,-99.8428,CA
+Labelle,46.2833,-74.7333,CA
+Lincoln,45.8716,-66.5437,CA
+Black River-Matheson,48.5333,-80.4667,CA
+Saint-Michel-des-Saints,46.6833,-73.9167,CA
+Dufferin,49.5319,-98.07,CA
+Saint-Victor,46.15,-70.9,CA
+Sicamous,50.8378,-118.9703,CA
+Cap Pele,46.2172,-64.2822,CA
+Kelsey,53.7356,-101.395,CA
+"Killaloe, Hagarty and Richards",45.6,-77.5,CA
+Alvinston,42.8489,-81.9049,CA
+Trenton,45.6193,-62.6332,CA
+Lunenburg,44.3833,-64.3167,CA
+Saint-Éphrem-de-Beauce,46.0516,-70.9374,CA
+Chase,50.8189,-119.6844,CA
+Léry,45.35,-73.8,CA
+Assiniboia,49.6167,-105.9833,CA
+Tumbler Ridge,55.1333,-121,CA
+Salisbury,46.03778842,-65.04790599,CA
+Témiscaming,46.7167,-79.1,CA
+Magrath,49.4239,-112.8683,CA
+Sainte-Geneviève-de-Berthier,46.0833,-73.2167,CA
+Logy Bay-Middle Cove-Outer Cove,47.63,-52.68,CA
+Buctouche,46.4719,-64.7249,CA
+Grand Manan,44.69,-66.82,CA
+Sainte-Madeleine,45.6,-73.1,CA
+Anmore,49.3144,-122.8564,CA
+Sainte-Croix,46.62,-71.73,CA
+Algonquin Highlands,45.4,-78.75,CA
+Valcourt,45.5,-72.3167,CA
+Gimli,50.63309122,-96.99232943,CA
+Saint George,45.2916,-66.8501,CA
+Saint-Mathieu,45.3167,-73.5164,CA
+Paquetville,47.6334,-65.1803,CA
+Clearwater,51.65,-120.0333,CA
+Addington Highlands,45,-77.25,CA
+Lillooet,50.6864,-121.9364,CA
+Burin,47.05,-55.18,CA
+Grand Bank,47.1,-55.7833,CA
+Waterville,45.2667,-71.9,CA
+Minto,46.1497,-66.1067,CA
+Rosthern No. 403,52.6206,-106.3967,CA
+Mansfield-et-Pontefract,45.8611,-76.7392,CA
+Saint-Denis,45.7833,-73.15,CA
+Gore,45.77,-74.25,CA
+Outlook,51.5,-107.05,CA
+Saint-Gédéon-de-Beauce,45.85,-70.6333,CA
+Saint-Léonard-d'Aston,46.1,-72.3667,CA
+Fort-Coulonge,45.85,-76.7333,CA
+Albanel,48.8833,-72.45,CA
+St. Anthony,51.3725,-55.5947,CA
+Pessamit,49.0485,-68.6814,CA
+Logan Lake,50.4911,-120.8153,CA
+Maskinongé,46.2333,-73.0167,CA
+Saint-Charles-de-Bellechasse,46.7667,-70.95,CA
+Fogo Island,49.6667,-54.1833,CA
+Neebing,48.1833,-89.4667,CA
+Port McNeill,50.5903,-127.0847,CA
+Hatley,45.27,-71.95,CA
+East Broughton,46.2167,-71.0667,CA
+Saint-Polycarpe,45.3,-74.3,CA
+Deschambault,46.6436,-72.0236,CA
+Canora,51.6339,-102.4369,CA
+Upper Miramichi,46.5254,-66.2085,CA
+Tofino,49.1275,-125.8852,CA
+Hardwicke,47.0208,-65.0302,CA
+Wendake,46.8693,-71.3628,CA
+Saint-Côme,46.27,-73.78,CA
+Waskaganish,51.3674,-78.7069,CA
+Twillingate,49.6444,-54.7436,CA
+Saint-Quentin,47.5135,-67.3921,CA
+Lebel-sur-Quévillon,49.05,-76.9833,CA
+Calmar,53.25,-113.7833,CA
+Nanton,50.3494,-113.7717,CA
+Pierreville,46.0667,-72.8167,CA
+New-Wes-Valley,49.15,-53.5833,CA
+Pennfield Ridge,45.1924,-66.6858,CA
+Northesk,47.2569,-66.2613,CA
+West Interlake,50.9837,-98.3572,CA
+Biggar,52.059,-107.979,CA
+Kent,46.6221,-67.2953,CA
+Maple Creek,49.9167,-109.4667,CA
+Wabana,47.65,-52.9333,CA
+Bonfield,46.2167,-79.1333,CA
+Saint-Gilles,46.5167,-71.3667,CA
+Saint-Bernard,46.5,-71.1333,CA
+Sainte-Cécile-de-Milton,45.4833,-72.75,CA
+Saint-Roch-de-Richelieu,45.8833,-73.1667,CA
+Burns Lake,54.2292,-125.7625,CA
+Redwater,53.9489,-113.1067,CA
+Saint-Nazaire,48.5833,-71.5333,CA
+Westfield Beach,45.3432,-66.2868,CA
+Saltair,48.9504,-123.7637,CA
+Saint-Elzéar,46.4,-71.0667,CA
+Hinchinbrooke,45.05,-74.1,CA
+Dundurn No. 314,51.8261,-106.5416,CA
+Saint-François-Xavier-de-Brompton,45.5333,-72.05,CA
+Papineauville,45.6167,-75.0167,CA
+Prairie View,50.3304,-100.9803,CA
+Saint-Ignace-de-Loyola,46.0667,-73.1333,CA
+Central Manitoulin,45.7167,-82.2,CA
+Glovertown,48.6667,-54.05,CA
+Tofield,53.3703,-112.6667,CA
+Madoc,44.5833,-77.5167,CA
+Sainte-Anne-de-Sabrevois,45.2,-73.2167,CA
+Sainte-Anne-de-la-Pérade,46.5833,-72.2,CA
+Saint-Damien-de-Buckland,46.6333,-70.6667,CA
+Baker Lake,64.3287,-96.0308,CA
+Saint-Ferdinand,46.1,-71.5667,CA
+Pouch Cove,47.767,-52.767,CA
+Britannia No. 502,53.4236,-109.7772,CA
+Saint-Fulgence,48.45,-70.9,CA
+Digby,44.6222,-65.7606,CA
+Manouane,47.2091,-74.3833,CA
+Saint-Gervais,46.7167,-70.8833,CA
+Saint-Alexandre-de-Kamouraska,47.6817,-69.625,CA
+Saint-Marc-sur-Richelieu,45.6833,-73.2,CA
+Mandeville,46.3667,-73.35,CA
+Caplan,48.1,-65.6833,CA
+Allardville,47.4321,-65.4383,CA
+Saint-Damien,46.33,-73.48,CA
+Lac-Nominingue,46.4,-75.0333,CA
+Obedjiwan,48.6686,-74.9289,CA
+Rama,51.7578,-103.0008,CA
+Deloraine-Winchester,49.1775,-100.4322,CA
+Oakland-Wawanesa,49.6208,-99.8481,CA
+Brenda-Waskada,49.1775,-100.7019,CA
+Russell-Binscarth,50.7272,-101.3689,CA
+Ellice-Archie,50.3239,-101.2729,CA
+Souris-Glenwood,49.6208,-100.2581,CA
+Riverdale,49.975,-100.2789,CA
+Pembina,49.1775,-98.5408,CA
+Wallace-Woodworth,49.9156,-100.9389,CA
+Lorne,49.4436,-98.7494,CA
+Yellowhead,50.4847,-100.4828,CA
+Swan Valley West,51.9978,-101.3944,CA
+Grey,49.7094,-98.0736,CA
+Gilbert Plains,51.1547,-100.4381,CA
+Norfolk-Treherne,49.6653,-98.5967,CA
+Emerson-Franklin,49.1333,-97.0331,CA
+Sifton,49.6653,-100.6678,CA
+Grassland,49.4306,-100.3103,CA
+Louise,49.1772,-98.8794,CA
+Ste. Rose,51.0222,-99.4306,CA
+Cartwright-Roblin,49.1331,-99.2797,CA
+Mossey River,51.755,-99.9664,CA
+Lakeshore,51.244,-99.6562,CA
+Riding Mountain West,50.8347,-101.0961,CA
+Clanwilliam-Erickson,50.5061,-99.8156,CA
+Glenboro-South Cypress,49.665,-99.3708,CA
+North Norfolk,49.9308,-98.8356,CA
+Reinland,49.1331,-97.5942,CA
+Minitonas-Bowsman,52.1433,-100.9772,CA
+Kippens,48.5492,-58.6236,CA
+Saint-Gédéon,48.5,-71.7667,CA
+Lumby,50.2494,-118.9656,CA
+Kingsey Falls,45.85,-72.0667,CA
+Provost,52.3539,-110.2686,CA
+Saint-Charles,46.6692,-65.0184,CA
+Swift Current No. 137,50.2211,-107.8559,CA
+Mattawa,46.3167,-78.7,CA
+Blucher,52.0134,-106.2176,CA
+L'Ascension-de-Notre-Seigneur,48.7,-71.6833,CA
+Bow Island,49.8667,-111.3667,CA
+Barraute,48.4333,-77.6333,CA
+One Hundred Mile House,51.6413,-121.3127,CA
+Saint-Liguori,46.0167,-73.5667,CA
+Saint Mary,46.3987,-64.8681,CA
+Saint-Patrice-de-Sherrington,45.1667,-73.5167,CA
+Fox Creek,54.395,-116.8092,CA
+Lumsden No. 189,50.6734,-104.7686,CA
+Dawn-Euphemia,42.7,-82.0167,CA
+Chapleau,47.8333,-83.4,CA
+Saint-Esprit,45.9,-73.6667,CA
+Montague,46.1652,-62.65,CA
+Mashteuiatsh,48.569,-72.2495,CA
+Saint-François-du-Lac,46.0667,-72.8333,CA
+Petit Rocher,47.7839,-65.7159,CA
+Eel River Crossing,48.0125,-66.4208,CA
+Millet,53.0978,-113.4728,CA
+Ucluelet,48.9358,-125.5433,CA
+Vallée-Jonction,46.3667,-70.9167,CA
+Manitouwadge,49.1333,-85.8333,CA
+Wellington,43.9579,-77.3534,CA
+Frontenac Islands,44.2,-76.3833,CA
+Point Edward,42.9931,-82.4083,CA
+Picture Butte,49.8731,-112.78,CA
+Manners Sutton,45.6417,-67.0609,CA
+Fort Qu’Appelle,50.7667,-103.7833,CA
+Vulcan,50.4,-113.25,CA
+Chetwynd,55.6972,-121.6333,CA
+Indian Head,50.5333,-103.6667,CA
+Wabush,52.9081,-66.869,CA
+Saint-Fabien,48.3,-68.87,CA
+Harrison Hot Springs,49.3,-121.7819,CA
+Watrous,51.6841,-105.4661,CA
+North Frontenac,44.95,-76.9,CA
+Lac-Supérieur,46.2,-74.4667,CA
+Les Escoumins,48.35,-69.4,CA
+Richibucto,46.6189,-64.8385,CA
+Terrasse-Vaudreuil,45.4,-73.9833,CA
+Rivière-Beaudette,45.2333,-74.3333,CA
+Orkney No. 244,51.2557,-102.6469,CA
+Saint-Barthélemy,46.1833,-73.1333,CA
+Komoka,42.958,-81.4001,CA
+Nisga'a,55.1078,-129.4293,CA
+Austin,45.1833,-72.2833,CA
+Saint-Paul-de-l'Île-aux-Noix,45.1333,-73.2833,CA
+Behchokò,62.8184,-115.9933,CA
+Saint-Cyprien-de-Napierville,45.1833,-73.4167,CA
+Valleyview,55.0686,-117.2683,CA
+Déléage,46.3833,-75.9167,CA
+Potton,45.0833,-72.3667,CA
+Sainte-Béatrix,46.2,-73.6167,CA
+Saint-Georges-de-Cacouna,47.9167,-69.5,CA
+Lakeview,49.9026,-119.5699,CA
+Sainte-Justine,46.4,-70.35,CA
+Saint-Valérien-de-Milton,45.5667,-72.7167,CA
+Saint-Cuthbert,46.15,-73.2333,CA
+Saint-Blaise-sur-Richelieu,45.2167,-73.2833,CA
+Middleton,44.9418,-65.0686,CA
+Kamsack,51.565,-101.8947,CA
+Carberry,49.8689,-99.3594,CA
+Saint-Joseph-de-Coleraine,45.97,-71.37,CA
+Trinity Bay North,48.4978,-53.086,CA
+Pointe-Lebel,49.1667,-68.2,CA
+Grenville,45.6333,-74.6,CA
+Saint-Michel-de-Bellechasse,46.8667,-70.9167,CA
+Sainte-Angèle-de-Monnoir,45.3833,-73.1,CA
+Champlain,46.45,-72.35,CA
+Sacré-Coeur-Saguenay,48.2479,-69.854,CA
+Saint-Louis,46.7048,-65.1046,CA
+Saint-Lucien,45.8667,-72.2667,CA
+Victoria,47.7675,-53.2411,CA
+Lumsden,50.6463,-104.8676,CA
+Saint-Robert,45.9667,-73,CA
+Armstrong,50.64,-97.495,CA
+Keremeos,49.2025,-119.8294,CA
+Regina Beach,50.79,-104.99,CA
+La Guadeloupe,45.95,-70.93,CA
+Sutton,45.1037249,-72.61809366,CA
+Saint Andrews,45.074,-67.0521,CA
+Saint-Placide,45.5333,-74.2,CA
+Grunthal,49.4065,-96.8603,CA
+Povungnituk,60.0477,-77.2751,CA
+Pointe-des-Cascades,45.3333,-73.9667,CA
+Deseronto,44.2,-77.05,CA
+Lamont,53.7603,-112.7778,CA
+Chambord,48.4333,-72.0667,CA
+Maugerville,46.1301,-66.2859,CA
+Dudswell,45.5833,-71.5833,CA
+Nipissing,46.05,-79.55,CA
+Shaunavon,49.651,-108.412,CA
+Wynyard,51.7667,-104.1833,CA
+Cambridge Bay,69.1528,-105.1707,CA
+Dalmeny,52.3411,-106.7733,CA
+Saint-Narcisse,46.5667,-72.4667,CA
+Waswanipi,49.7883,-75.9544,CA
+Inukjuak,58.4824,-78.1309,CA
+Balgonie,50.488,-104.269,CA
+Piney,49.2069,-95.8333,CA
+Warfield,49.0953,-117.7344,CA
+Saint-Zacharie,46.1333,-70.3667,CA
+Hemmingford,45.0833,-73.5833,CA
+Saint-Pierre-de-l'Île-d'Orléans,46.8833,-71.0667,CA
+Kensington,46.4333,-63.65,CA
+Shelburne,43.7633,-65.3236,CA
+Saint-Clet,45.35,-74.22,CA
+Blumenort,49.6033,-96.7006,CA
+Brighton,46.3316,-67.3585,CA
+Saint-Antoine,46.3629,-64.753,CA
+Northampton,46.1313,-67.4713,CA
+Flat Rock,47.7086,-52.7144,CA
+Saint-Ours,45.8833,-73.15,CA
+Stephenville Crossing,48.5167,-58.4167,CA
+Sainte-Anne-de-la-Pocatière,47.35,-70,CA
+Popkum,49.1911,-121.7553,CA
+Notre-Dame-du-Bon-Conseil,46,-72.35,CA
+Fisher,51.0825,-97.6611,CA
+Sainte-Clotilde,45.15,-73.6833,CA
+Lantz,44.9894,-63.4736,CA
+Wicklow,46.5017,-67.7067,CA
+Nouvelle,48.1333,-66.3167,CA
+Wasagamack,53.9056,-94.9412,CA
+Rosthern,52.65,-106.3333,CA
+Yamaska,46.0236,-72.9391,CA
+Neguac,47.2333,-65.05,CA
+Saint-Antoine-de-Tilly,46.6667,-71.5833,CA
+Igloolik,69.3817,-81.6811,CA
+Whitehead,49.7981,-100.2575,CA
+Saint-Élie-de-Caxton,46.4833,-72.9667,CA
+Balmoral,47.9667,-66.45,CA
+Price,48.6017,-68.1227,CA
+Rosedale,50.4397,-99.5389,CA
+Saint-Jacques-le-Mineur,45.2833,-73.4167,CA
+Coombs,49.3008,-124.4049,CA
+Val-Joli,45.6,-71.97,CA
+Southesk,46.9901,-66.4336,CA
+Huron Shores,46.2833,-83.2,CA
+Saint-Antoine-sur-Richelieu,45.7833,-73.1833,CA
+Saint-Pacôme,47.4,-69.95,CA
+Saint-Stanislas-de-Kostka,45.18,-74.13,CA
+Saint-Jacques,47.5634,-68.3693,CA
+Frontenac,45.58,-70.83,CA
+Stuartburn,49.1331,-96.5158,CA
+Sainte-Émélie-de-l'Énergie,46.3167,-73.65,CA
+Saint-Charles-sur-Richelieu,45.6833,-73.1833,CA
+Nipigon,49.0153,-88.2683,CA
+Witless Bay,47.28,-52.83,CA
+Sainte-Hélène-de-Bagot,45.7333,-72.7333,CA
+Franklin Centre,45.0467,-73.9005,CA
+Harbour Breton,47.4833,-55.8333,CA
+Mille-Isles,45.82,-74.22,CA
+Naramata,49.5886,-119.5838,CA
+Lyster,46.3667,-71.6167,CA
+Oakview,50.1964,-100.2167,CA
+Harrison Park,50.5563,-100.1674,CA
+Pond Inlet,72.6808,-77.7503,CA
+Sainte-Clotilde-de-Horton,45.9833,-72.2333,CA
+Burford,43.1036,-80.424,CA
+Saint-Benoît-Labre,46.0667,-70.8,CA
+Terrace Bay,48.8,-87.1,CA
+Maliotenam,50.2114,-66.1911,CA
+Chapais,49.7819,-74.8544,CA
+Saint-Honoré-de-Shenley,45.9667,-70.8333,CA
+Cleveland,45.67,-72.08,CA
+Messines,46.2333,-76.0167,CA
+Saint-Laurent-de-l'Île-d'Orléans,46.8667,-71.0167,CA
+Saint-Jean-de-Dieu,48,-69.05,CA
+Massey Drive,48.9372,-57.9,CA
+Nakusp,50.2434,-117.8002,CA
+Florenceville,46.4435,-67.6152,CA
+Larouche,48.45,-71.5167,CA
+Fort St. James,54.4431,-124.2542,CA
+Saint-François-de-la-Rivière-du-Sud,46.8833,-70.7167,CA
+Wabasca,55.9855,-113.8566,CA
+Hilliers,49.3022,-124.4727,CA
+Perth,46.7393,-67.6984,CA
+Eeyou Istchee Baie-James,52.3382,-75.1977,CA
+Shellbrook No. 493,53.3545,-106.2553,CA
+Shawville,45.6,-76.4833,CA
+Lambton,45.83,-71.08,CA
+Saint-Flavien,46.5167,-71.6,CA
+Boissevain,49.22987519,-100.0593912,CA
+Sainte-Marcelline-de-Kildare,46.1167,-73.6,CA
+Rivière-Blanche,48.7833,-67.7,CA
+Bay Bulls,47.3158,-52.8103,CA
+Saint-Félix-de-Kingsey,45.8,-72.1833,CA
+Upper Island Cove,47.6472,-53.2233,CA
+Sainte-Élisabeth,46.0833,-73.35,CA
+Ashcroft,50.7256,-121.2806,CA
+Clarkes Beach,47.5447,-53.2824,CA
+Falmouth,44.9967,-64.1634,CA
+Uashat,50.233,-66.3947,CA
+Saint-Bernard-de-Lacolle,45.0833,-73.4167,CA
+Saint-Joseph,47.558,-68.3082,CA
+Belledune,47.9,-65.8167,CA
+Saint-Guillaume,45.8833,-72.7667,CA
+Venise-en-Québec,45.0833,-73.1333,CA
+Gambo,48.7833,-54.2167,CA
+Nauwigewauk,45.4812,-65.8738,CA
+Humbermouth,49.0156,-58.1678,CA
+Springbrook,52.1796,-113.885,CA
+Saint-Paulin,46.4167,-73.0333,CA
+Glenelg,46.9455,-65.2893,CA
+Saint David,45.2918,-67.1983,CA
+Saint-Albert,46,-72.0833,CA
+Matagami,49.75,-77.6333,CA
+Grindrod,50.63,-119.1314,CA
+Springfield,45.7005,-65.8079,CA
+Amherst,46.05,-74.7667,CA
+Carlyle,49.6333,-102.2667,CA
+Notre-Dame-du-Laus,46.0833,-75.6167,CA
+Langham,52.3667,-106.9667,CA
+St. George,45.1333,-66.8167,CA
+Wembley,55.1572,-119.1392,CA
+"Macdonald, Meredith and Aberdeen Additional",46.4833,-84.0667,CA
+Pinawa,50.1707,-95.9547,CA
+Windermere,50.4856,-115.9948,CA
+Saint-Tite-des-Caps,47.1333,-70.7667,CA
+Hudson Bay,52.851,-102.392,CA
+"Brudenell, Lyndoch and Raglan",45.3167,-77.4,CA
+Gold River,49.7769,-126.0514,CA
+Saint-Casimir,46.65,-72.1333,CA
+Dunsmuir,49.3696,-124.5772,CA
+Frenchman Butte,53.6052,-109.4298,CA
+Gordon,46.8363,-67.1913,CA
+Saint-Malachie,46.5333,-70.7667,CA
+Southampton,46.0789,-67.3124,CA
+Salluit,62.2013,-75.6337,CA
+Pangnirtung,66.1436,-65.6829,CA
+Saint-Louis-de-Gonzague,45.2,-73.98,CA
+Moosonee,51.2722,-80.6431,CA
+Englehart,47.8167,-79.8667,CA
+Saint-Urbain,47.55,-70.5333,CA
+Tring-Jonction,46.2667,-70.9833,CA
+Wilton No. 472,53.124,-109.7885,CA
+Denmark,47.1155,-67.4771,CA
+Saint-Joachim,47.05,-70.85,CA
+Torch River No. 488,53.5445,-104.4619,CA
+Saint-Théodore-d'Acton,45.6833,-72.5833,CA
+L’ Îsle-Verte,48.0167,-69.3333,CA
+Palmarolle,48.6667,-79.2,CA
+Bon Accord,53.8328,-113.4189,CA
+Sussex Corner,45.7122,-65.4719,CA
+Saint-Odilon-de-Cranbourne,46.3667,-70.6833,CA
+Pipestone,49.6653,-101.1444,CA
+La Doré,48.72,-72.65,CA
+Lac-au-Saumon,48.4167,-67.35,CA
+Wotton,45.7333,-71.8,CA
+Prairie Lakes,49.4034,-99.6298,CA
+Elk Point,53.8967,-110.8972,CA
+St. François Xavier,49.9903,-97.6722,CA
+Shellbrook,53.2167,-106.4,CA
+Wemindji,53.044,-78.7384,CA
+Cape Dorset,64.2237,-76.5405,CA
+Strong,45.75,-79.4,CA
+Nobleford,49.8822,-113.0531,CA
+Lappe,48.5693,-89.3573,CA
+Pointe-aux-Outardes,49.05,-68.4333,CA
+Rivière-Héva,48.2333,-78.2167,CA
+Scott,46.5078724,-71.06656282,CA
+Godmanchester,45.08,-74.25,CA
+Macklin,52.33,-109.94,CA
+Armour,45.6289,-79.3436,CA
+Saint-Simon,45.719,-72.8463,CA
+Tingwick,45.8873,-71.9244,CA
+Saint-Aubert,47.1833,-70.2167,CA
+Saint-Mathieu-du-Parc,46.5667,-72.9167,CA
+Saint-Ubalde,46.75,-72.2667,CA
+Creighton,54.7561,-101.8973,CA
+Faraday,45,-77.9167,CA
+Berthier-sur-Mer,46.9167,-70.7333,CA
+Bayfield,43.5615,-81.6983,CA
+Frampton,46.4667,-70.8,CA
+Barrière,51.1803,-120.1261,CA
+Chute-aux-Outardes,49.1167,-68.4,CA
+Lions Bay,49.4581,-123.2369,CA
+New Carlisle,48.0167,-65.3333,CA
+Laird No. 404,52.5696,-106.7312,CA
+Saint-Majorique-de-Grantham,45.9333,-72.5833,CA
+Petitcodiac,45.9333,-65.1667,CA
+Canwood No. 494,53.4574,-106.7768,CA
+Wentworth-Nord,45.85,-74.45,CA
+Bas Caraquet,47.8,-64.8333,CA
+Two Hills,53.715,-111.7461,CA
+Sainte-Ursule,46.2833,-73.0333,CA
+Dawson,64.0464,-139.3893,CA
+Nantes,45.6333,-71.0333,CA
+Lac-aux-Sables,46.8667,-72.4,CA
+Stewiacke,45.1422,-63.3483,CA
+Vaudreuil-sur-le-Lac,45.4,-74.0333,CA
+Grahamdale,51.42,-98.3733,CA
+Upham,45.5083,-65.6618,CA
+St.-Charles,46.3422,-80.4497,CA
+Cardwell,45.7848,-65.3037,CA
+Amulet,48.2938,-79.0274,CA
+L’Avenir,45.7667,-72.3,CA
+Hillsborough,45.92057819,-64.65066537,CA
+Spiritwood No. 496,53.4435,-107.4495,CA
+Pointe-à-la-Croix,48.0167,-66.6833,CA
+Hérouxville,46.6667,-72.6167,CA
+Weldford,46.5221,-65.1114,CA
+Reynolds,49.7678,-95.8842,CA
+St. Laurent,50.43,-97.7933,CA
+L'Isle-aux-Allumettes,45.8667,-77.0667,CA
+Emo,48.6333,-93.8333,CA
+Sainte-Brigide-d'Iberville,45.3167,-73.0667,CA
+Les Éboulements,47.4833,-70.3167,CA
+Smooth Rock Falls,49.2833,-81.6333,CA
+Bruederheim,53.8042,-112.9278,CA
+Oxbow,49.2333,-102.1667,CA
+Telkwa,54.6972,-127.05,CA
+Landmark,49.6711,-96.8179,CA
+Norton,45.6387,-65.6955,CA
+Gjoa Haven,68.6448,-95.8912,CA
+Sainte-Barbe,45.1667,-74.2,CA
+Mayerthorpe,53.9503,-115.1336,CA
+Ootischenia,49.2916,-117.6323,CA
+Saint-Louis-du-Ha! Ha!,47.67,-68.98,CA
+Taylor,56.159,-120.6878,CA
+Powerview-Pine Falls,50.5661,-96.1981,CA
+Ragueneau,49.0667,-68.5333,CA
+Baie Verte,49.9167,-56.1833,CA
+Chisholm,46.1,-79.2333,CA
+Saint-Édouard,45.2333,-73.5167,CA
+Charlo,48,-66.32,CA
+Sorrento,50.8832,-119.4782,CA
+Burgeo,47.6,-57.6333,CA
+Wadena,51.9458,-103.8014,CA
+St-Pierre-Jolys,49.4403,-96.9844,CA
+Richmond,46.0776,-67.7248,CA
+Youbou,48.8562,-124.1731,CA
+Swan Hills,54.7106,-115.4133,CA
+Wilkie,52.4167,-108.7,CA
+Saint-Léonard,47.1625,-67.925,CA
+Rivière-Bleue,47.4333,-69.05,CA
+Noyan,45.0667,-73.3,CA
+Notre-Dame-du-Portage,47.7667,-69.6167,CA
+Ile-à-la-Crosse,55.45,-107.8833,CA
+Saint-Hugues,45.8,-72.8667,CA
+Sainte-Anne-du-Sault,46.1733,-72.1415,CA
+La Conception,46.15,-74.7,CA
+Vauxhall,50.0689,-112.0975,CA
+Lamèque,47.7925,-64.6532,CA
+Arborg,50.9075,-97.2182,CA
+Estevan No. 5,49.1308,-103.0126,CA
+Thessalon,46.25,-83.55,CA
+L'Isle-aux-Coudres,47.4,-70.3833,CA
+Lanigan,51.85,-105.0333,CA
+Elton,49.975,-99.8658,CA
+Bowden,51.9306,-114.0256,CA
+South Qu'Appelle No. 157,50.5389,-104.0141,CA
+Conestogo,43.5441,-80.4997,CA
+Rosser,49.99,-97.4592,CA
+Sainte-Lucie-des-Laurentides,46.13,-74.18,CA
+Saint-Alexis,45.9333,-73.6167,CA
+Roxton Falls,45.5667,-72.5167,CA
+Montcalm,49.1775,-97.3247,CA
+Irishtown-Summerside,48.9833,-57.95,CA
+Clarendon,45.65,-76.5167,CA
+Mervin No. 499,53.5455,-108.8762,CA
+Saint-Ludger,45.75,-70.7,CA
+Coldwell,50.6389,-98.0417,CA
+Musquash,45.1836,-66.3514,CA
+Racine,45.5,-72.25,CA
+Osler,52.37,-106.54,CA
+Saint-Zénon,46.55,-73.8167,CA
+Saint-Armand,45.0333,-73.05,CA
+Saint-Édouard-de-Lotbinière,46.5667,-71.8333,CA
+Alonsa,50.9794,-99.0796,CA
+Saint-Arsène,47.9167,-69.4333,CA
+Listuguj,48.0609,-66.7491,CA
+St. Joseph,46.2667,-84,CA
+Queensbury,45.9918,-67.0632,CA
+Saint-Hubert-de-Rivière-du-Loup,47.8167,-69.15,CA
+Saint-Jude,45.7667,-72.9833,CA
+La Minerve,46.25,-74.9333,CA
+Trécesson,48.65,-78.3167,CA
+Legal,53.9492,-113.595,CA
+Moonbeam,49.35,-82.15,CA
+Notre-Dame-des-Pins,46.1833,-70.7167,CA
+Saint-Alban,46.7167,-72.0833,CA
+Saint-Pierre-les-Becquets,46.5,-72.2,CA
+Beaver River,54.3531,-109.5575,CA
+Labrecque,48.6667,-71.5333,CA
+Claremont,43.9741,-79.1316,CA
+New Bandon,47.6912,-65.29,CA
+Sainte-Hénédine,46.55,-70.9833,CA
+L'Anse-Saint-Jean,48.2333,-70.2,CA
+Moose Jaw No. 161,50.4433,-105.5091,CA
+Bassano,50.7833,-112.4667,CA
+Parrsboro,45.3998,-64.3312,CA
+St. George's,48.4275,-58.4778,CA
+Fort Simpson,61.8082,-121.3199,CA
+Akwesasne,45.0155,-74.5769,CA
+Ignace,49.4167,-91.6667,CA
+Teulon,50.3858,-97.2611,CA
+Peel,46.4058,-67.5278,CA
+Miltonvale Park,46.318,-63.237,CA
+St. Lawrence,46.9244,-55.3928,CA
+Oxford,45.7306,-63.8733,CA
+Minto-Odanah,50.2406,-99.8056,CA
+Saint-Valère,46.0667,-72.1,CA
+St. Alban's,47.8753,-55.8414,CA
+Kaleden,49.3926,-119.5955,CA
+Saint James,45.3822,-67.3427,CA
+Saint-Norbert-d'Arthabaska,46.1,-71.8167,CA
+Manning,56.9142,-117.6272,CA
+Glenella-Lansdowne,50.4163,-99.2097,CA
+Saint-Hilarion,47.5667,-70.4,CA
+Saint-Modeste,47.8333,-69.4,CA
+Saint-Siméon,48.0667,-65.5667,CA
+Saint-Barnabé,46.4,-72.8833,CA
+Irricana,51.3189,-113.6106,CA
+Saint Martins,45.4563,-65.4395,CA
+Two Borders,49.2668,-101.1124,CA
+Bury,45.4667,-71.5,CA
+Lac-Bouchette,48.25,-72.18,CA
+Saint-Lazare-de-Bellechasse,46.65,-70.8,CA
+Saint-Michel-du-Squatec,47.88,-68.72,CA
+Saint-Joachim-de-Shefford,45.45,-72.5333,CA
+Grand-Remous,46.6167,-75.9,CA
+Saint-Gabriel-de-Rimouski,48.4209,-68.1791,CA
+Armstrong,47.7083,-79.825,CA
+Rogersville,46.7167,-65.4167,CA
+Langenburg,50.8333,-101.7,CA
+Sainte-Marie-Salomé,45.9333,-73.5,CA
+Saint-Cyprien,47.9,-69.0167,CA
+Centreville,45.13,-64.5224,CA
+Maidstone,53.092,-109.294,CA
+Très-Saint-Sacrement,45.1833,-73.85,CA
+Hillsburgh,43.7914,-80.1354,CA
+McAdam,45.5944,-67.3258,CA
+Newcastle,47.1725,-65.5551,CA
+Saints-Anges,46.4167,-70.8833,CA
+Saint-Urbain-Premier,45.22,-73.73,CA
+Centreville-Wareham-Trinity,48.9879,-53.9069,CA
+Alberton,46.8167,-64.0667,CA
+Winnipeg Beach,50.5058,-96.9742,CA
+Sainte-Agathe-de-Lotbinière,46.3833,-71.4167,CA
+Salmo,49.1942,-117.2778,CA
+Kipling,50.1015,-102.6324,CA
+Sagamok,46.1529,-82.2072,CA
+Grande-Vallée,49.2167,-65.1333,CA
+Bertrand,47.7622,-65.0686,CA
+Mont-Carmel,47.4397,-69.8586,CA
+Victoria,49.6644,-98.9153,CA
+Saint-Eugène,45.8,-72.7,CA
+Notre-Dame-des-Neiges,48.1167,-69.1667,CA
+Saint-André,47.1392,-67.7444,CA
+Roland,49.3547,-97.8997,CA
+Saint-Léon-de-Standon,46.4833,-70.6167,CA
+Hensall,43.4345,-81.504,CA
+Carnduff,49.167,-101.783,CA
+Greenwich,45.5112,-66.1229,CA
+Carling,45.4333,-80.2167,CA
+Eckville,52.3622,-114.3614,CA
+Nain,56.5422,-61.6928,CA
+Foam Lake,51.65,-103.5333,CA
+Sayabec,48.5667,-67.6833,CA
+Laird,46.3833,-84.0667,CA
+Sainte-Sabine,45.2333,-73.0167,CA
+Tara,44.4793,-81.1445,CA
+Saint-Maxime-du-Mont-Louis,49.2333,-65.7333,CA
+Blanc-Sablon,51.4167,-57.1333,CA
+Cobalt,47.4,-79.6833,CA
+South River,45.8417,-79.375,CA
+Hudson Bay No. 394,53.0295,-102.3122,CA
+Waldheim,52.65,-106.6167,CA
+McKellar,45.4833,-79.85,CA
+Buffalo Narrows,55.8769,-108.5244,CA
+Ayer’s Cliff,45.1667,-72.05,CA
+Les Méchins,49,-66.9833,CA
+Sainte-Marguerite,46.5167,-70.9333,CA
+Saint-Claude,45.6667,-71.9833,CA
+Air Ronge,55.0872,-105.3318,CA
+Chipman,46.171,-65.884,CA
+Weyburn No. 67,49.6535,-103.8348,CA
+Alberta Beach,53.6767,-114.35,CA
+Sainte-Jeanne-d'Arc,48.8575,-72.0939,CA
+Sainte-Félicité,48.9,-67.3333,CA
+Girardville,49,-72.55,CA
+Saint-Bruno-de-Guigues,47.4667,-79.4333,CA
+Grenfell,50.4167,-102.9167,CA
+South Algonquin,45.4967,-78.0239,CA
+Upton,45.65,-72.6833,CA
+Saint-Narcisse-de-Beaurivage,46.4833,-71.2333,CA
+Plaisance,45.6167,-75.1167,CA
+Roxton-Sud,45.5521,-72.5265,CA
+St. Louis No. 431,52.8277,-105.7873,CA
+Noonan,45.9544,-66.4868,CA
+Duchess,50.7333,-111.9,CA
+Saint-Frédéric,46.3,-70.9667,CA
+Saint-Narcisse-de-Rimouski,48.28,-68.43,CA
+Atholville,47.98185111,-66.71468904,CA
+Viking,53.0953,-111.7769,CA
+Sioux Narrows-Nestor Falls,49.4,-94.08,CA
+Repulse Bay,66.5628,-86.3186,CA
+Saint-Patrice-de-Beaurivage,46.4167,-71.2333,CA
+Bentley,52.4667,-114.05,CA
+Durham,47.7631,-66.0849,CA
+Sainte-Marthe,45.4,-74.3,CA
+Notre-Dame-du-Nord,47.6,-79.4833,CA
+Beachburg,45.7303,-76.8559,CA
+Pinehouse,55.5136,-106.5986,CA
+Saint-Aimé-des-Lacs,47.6833,-70.3,CA
+Wedgeport,43.7323,-65.9797,CA
+Lac-Drolet,45.72,-70.85,CA
+Preeceville,51.958,-102.6673,CA
+Maple Creek No. 111,49.8044,-109.6508,CA
+Harbour Main-Chapel's Cove-Lakeview,47.4337,-53.1458,CA
+Coleraine,45.9649,-71.3734,CA
+Birch Hills,52.9833,-105.4333,CA
+Saint-Bonaventure,45.9667,-72.6833,CA
+Saint-Wenceslas,46.1667,-72.3333,CA
+Kerrobert,51.92,-109.1272,CA
+Havelock,45.9523,-65.3885,CA
+Eston,51.15,-108.75,CA
+Sainte-Geneviève-de-Batiscan,46.5333,-72.3333,CA
+Saint-Justin,46.25,-73.0833,CA
+Saint-Norbert,46.1667,-73.3167,CA
+Schreiber,48.8167,-87.2667,CA
+Trochu,51.8236,-113.2328,CA
+Botsford,46.1145,-63.9804,CA
+Riviere-Ouelle,47.4333,-70.0167,CA
+Stukely-Sud,45.3167,-72.4167,CA
+Saint-Georges-de-Clarenceville,45.0667,-73.25,CA
+Plantagenet,45.5321,-74.9956,CA
+Sainte-Thérèse-de-Gaspé,48.4167,-64.4167,CA
+Sainte-Pétronille,46.85,-71.1333,CA
+Desbiens,48.4167,-71.95,CA
+Clyde River,70.4632,-68.4822,CA
+La Macaza,46.3667,-74.7667,CA
+Souris,46.3554,-62.2542,CA
+Kindersley No. 290,51.4894,-109.0979,CA
+Falher,55.7372,-117.2014,CA
+Saint-Vallier,46.8833,-70.8167,CA
+Melita,49.2681,-100.9958,CA
+Davidson,51.2667,-105.9667,CA
+Bristol,45.5333,-76.4667,CA
+Mahone Bay,44.4489,-64.3819,CA
+Saint-Sylvestre,46.3667,-71.2333,CA
+Taloyoak,69.5554,-93.4972,CA
+Onoway,53.7011,-114.1981,CA
+Saint-Stanislas,46.6167,-72.4,CA
+Battle River No. 438,52.7343,-108.4452,CA
+Malpeque,46.5,-63.6667,CA
+Longue-Rive,48.55,-69.25,CA
+Argyle,49.3697,-99.1506,CA
+Delisle,51.9254,-107.1333,CA
+Plaster Rock,46.8833,-67.3833,CA
+Wilmot,46.3463,-67.7099,CA
+Valemount,52.8284,-119.2659,CA
+Saint-Léonard-de-Portneuf,46.8833,-71.9167,CA
+Longlaketon No. 219,50.9386,-104.6913,CA
+Papineau-Cameron,46.3,-78.7333,CA
+Assiginack,45.7333,-81.8,CA
+Brébeuf,46.0667,-74.6667,CA
+Hudson Hope,56.0316,-121.9057,CA
+Baie-du-Febvre,46.13,-72.72,CA
+Durham-Sud,45.6667,-72.3333,CA
+Melbourne,45.58,-72.17,CA
+Nipawin No. 487,53.2881,-104.0544,CA
+Duck Lake No. 463,52.9596,-106.2089,CA
+Oyen,51.3522,-110.4739,CA
+Gravelbourg,49.874,-106.555,CA
+Lajord No. 128,50.1965,-104.2507,CA
+Hébertville,48.39080959,-71.68197283,CA
+Lorrainville,47.3542299,-79.35209147,CA
+Prince,46.5333,-84.5,CA
+Athens,44.625,-75.95,CA
+Saint-René-de-Matane,48.7,-67.3833,CA
+Eastman,45.29689817,-72.30552225,CA
+Kugluktuk,67.82384812,-115.099089,CA
+Kedgwick,47.6456,-67.3431,CA
+Wemotaci,47.90248188,-73.78170902,CA
+Cookshire,45.41216116,-71.61611367,CA
+Dorchester,45.9016,-64.5161,CA
+Fortune,47.07221121,-55.82431659,CA
+Hamiota,50.1964,-100.6342,CA
+Gillam,56.34891796,-94.71112885,CA
+Grand View,51.155,-100.7892,CA
+Dildo,47.5685,-53.5471,CA
+Laurierville,46.3,-71.65,CA
+Ripon,45.7833,-75.1,CA
+Henryville,45.1333,-73.1833,CA
+Gracefield,46.09263218,-76.05138832,CA
+Chatsworth,44.38,-80.87,CA
+McCreary,50.7494,-99.485,CA
+Yamaska-Est,46,-72.92,CA
+Rossburn,50.7272,-100.7408,CA
+Rothesay,45.39956964,-65.8776222,CA
+Ethelbert,51.5364,-100.4981,CA
+Frelighsburg,45.05477721,-72.84167324,CA
+Magnetawan,45.6667,-79.6333,CA

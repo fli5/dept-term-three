@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  condition_code: MyString
+  condition_name: MyString
+  condition_desc: MyText
+  condition_icon: MyString
+
+two:
+  condition_code: MyString
+  condition_name: MyString
+  condition_desc: MyText
+  condition_icon: MyString

@@ -1,0 +1,31 @@
+﻿Code,Description,NAME
+Af,Tropical rainforest climate,Tropical
+Am,Tropical monsoon climate,Tropical
+As,Tropical dry savanna climate,Tropical
+Aw,"Tropical savanna, wet",Tropical
+BSh,Hot semi-arid (steppe) climate,Arid
+BSk,Cold semi-arid (steppe) climate,Arid
+BWh,Hot deserts climate,Arid
+BWk,Cold desert climate,Arid
+Cfa,Humid subtropical climate,Temperate
+Cfb,Temperate oceanic climate,Temperate
+Cfc,Subpolar oceanic climate,Temperate
+Csa,Hot-summer Mediterranean climate,Temperate
+Csb,Warm-summer Mediterranean climate,Temperate
+Csc,Cool-summer Mediterranean climate,Temperate
+Cwa,Monsoon-influenced humid subtropical climate,Temperate
+Cwb,Subtropical highland climate or temperate oceanic climate with dry winters,Temperate
+Cwc,Cold subtropical highland climate or subpolar oceanic climate with dry winters,Temperate
+Dfa,Hot-summer humid continental climate,Cold (continental)
+Dfb,Warm-summer humid continental climate,Cold (continental)
+Dfc,Subarctic climate,Cold (continental)
+Dfd,Extremely cold subarctic climate,Cold (continental)
+Dsa,"Hot, dry-summer continental climate",Cold (continental)
+Dsb,"Warm, dry-summer continental climate",Cold (continental)
+Dsc,Dry-summer subarctic climate,Cold (continental)
+Dwa,Monsoon-influenced hot-summer humid continental climate,Cold (continental)
+Dwb,Monsoon-influenced warm-summer humid continental climate,Cold (continental)
+Dwc,Monsoon-influenced subarctic climate,Cold (continental)
+Dwd,Monsoon-influenced extremely cold subarctic climate,Cold (continental)
+EF,Ice cap climate,Polar
+ET,Tundra,Polar

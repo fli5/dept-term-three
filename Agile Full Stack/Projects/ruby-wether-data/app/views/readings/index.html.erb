@@ -1,0 +1,80 @@
+<!-- app/views/weather_readings/index.html.erb -->
+<div class="row mb-4">
+  <div class="col-12">
+    <h1>Weather Readings</h1>
+    <p class="lead">Browse all weather readings from cities around the world.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <% if @weather_readings.any? %>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover">
+          <thead class="table-dark">
+          <tr>
+            <th>City</th>
+            <th>Condition</th>
+            <th>Temperature (Day)</th>
+            <th>Min / Max</th>
+            <th>Humidity</th>
+            <th>Wind Speed</th>
+            <th>Recorded At</th>
+            <th>Actions</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% @weather_readings.each do |reading| %>
+            <tr>
+              <td>
+                <%= link_to reading.city.city_name, city_path(reading.city), class: "fw-bold" %>
+                <br>
+                <small class="text-muted"><%= reading.city.country_name %></small>
+              </td>
+              <td>
+                <%= link_to reading.weather_condition.condition_name,
+                            condition_path(reading.weather_condition),
+                            class: "badge bg-info text-decoration-none" %>
+              </td>
+              <td><strong><%= reading.temp_day %>°C</strong></td>
+              <td>
+                <% if reading.temp_min.present? && reading.temp_max.present? %>
+                  <small><%= reading.temp_min %>°C / <%= reading.temp_max %>°C</small>
+                <% else %>
+                  <span class="text-muted">N/A</span>
+                <% end %>
+              </td>
+              <td>
+                <% if reading.humidity.present? %>
+                  <%= reading.humidity %>%
+                <% else %>
+                  <span class="text-muted">N/A</span>
+                <% end %>
+              </td>
+              <td>
+                <% if reading.wind_speed.present? %>
+                  <%= reading.wind_speed %> km/h
+                <% else %>
+                  <span class="text-muted">N/A</span>
+                <% end %>
+              </td>
+              <td><%= reading.recorded_at.strftime("%Y-%m-%d %H:%M") %></td>
+              <td>
+                <%= link_to "View", reading_path(reading), class: "btn btn-sm btn-primary" %>
+              </td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="d-flex justify-content-center mt-4">
+        <%= paginate @weather_readings %>
+      </div>
+    <% else %>
+      <div class="alert alert-info">
+        <p>No weather readings found.</p>
+      </div>
+    <% end %>
+  </div>
+</div>

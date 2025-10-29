@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <%#= link_to "Climate Weather Tracker", root_path, class: "navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <%= link_to "Home", root_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Cities", cities_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Climate Zones", zones_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Weather Conditions", conditions_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Weather Readings", readings_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "About", pages_about_path, class: "nav-link" %>
+        </li>
+      </ul>
+      <%= form_with url: search_path, method: :get, class: "d-flex" do |f| %>
+        <%= f.select :category, options_for_select(%w[city climate weather], params[:category]), { include_blank: "All" }, class: "form-select me-2" %>
+        <%= f.text_field :q, placeholder: "Search...", class: "form-control me-2", value: params[:q] %>
+        <%= f.submit "Search", class: "btn btn-light" %>
+      <% end %>
+    </div>
+  </div>
+</nav>

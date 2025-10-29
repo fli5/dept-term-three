@@ -1,0 +1,167 @@
+<!-- app/views/weather_readings/show.html.erb -->
+<div class="row mb-3">
+  <div class="col-12">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <!--        <li class="breadcrumb-item"><%#= link_to "Home", root_path %></li>-->
+        <li class="breadcrumb-item"><%= link_to "Weather Readings", readings_path %></li>
+        <li class="breadcrumb-item active">Reading #<%= @weather_reading.id %></li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8">
+    <h1>Weather Reading Details</h1>
+    <p class="lead">
+      <%= link_to @weather_reading.city.city_name, city_path(@weather_reading.city) %>,
+      <%= @weather_reading.city.country_name %>
+    </p>
+
+    <div class="card mb-4">
+      <div class="card-header bg-primary text-white">
+        <h3 class="mb-0">Reading Information</h3>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <h5>Weather Condition</h5>
+            <p>
+              <%= link_to @weather_reading.weather_condition.condition_name,
+                          condition_path(@weather_reading.weather_condition),
+                          class: "btn btn-info" %>
+            </p>
+            <% if @weather_reading.weather_condition.condition_desc.present? %>
+              <p class="text-muted"><small><%= @weather_reading.weather_condition.condition_desc %></small></p>
+            <% end %>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <p class="h4"><%= @weather_reading.recorded_at.strftime("%B %d, %Y at %I:%M %p") %></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-4 mb-3 text-center">
+            <h6 class="text-muted">Day Temperature</h6>
+            <p class="display-4 mb-0"><%= @weather_reading.temp_day %>°C</p>
+          </div>
+
+          <div class="col-md-4 mb-3 text-center">
+            <h6 class="text-muted">Minimum</h6>
+            <% if @weather_reading.temp_min.present? %>
+              <p class="display-4 mb-0 text-primary"><%= @weather_reading.temp_min %>°C</p>
+            <% else %>
+              <p class="text-muted">N/A</p>
+            <% end %>
+          </div>
+
+          <div class="col-md-4 mb-3 text-center">
+            <h6 class="text-muted">Maximum</h6>
+            <% if @weather_reading.temp_max.present? %>
+              <p class="display-4 mb-0 text-danger"><%= @weather_reading.temp_max %>°C</p>
+            <% else %>
+              <p class="text-muted">N/A</p>
+            <% end %>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <h6>Humidity</h6>
+            <% if @weather_reading.humidity.present? %>
+              <div class="progress" style="height: 30px;">
+                <div class="progress-bar bg-info" role="progressbar"
+                     style="width: <%= @weather_reading.humidity %>%;"
+                     aria-valuenow="<%= @weather_reading.humidity %>"
+                     aria-valuemin="0" aria-valuemax="100">
+                  <%= @weather_reading.humidity %>%
+                </div>
+              </div>
+            <% else %>
+              <p class="text-muted">Not available</p>
+            <% end %>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <h6>Wind Speed</h6>
+            <% if @weather_reading.wind_speed.present? %>
+              <p class="h3"><%= @weather_reading.wind_speed %> km/h</p>
+            <% else %>
+              <p class="text-muted">Not available</p>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related City Information -->
+    <div class="card mb-4">
+      <div class="card-header bg-success text-white">
+        <h3 class="mb-0">City Information</h3>
+      </div>
+      <div class="card-body">
+        <h4><%= link_to @weather_reading.city.city_name, city_path(@weather_reading.city) %></h4>
+        <p><strong>Country:</strong> <%= @weather_reading.city.country_name %></p>
+
+        <% if @weather_reading.city.coord_lat.present? && @weather_reading.city.coord_lon.present? %>
+          <p>
+            <strong>Coordinates:</strong>
+            <%= @weather_reading.city.coord_lat %>, <%= @weather_reading.city.coord_lon %>
+          </p>
+        <% end %>
+
+        <% if @weather_reading.city.climate_zones.any? %>
+          <p>
+            <strong>Climate Zones:</strong>
+            <%= @weather_reading.city.climate_zones.map { |zone|
+              link_to zone.zone_name, zone_path(zone), class: "badge bg-primary text-decoration-none"
+            }.join(" ").html_safe %>
+          </p>
+        <% end %>
+
+        <%= link_to "View City Details", city_path(@weather_reading.city), class: "btn btn-success" %>
+        <%= link_to "More Readings from this City", readings_city_path(@weather_reading.city),
+                    class: "btn btn-info" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card mb-3 sticky-top" style="top: 20px;">
+      <div class="card-header bg-warning">
+        <h4 class="mb-0">Location Map</h4>
+      </div>
+      <div class="card-body p-0">
+        <% if @weather_reading.city.coord_lat.present? && @weather_reading.city.coord_lon.present? %>
+          <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @weather_reading.city.coord_lat %>,<%= @weather_reading.city.coord_lon %>&zoom=8&size=400x300&markers=color:red%7C<%= @weather_reading.city.coord_lat %>,<%= @weather_reading.city.coord_lon %>&key=YOUR_GOOGLE_MAPS_API_KEY"
+               alt="Map of <%= @weather_reading.city.city_name %>"
+               class="img-fluid">
+        <% else %>
+          <div class="p-3 text-center text-muted">
+            <p>Map not available</p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header bg-info text-white">
+        <h5 class="mb-0">Quick Links</h5>
+      </div>
+      <div class="card-body">
+        <div class="d-grid gap-2">
+          <%= link_to "All Weather Readings", readings_path, class: "btn btn-outline-primary" %>
+          <%= link_to "View City", city_path(@weather_reading.city), class: "btn btn-outline-success" %>
+          <%= link_to "View Condition", condition_path(@weather_reading.weather_condition),
+                      class: "btn btn-outline-info" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,124 @@
+<!-- app/views/weather_conditions/show.html.erb -->
+<div class="row mb-3">
+  <div class="col-12">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <!--        <li class="breadcrumb-item"><%#= link_to "Home", root_path %></li>-->
+        <li class="breadcrumb-item"><%= link_to "Weather Conditions", conditions_path %></li>
+        <li class="breadcrumb-item active"><%= @weather_condition.condition_name %></li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-8">
+    <div class="d-flex align-items-center mb-4">
+      <% if @weather_condition.condition_icon.present? %>
+        <span style="font-size: 4rem; margin-right: 1rem;"><%= @weather_condition.condition_icon %></span>
+      <% end %>
+      <div>
+        <h1 class="mb-0"><%= @weather_condition.condition_name %></h1>
+        <p class="lead mb-0">Code: <span class="badge bg-info"><%= @weather_condition.condition_code %></span></p>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-header bg-info text-white">
+        <h3 class="mb-0">Condition Description</h3>
+      </div>
+      <div class="card-body">
+        <% if @weather_condition.condition_desc.present? %>
+          <p><%= @weather_condition.condition_desc %></p>
+        <% else %>
+          <p class="text-muted">No detailed description available for this weather condition.</p>
+        <% end %>
+      </div>
+    </div>
+
+    <!-- Weather Readings for this Condition -->
+    <div class="card mb-4">
+      <div class="card-header bg-primary text-white">
+        <h3 class="mb-0">Recent Weather Readings</h3>
+      </div>
+      <div class="card-body">
+        <% if @readings.any? %>
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+              <tr>
+                <th>City</th>
+                <th>Temperature</th>
+                <th>Humidity</th>
+                <th>Wind Speed</th>
+                <th>Recorded At</th>
+                <th>Actions</th>
+              </tr>
+              </thead>
+              <tbody>
+              <% @readings.each do |reading| %>
+                <tr>
+                  <td><%= link_to reading.city.city_name, city_path(reading.city) %></td>
+                  <td><%= reading.temp_day %>°C</td>
+                  <td>
+                    <% if reading.humidity.present? %>
+                      <%= reading.humidity %>%
+                    <% else %>
+                      <span class="text-muted">N/A</span>
+                    <% end %>
+                  </td>
+                  <td>
+                    <% if reading.wind_speed.present? %>
+                      <%= reading.wind_speed %> km/h
+                    <% else %>
+                      <span class="text-muted">N/A</span>
+                    <% end %>
+                  </td>
+                  <td><%= reading.recorded_at.strftime("%Y-%m-%d %H:%M") %></td>
+                  <td>
+                    <%= link_to "Details", reading_path(reading), class: "btn btn-sm btn-primary" %>
+                  </td>
+                </tr>
+              <% end %>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="d-flex justify-content-center mt-3">
+            <%= paginate @readings %>
+          </div>
+        <% else %>
+          <p class="text-muted">No weather readings found for this condition.</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card sticky-top" style="top: 20px;">
+      <div class="card-header bg-warning">
+        <h4 class="mb-0">Statistics</h4>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <h5 class="mb-1">Total Readings</h5>
+          <p class="display-4 mb-0"><%= @weather_condition.weather_readings.count %></p>
+        </div>
+
+        <hr>
+
+        <div class="mb-3">
+          <h5 class="mb-1">Condition Code</h5>
+          <p class="h3 mb-0"><%= @weather_condition.condition_code %></p>
+        </div>
+
+        <hr>
+
+        <div>
+          <%= link_to "View All Readings", readings_condition_path(@weather_condition),
+                      class: "btn btn-primary w-100" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+<!-- app/views/cities/index.html.erb -->
+<!-- 3.1 Collection Navigation -->
+<div class="row mb-4">
+  <div class="col-12">
+    <h1>Cities</h1>
+    <p class="lead">Browse cities from around the world and their climate information.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <!-- 3.5 Pagination using Kaminari -->
+    <% if @cities.any? %>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover">
+          <thead class="table-dark">
+          <tr>
+            <th>City Name</th>
+            <th>Country Name</th>
+            <th>Climate Zones</th>
+            <th>Coordinates</th>
+            <th>Actions</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% @cities.each do |city| %>
+            <tr>
+              <td><%= link_to city.city_name, city_path(city), class: "fw-bold" %></td>
+              <td><%= city.country_name %></td>
+              <td>
+                <% if city.climate_zones.any? %>
+                  <%= city.climate_zones.map { |zone|
+                    link_to zone.zone_name, zones_path(zone), class: "badge bg-primary text-decoration-none"
+                  }.join(" ").html_safe %>
+                <% else %>
+                  <span class="text-muted">No zones assigned</span>
+                <% end %>
+              </td>
+              <td>
+                <% if city.coord_lat.present? && city.coord_lon.present? %>
+                  <%= "#{city.coord_lat.round(4)}, #{city.coord_lon.round(4)}" %>
+                <% else %>
+                  <span class="text-muted">N/A</span>
+                <% end %>
+              </td>
+              <td>
+                <%= link_to "View Details", city_path(city), class: "btn btn-sm btn-primary" %>
+                <%= link_to "Weather Readings", readings_city_path(city), class: "btn btn-sm btn-info" %>
+              </td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Pagination Controls -->
+      <div class="d-flex justify-content-center mt-4">
+        <%= paginate @cities %>
+      </div>
+    <% else %>
+      <div class="alert alert-info">
+        <p>No cities found.</p>
+      </div>
+    <% end %>
+  </div>
+</div>
