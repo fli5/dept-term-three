@@ -139,9 +139,7 @@
       </div>
       <div class="card-body p-0">
         <% if @weather_reading.city.coord_lat.present? && @weather_reading.city.coord_lon.present? %>
-          <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @weather_reading.city.coord_lat %>,<%= @weather_reading.city.coord_lon %>&zoom=8&size=400x300&markers=color:red%7C<%= @weather_reading.city.coord_lat %>,<%= @weather_reading.city.coord_lon %>&key=YOUR_GOOGLE_MAPS_API_KEY"
-               alt="Map of <%= @weather_reading.city.city_name %>"
-               class="img-fluid">
+          <div id="reading-map" style="height: 300px; width: 100%; position: relative;"></div>
         <% else %>
           <div class="p-3 text-center text-muted">
             <p>Map not available</p>
@@ -165,3 +163,47 @@
     </div>
   </div>
 </div>
+
+<% if @weather_reading.city.coord_lat.present? && @weather_reading.city.coord_lon.present? %>
+  <%= javascript_tag do %>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Fix icon paths - use CDN for simplicity
+      delete L.Icon.Default.prototype._getIconUrl;
+      L.Icon.Default.mergeOptions({
+        iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+        iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+        shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png'
+      });
+
+      // Wait a bit to ensure the container is properly sized
+      setTimeout(function() {
+        // Initialize the map with zoom level 8 (wider view)
+        var map = L.map('reading-map').setView([<%= @weather_reading.city.coord_lat %>, <%= @weather_reading.city.coord_lon %>], 8);
+
+        // Add OpenStreetMap tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          maxZoom: 19
+        }).addTo(map);
+
+        // Create custom popup content with weather info
+        var popupContent = '<div style="text-align: center;">' +
+          '<b><%= j @weather_reading.city.city_name %></b><br>' +
+          '<%= j @weather_reading.city.country_name %><br>' +
+          '<hr style="margin: 5px 0;">' +
+          '<strong><%= @weather_reading.temp_day %>°C</strong><br>' +
+          '<small><%= j @weather_reading.weather_condition.condition_name %></small>' +
+          '</div>';
+
+        // Add a marker for the city
+        var marker = L.marker([<%= @weather_reading.city.coord_lat %>, <%= @weather_reading.city.coord_lon %>]).addTo(map);
+        
+        // Add popup with weather info
+        marker.bindPopup(popupContent).openPopup();
+
+        // Force map to recalculate size
+        map.invalidateSize();
+      }, 100);
+    });
+  <% end %>
+<% end %>
