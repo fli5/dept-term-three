@@ -19,7 +19,7 @@ if File.exist?(csv_path)
     end
   end
 
-  puts "✅ Climate zones imported successfully!"
+  puts "Climate zones imported successfully!"
 else
-  puts "⚠️ CSV file not found: #{csv_path}"
+  puts "CSV file not found: #{csv_path}"
 end

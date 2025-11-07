@@ -8,4 +8,5 @@ class City < ApplicationRecord
   validates :coord_lon, :coord_lat, presence: true, numericality: true
 
   scope :recent, -> { order(created_at: :desc) }
+
 end

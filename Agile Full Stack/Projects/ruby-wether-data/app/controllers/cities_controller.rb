@@ -13,4 +13,6 @@ class CitiesController < ApplicationController
     @weather_readings = @city.weather_readings.includes(:weather_condition).recent.page(params[:page])
     render "readings/index"
   end
+
+
 end

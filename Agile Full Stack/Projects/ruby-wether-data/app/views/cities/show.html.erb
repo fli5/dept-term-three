@@ -130,7 +130,7 @@
     </div>
   </div>
 
-  <!-- 3.6 Mapping - Google Maps -->
+  <!-- 3.6 Mapping - Leaflet.js Interactive Map -->
   <div class="col-lg-4">
     <div class="card sticky-top" style="top: 20px;">
       <div class="card-header bg-warning">
@@ -138,9 +138,7 @@
       </div>
       <div class="card-body p-0">
         <% if @city.coord_lat.present? && @city.coord_lon.present? %>
-          <img src="https://maps.googleapis.com/maps/api/staticmap?center=<%= @city.coord_lat %>,<%= @city.coord_lon %>&zoom=10&size=400x300&markers=color:red%7C<%= @city.coord_lat %>,<%= @city.coord_lon %>&key=YOUR_GOOGLE_MAPS_API_KEY"
-               alt="Map of <%= @city.city_name %>"
-               class="img-fluid">
+          <div id="city-map" style="height: 300px; width: 100%; position: relative;"></div>
           <div class="p-3">
             <p class="mb-1"><small><strong>Coordinates:</strong></small></p>
             <p class="mb-0"><small><%= @city.coord_lat %>, <%= @city.coord_lon %></small></p>
@@ -154,3 +152,30 @@
     </div>
   </div>
 </div>
+
+<% if @city.coord_lat.present? && @city.coord_lon.present? %>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Wait a bit to ensure the container is properly sized
+      setTimeout(function() {
+        // Initialize the map
+        var map = L.map('city-map').setView([<%= @city.coord_lat %>, <%= @city.coord_lon %>], 10);
+
+        // Add OpenStreetMap tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          maxZoom: 19
+        }).addTo(map);
+
+        // Add a marker for the city
+        var marker = L.marker([<%= @city.coord_lat %>, <%= @city.coord_lon %>]).addTo(map);
+        
+        // Add popup to the marker
+        marker.bindPopup('<b><%= j @city.city_name %></b><br><%= j @city.country_name %>').openPopup();
+
+        // Force map to recalculate size
+        map.invalidateSize();
+      }, 100);
+    });
+  </script>
+<% end %>
