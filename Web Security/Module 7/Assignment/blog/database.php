@@ -93,7 +93,7 @@ class Database {
         $stmt->execute([$username]);
         $result = $stmt->fetch();
 
-        return ($result && $result['count_num'] > 0);
+        return $result && $result['count_num'] > 0;
     }
 
     public static function checkLogin($username, $password): array {
@@ -125,7 +125,7 @@ class Database {
     public static function findPostById($post_id): bool|array {
         $pdo = self::getConnection();
         $post_id = filter_var($post_id, FILTER_VALIDATE_INT);
-        if (!$post_id) return false;
+        if (!$post_id) {return false;}
 
         $sql = "SELECT * FROM posts WHERE id = ?";
         $stmt = $pdo->prepare($sql);

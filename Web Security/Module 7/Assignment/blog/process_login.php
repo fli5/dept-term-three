@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p>Redirecting to homepage in 2 seconds...</p>
     <?php
     $_SESSION['username'] = $sanitized_username;
-    $_SESSION['id'] = $login_result['user_id'];
+    $_SESSION['userid'] = $login_result['user_id'];
     ?>
         <script id="redirect-script"
                 src="redirect.js"

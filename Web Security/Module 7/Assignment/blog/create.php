@@ -1,16 +1,16 @@
 <?php
 require 'security.php';
-  require 'config.php';
-  require 'database.php.backup';
-  $g_title = BLOG_NAME . ' - New Post';
-  $g_page = 'create';
-  require 'header.php';
-  require 'menu.php';
+require 'config.php';
+// require 'database.php';
+$g_title = BLOG_NAME . ' - New Post';
+$g_page = 'create';
+require 'header.php';
+require 'menu.php';
 
 if (!isset($_SESSION['username']) || !$_SESSION['username']) {
-    header("Location: login.php");
-    http_response_code(302);
-    exit;
+  header("Location: login.php");
+  http_response_code(302);
+  exit;
 }
 
 ?>
@@ -33,5 +33,5 @@ if (!isset($_SESSION['username']) || !$_SESSION['username']) {
   </form>
 </div>
 <?php
-  require 'footer.php';
+require 'footer.php';
 ?>
