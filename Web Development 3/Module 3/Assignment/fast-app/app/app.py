@@ -3,6 +3,22 @@ import threading
 from flask import Flask, request, jsonify, send_file, render_template_string
 from PIL import Image
 from io import BytesIO
+import sys
+
+# ------------------------------
+# Windows specific configuration to avoid Twisted signal handling issues
+if sys.platform == "win32":
+    # Select the asyncio event loop (SelectorEventLoop) policy on Windows
+    # Because the default ProactorEventLoop does not work well with Twisted
+    asyncio_policy = __import__("asyncio").WindowsSelectorEventLoopPolicy()
+    __import__("asyncio").set_event_loop_policy(asyncio_policy)
+
+# Install the asyncio reactor for compatibility with Flask
+# Because Flask uses asyncio under the hood
+from twisted.internet import asyncioreactor
+asyncioreactor.install()
+# -------------------------------
+
 import scrapy
 from twisted.internet import reactor, defer
 from scrapy.crawler import CrawlerRunner
@@ -10,22 +26,20 @@ from app.scraper import QuotesSpider
 
 app = Flask(__name__)
 
+# -------------------------------
 # Avoid starting multiple reactors
-runner = CrawlerRunner()
+runner = CrawlerRunner(settings={'LOG_ENABLED': True})
 reactor_started = False
 def start_reactor():
     global reactor_started
     if not reactor_started:
+        print("Starting Twisted reactor...")
         reactor_started = True
         reactor.run(installSignalHandlers=False)
 
 # Start the reactor in a separate thread in daemon mode
 threading.Thread(target=start_reactor, daemon=True).start()
-
-# # Create uploads directory if it doesn't exist
-# UPLOAD_FOLDER = "uploads"
-# os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-# app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
+# -------------------------------
 
 # Defined supported output image types
 OUTPUT_TYPES = ["JPEG", "PNG", "BMP", "GIF", "TIFF"]
@@ -35,25 +49,90 @@ OUTPUT_TYPES = ["JPEG", "PNG", "BMP", "GIF", "TIFF"]
 # -------------------------------
 @app.route("/")
 def index():
-    usage_instructions = f"""
-    <h2>Flask App Usage</h2>
+    usage_html = """
+    <h2>API Usage Documentation</h2>
+
+    <h3>1. Image Conversion API</h3>
+    <p><b>POST /convert</b></p>
+    <p>Convert an uploaded image into another format using Pillow.</p>
+
+    <h4>Parameters (form-data)</h4>
     <ul>
-        <li>POST /convert: Convert an image to another type. Available types: {', '.join(OUTPUT_TYPES)} <br>
-        For example, use cURL: <br>
-        curl -X POST -F "image=@example.jpg" -F "output_type=PNG" http://127.0.0.1:5000/convert --output converted.png
-        method: POST
-        parameters: 
-        1. image (file)
-        2. output_type (string)
-        </li>
-        <li>POST /search: Filter quotes with specified keyword.
-        method: POST
-        parameters:
-        1. query (string) - JSON body {"query": "keyword"}
+        <li><b>image</b> — (File, required) The uploaded image</li>
+        <li><b>output_type</b> — (String, required) Target format. Must be one of:
+            <code>JPEG, PNG, BMP, GIF, TIFF</code>
         </li>
     </ul>
+
+    <h4>Supported Output Types</h4>
+    <pre>["JPEG", "PNG", "BMP", "GIF", "TIFF"]</pre>
+
+    <h4>cURL Example</h4>
+    <pre>
+curl -X POST http://localhost:5000/convert \
+  -F "image=@test.png" \
+  -F "output_type=JPEG" \
+  -o converted.jpeg
+    </pre>
+
+    <h4>Successful Response</h4>
+    <p>Returns the converted image file (binary download).</p>
+
+    <h4>Error Examples</h4>
+    <pre>{
+  "error": "Missing image file or output_type"
+}</pre>
+    <pre>{
+  "error": "Unsupported output type. Available types: ['JPEG','PNG','BMP','GIF','TIFF']"
+}</pre>
+
+
+    <hr>
+
+    <h3>2. Quotes Search API (Scrapy)</h3>
+    <p><b>POST /search</b></p>
+    <p>Search quotes containing a keyword from <i>quotes.toscrape.com</i>.  
+    Uses Scrapy and waits for the spider to finish.</p>
+
+    <h4>Headers</h4>
+    <pre>Content-Type: application/json</pre>
+
+    <h4>Parameters (JSON Body)</h4>
+    <ul>
+        <li><b>query</b> — (String, required) Keyword used to filter quotes</li>
+    </ul>
+
+    <h4>cURL Example</h4>
+    <pre>
+curl -X POST http://localhost:5000/search \
+  -H "Content-Type: application/json" \
+  -d '{"query": "life"}'
+    </pre>
+
+    <h4>Successful Response Example</h4>
+    <pre>{
+  "query": "life",
+  "matches": [
+    {"text": "...", "author": "..."},
+    {"text": "...", "author": "..."}
+  ]
+}
+    </pre>
+
+    <h4>Error Examples</h4>
+    <pre>{
+  "error": "Content-Type must be application/json"
+}</pre>
+
+    <pre>{
+  "error": "Missing query parameter"
+}</pre>
+
+    <p><i>Note: The API will wait until Scrapy finishes crawling.</i></p>
+
     """
-    return render_template_string(usage_instructions)
+
+    return render_template_string(usage_html)
 
 # -------------------------------
 # Image conversion route
