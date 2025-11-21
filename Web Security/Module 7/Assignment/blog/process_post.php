@@ -1,7 +1,7 @@
 <?php
 require 'security.php';
 require 'config.php';
-require 'database.php.backup';
+require 'database.php';
 
 function validated_post($title, $content) {
     return ((strlen($title) >= 1) && (strlen($content) >= 1));

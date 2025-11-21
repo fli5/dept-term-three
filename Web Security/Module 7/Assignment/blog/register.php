@@ -1,7 +1,7 @@
 <?php
 require 'security.php';
 require 'config.php';
-require 'database.php.backup';
+require 'database.php';
 require 'csrftool.php';
 $g_title = BLOG_NAME . ' - Register';
 $g_page = 'register';
@@ -21,12 +21,22 @@ $csrf_token = CSRFTool::generateCsrf();
             <tr>
                 <td width="78">Username</td>
                 <td width="6">:</td>
-                <td width="294"><label><input name="username" type="text" id="username"></label></td>
+                <td width="294"><label><input name="username" type="text" id="username" required></label></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td>:</td>
+                <td><input name="email" type="text" id="email" required></td>
             </tr>
             <tr>
                 <td>Password</td>
                 <td>:</td>
-                <td><label><input name="password" type="password" id="password"></label></td>
+                <td><label><input name="password" type="password" id="password" required></label></td>
+            </tr>
+            <tr>
+                <td>Verify Password</td>
+                <td>:</td>
+                <td><input name="password2" type="password" id="password2" required></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>

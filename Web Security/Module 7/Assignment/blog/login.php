@@ -1,7 +1,7 @@
 <?php
 require 'security.php';
 require 'config.php';
-require 'database.php.backup';
+require 'database.php';
 require 'csrftool.php';
 $g_title = BLOG_NAME . ' - Login';
 $g_page = 'login';

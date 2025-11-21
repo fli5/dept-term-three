@@ -36,21 +36,28 @@ class Database {
         return date("Y-m-d H:i:s", strtotime($datetime));
     }
 
-    public static function createUser($username, $password): bool {
+    public static function createUser($username, $email, $password): array|bool {
+        $errors = array();
         $pdo = self::getConnection();
-
         //check if username already exists
-        if (self::existUser($username)) {
-            return false;
+        $user=self::existUser($username, $email);
+        if ($user) { // if user exists, which field?
+            if ($user['username'] == $username) {
+                array_push($errors, "Username already exists!");
+            }
+            if ($user['email'] == $email) {
+                array_push($errors, "Email already exists!");
+            }
+           return $errors;
         }
 
         $salt = uniqid();
         $salted_password = $salt . $password;
         $encrypted_password = hash("sha512", $salted_password);
 
-        $sql = "INSERT INTO members (username, password, salt) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO members (username, email, password, salt) VALUES (?, ?, ?, ?)";
         $stmt = $pdo->prepare($sql);
-        return $stmt->execute([$username, $encrypted_password, $salt]);
+        return $stmt->execute([$username, $email, $encrypted_password, $salt]);
     }
 
     public static function findBlogs($limit = null): array {
@@ -86,14 +93,13 @@ class Database {
         return $stmt->execute([$title, $content]);
     }
 
-    private static function existUser($username): bool {
+    private static function existUser($username, $email): mixed {
         $pdo = self::getConnection();
-        $sql = "SELECT COUNT(*) AS count_num FROM members WHERE username = ?";
+        $sql = "SELECT username, email FROM members WHERE username = ? or email = ? LIMIT 1";
         $stmt = $pdo->prepare($sql);
-        $stmt->execute([$username]);
+        $stmt->execute([$username, $email]);
         $result = $stmt->fetch();
-
-        return $result && $result['count_num'] > 0;
+        return $result;
     }
 
     public static function checkLogin($username, $password): array {

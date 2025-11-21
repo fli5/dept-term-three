@@ -1,7 +1,7 @@
 <?php
 require 'security.php';
 require 'config.php';
-require 'database.php.backup';
+require 'database.php';
 $g_title = BLOG_NAME . ' - Logout';
 $g_page = 'logout';
 require 'header.php';

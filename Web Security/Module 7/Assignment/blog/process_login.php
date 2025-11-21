@@ -1,7 +1,7 @@
 <?php
 require 'security.php';
 require 'config.php';
-require 'database.php.backup';
+require 'database.php';
 require 'csrftool.php';
 $g_title = BLOG_NAME . ' - Login';
 $g_page = 'login';
@@ -9,7 +9,7 @@ require 'header.php';
 require 'menu.php';
 
 
-$login_result = false;
+$login_result = array('login_success' => false, 'user_id' => null);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $sanitized_password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_FULL_SPECIAL_CHARS);

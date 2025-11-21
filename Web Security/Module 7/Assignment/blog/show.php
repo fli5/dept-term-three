@@ -1,7 +1,7 @@
 <?php
 require 'security.php';
 require 'config.php';
-require 'database.php.backup';
+require 'database.php';
 
 $post_id = filter_input(INPUT_GET, "id", FILTER_VALIDATE_INT);
 

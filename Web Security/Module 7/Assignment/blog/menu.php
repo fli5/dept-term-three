@@ -7,7 +7,6 @@ if (!isset($g_page)) {
 }
 
 use PhpRbac\Rbac;
-
 $rbac = new Rbac();
 $role_id = $rbac->Roles->returnId('admin');
 ?>
