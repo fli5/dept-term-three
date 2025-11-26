@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= content_for(:title) || "Northern Harvest Natural Foods" %></title>
+    <meta name="description" content="<%= content_for(:description) || 'Premium organic and natural foods in Winnipeg' %>">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+<%= favicon_link_tag "favicon.png", type: "image/png" %>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap CSS -->
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    
+    <!-- Bootstrap JS -->
+    <%# <%= javascript_importmap_tags %> 
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Header Navigation -->
+    <%= render 'shared/header' %>
+    
+    <!-- Flash Messages -->
+    <%= render 'shared/flash' %>
+    
+    <!-- Main Content -->
+    <main class="flex-grow-1">
+      <%= yield %>
+    </main>
+    
+    <!-- Footer -->
+    <%= render 'shared/footer' %>
+  </body>
+</html>
+</html>

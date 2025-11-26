@@ -1,0 +1,54 @@
+version: '3'
+
+services:
+  web-app:
+    image: ghcr.io/fli5/naturio-app:latest
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    networks:
+      - rails_network
+    ports:
+      - "80:3000"
+    env_file:
+      - .env
+    environment:
+      DB_HOST: web-postgres
+      DB_USERNAME: postgres
+      DB_PASSWORD: password
+      DB_NAME: naturio_production
+      RAILS_ENV: production
+
+    depends_on:
+      - web-postgres
+
+  web-postgres:
+    image: postgres:15
+    restart: unless-stopped
+    networks:
+      - rails_network
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      # - ./.devcontainer/create-db-user.sql:/docker-entrypoint-initdb.d/create-db-user.sql
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: naturio_production
+
+  stripe-cli:
+    image: stripe/stripe-cli:latest
+    container_name: stripe-cli
+    networks:
+      - rails_network
+    command: ["listen", "--forward-to", "http://web-app/webhooks/stripe"]
+    environment:
+      STRIPE_API_KEY: ${STRIPE_SECRET_KEY}
+    stdin_open: true
+    tty: true
+
+volumes:
+  postgres-data:
+
+networks:
+  rails_network:
+    driver: bridge
