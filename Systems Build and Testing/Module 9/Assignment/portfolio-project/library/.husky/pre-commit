@@ -1,0 +1,4 @@
+echo '>>Run ESLint Check and Prettier Check...\n'
+lint-staged --verbose
+echo '>>>Run testing... \n'
+npm test

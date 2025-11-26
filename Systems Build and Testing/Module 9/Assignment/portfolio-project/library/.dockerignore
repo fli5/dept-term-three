@@ -1,0 +1,22 @@
+# Ignore node_modules
+node_modules
+
+# Ignore temporary and log files
+*.log
+*.tmp
+
+# Ignore build outputs
+dist
+coverage
+
+# Ignore Git-related files
+.git
+.gitignore
+
+# Ignore Docker-specific files if not needed
+Dockerfile
+
+# Ignore IDE/editor settings
+.idea
+
+README.md

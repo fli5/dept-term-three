@@ -1,0 +1,16 @@
+.basic-info {
+  &-section {
+    margin-bottom: 4rem;
+  }
+
+  &-hero-content {
+    margin-top: 2rem;
+  }
+
+  &-labels {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}

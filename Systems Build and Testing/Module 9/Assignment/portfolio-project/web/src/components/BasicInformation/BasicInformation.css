@@ -1,0 +1,12 @@
+.basic-info-section {
+  margin-bottom: 4rem;
+}
+.basic-info-hero-content {
+  margin-top: 2rem;
+}
+.basic-info-labels {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+} /*# sourceMappingURL=BasicInformation.css.map */

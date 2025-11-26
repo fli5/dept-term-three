@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.portfolio-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #eff6ff, #ffffff, #faf5ff);
+}
+.portfolio-header {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.portfolio-header-content {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2563eb;
+}
+.portfolio-social {
+  display: flex;
+  gap: 1rem;
+}
+.portfolio-social a {
+  color: #6b7280;
+  transition: color 0.2s;
+}
+.portfolio-main {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+.portfolio-filters {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: end;
+}
+.portfolio-section {
+  margin-bottom: 4rem;
+}
+.portfolio-footer {
+  background-color: #111827;
+  color: white;
+  padding: 2rem;
+}
+.portfolio-footer-content {
+  max-width: 1152px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.filter-dropdown {
+  flex: 1;
+  min-width: 200px;
+}
+.filter-search {
+  flex: 2;
+  min-width: 300px;
+}
+
+.footer-text {
+  color: #9ca3af;
+  margin-bottom: 1rem;
+}
+.footer-copyright {
+  color: #6b7280;
+  font-size: 0.875rem;
+}/*# sourceMappingURL=App.css.map */

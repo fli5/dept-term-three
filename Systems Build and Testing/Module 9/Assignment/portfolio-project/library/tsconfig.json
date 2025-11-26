@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    //Specifies that the TypeScript compiler will generate code compatible with ECMAScript 5
+    "target": "es5",
+    //Includes necessary libraries, such as the Document Object Model (DOM)
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    //Skips type checking of declaration files (.d.ts), speeding up compilation
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    //Indicates that the module system for code compiling is ES6 and above
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    //Specifies the syntax for JSX (React’s JavaScript XML). "react-jsx" indicates that TypeScript should use React’s JSX syntax
+    "jsx": "react-jsx"
+  },
+  //Specifies that TypeScript should include files from the src directory
+  "include": ["src"]
+}

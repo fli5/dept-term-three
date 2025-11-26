@@ -1,0 +1,2 @@
+# Allows us to tell Prettier what files it should not run on.
+node_modules/
