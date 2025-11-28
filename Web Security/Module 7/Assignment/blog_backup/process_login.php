@@ -7,17 +7,16 @@ $g_title = BLOG_NAME . ' - Login';
 $g_page = 'login';
 require 'header.php';
 require 'menu.php';
-date_default_timezone_set('America/Winnipeg');
+
 
 $login_result = array('login_success' => false, 'user_id' => null);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $sanitized_password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $csrf_token = filter_input(INPUT_POST, "csrf_token", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    // if ($csrf_token && CSRFTool::validateCsrf($csrf_token)) {
-    $login_result = Database::checkLogin($sanitized_username, $sanitized_password);
-    error_log("time:" . date("Y-m-d H:i:s") . " " . var_export($login_result, true));
-    // }
+    if ($csrf_token && CSRFTool::validateCsrf($csrf_token)) {
+        $login_result = Database::checkLogin($sanitized_username, $sanitized_password);
+    }
 }
 ?>
 <div id="all_blogs">
@@ -28,13 +27,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['username'] = $sanitized_username;
         $_SESSION['userid'] = $login_result['user_id'];
         ?>
-        <script id="redirect-script" src="redirect.js" data-delay="2000" data-url="index.php"> </script>
-    <?php elseif (!empty($login_result['message']) && is_array($login_result['message'])): ?>
-        <?php foreach ($login_result['message'] as $msg): ?>
-            <pre><?= htmlspecialchars($msg) ?></pre>
-        <?php endforeach; ?>
+        <script id="redirect-script"
+            src="redirect.js"
+            data-delay="2000"
+            data-url="index.php">
+        </script>
+
     <?php else: ?>
-        Wrong username or password
+        Wrong Username or Password
     <?php endif; ?>
 </div>
 <?php
