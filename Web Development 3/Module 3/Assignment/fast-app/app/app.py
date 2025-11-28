@@ -16,6 +16,7 @@ if sys.platform == "win32":
 # Install the asyncio reactor for compatibility with Flask
 # Because Flask uses asyncio under the hood
 from twisted.internet import asyncioreactor
+
 asyncioreactor.install()
 # -------------------------------
 
@@ -28,8 +29,10 @@ app = Flask(__name__)
 
 # -------------------------------
 # Avoid starting multiple reactors
-runner = CrawlerRunner(settings={'LOG_ENABLED': True})
+runner = CrawlerRunner(settings={"LOG_ENABLED": True})
 reactor_started = False
+
+
 def start_reactor():
     global reactor_started
     if not reactor_started:
@@ -37,12 +40,14 @@ def start_reactor():
         reactor_started = True
         reactor.run(installSignalHandlers=False)
 
+
 # Start the reactor in a separate thread in daemon mode
 threading.Thread(target=start_reactor, daemon=True).start()
 # -------------------------------
 
 # Defined supported output image types
 OUTPUT_TYPES = ["JPEG", "PNG", "BMP", "GIF", "TIFF"]
+
 
 # -------------------------------
 # Index route
@@ -134,20 +139,26 @@ curl -X POST http://localhost:5000/search \
 
     return render_template_string(usage_html)
 
+
 # -------------------------------
 # Image conversion route
 # -------------------------------
 @app.route("/convert", methods=["POST"])
 def convert_image():
-    if 'image' not in request.files or 'output_type' not in request.form:
+    if "image" not in request.files or "output_type" not in request.form:
         return jsonify({"error": "Missing image file or output_type"}), 400
 
-    image_field = request.files['image']
-    output_type = request.form['output_type'].upper()
+    image_field = request.files["image"]
+    output_type = request.form["output_type"].upper()
 
     # Allow only supported output types
     if output_type not in OUTPUT_TYPES:
-        return jsonify({"error": f"Unsupported output type. Available types: {OUTPUT_TYPES}"}), 400
+        return (
+            jsonify(
+                {"error": f"Unsupported output type. Available types: {OUTPUT_TYPES}"}
+            ),
+            400,
+        )
 
     try:
         # Open the image stream with PIL
@@ -163,7 +174,9 @@ def convert_image():
         output_io.seek(0)
 
         filename = f"converted.{output_type.lower()}"
-        return send_file(output_io, download_name=filename, mimetype=f"image/{output_type.lower()}")
+        return send_file(
+            output_io, download_name=filename, mimetype=f"image/{output_type.lower()}"
+        )
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -174,12 +187,12 @@ def convert_image():
 @app.route("/search", methods=["POST"])
 def scrape_quote():
     """
-    Example: user sends JSON {"query": "Python"} 
+    Example: user sends JSON {"query": "Python"}
     We use Scrapy to scrape quotes.toscrape.com containing the keyword.
     """
     # Check Content-Type
-    content_type = request.headers.get('Content-Type')
-    if (content_type is None) or (content_type!='application/json'):
+    content_type = request.headers.get("Content-Type")
+    if (content_type is None) or (content_type != "application/json"):
         return jsonify({"error": "Content-Type must be application/json"}), 400
 
     # Get query parameter from JSON body
@@ -208,9 +221,7 @@ def scrape_quote():
     # Wait for the spider to finish
     finished_event.wait()
 
-    return jsonify(
-        {"query": query_parameter, "matches": query_results}
-    )
+    return jsonify({"query": query_parameter, "matches": query_results})
 
 
 # -------------------------------
