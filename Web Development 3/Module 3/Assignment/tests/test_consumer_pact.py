@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 # tests/test_consumer_pact.py
 from pact import Pact
-from pact_ffi import Consumer, Provider
 import requests
 
 PACT_DIR = "../pacts"
@@ -27,8 +25,8 @@ def test_get_user():
     )
 
     # Start the mock server and run the test
-    with pact.serve() as srv:
-        expected_api = f"{srv.url}/user/{user_id}"
+    with pact.serve() as server:
+        expected_api = f"{server.url}/user/{user_id}"
         response = requests.get(expected_api)
         response.raise_for_status()
         actual_result = response.json()
