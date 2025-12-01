@@ -140,6 +140,11 @@ curl -X POST http://localhost:5000/search \
     return render_template_string(usage_html)
 
 
+@app.route("/user/<id>", methods=["GET"])
+def get_user(id):
+    return {"username": "testuser", "email": "testuser@example.com"}
+
+
 # -------------------------------
 # Image conversion route
 # -------------------------------
