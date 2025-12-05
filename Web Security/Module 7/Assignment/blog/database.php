@@ -114,34 +114,6 @@ class Database
         return $result;
     }
 
-    private static function checkLocked($username): array
-    {
-        $pdo = self::getConnection();
-        $sql = "SELECT failed_login, last_login FROM members WHERE username = ? LIMIT 1 FOR UPDATE";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute([$username]);
-        $user = $stmt->fetch();
-
-        $message = [];
-        $account_locked = false;
-        // Check to see if the user has been locked out.
-        if ($user && $user['failed_login'] >= self::TOTAL_FAILED_LOGIN) {
-            $last_login = strtotime($user['last_login']);
-            $timeout = $last_login + (self::LOCKOUT_TIME * 60);
-            $timenow = time();
-            $message = [
-                "The account is locked for time",
-                "The last login was: " . date("h:i:s", $last_login),
-                "The timenow is: " . date("h:i:s", $timenow),
-                "The timeout is: " . date("h:i:s", $timeout),
-            ];
-            if ($timenow < $timeout) {
-                $account_locked = true;
-            }
-        }
-        return ['account_locked' => $account_locked, 'message' => $message];
-    }
-
     public static function checkLogin($username, $password): array
     {
         $user_id = -1;
